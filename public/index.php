@@ -72,9 +72,9 @@
 
     <a style="margin-left: 300px;" href="/" class="headerLogo">KRV<span style="color: red">VKO</span></a>
 
-    <a id="HeaderMenuButton" class="headerElements dot">⋮</a>
-    <a href="/AboutMe" class="headerElements">ABOUT ME</a>
-    <a href="/" class="headerElements">HOME</a>
+    <a id="HeaderMenuButton" class="headerElements dot ">⋮</a>
+    <a href="/AboutMe" class="headerElements <?= $_SERVER['REQUEST_URI'] === '/AboutMe' ? 'active' : '' ?>">ABOUT ME</a>
+    <a href="/" class="headerElements <?= $_SERVER['REQUEST_URI'] === '/' ? 'active' : '' ?>">HOME</a>
 
     <div id="HeaderMenuBlock" class="HeaderMenu">
 
