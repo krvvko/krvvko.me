@@ -13,7 +13,7 @@
                 <div class="ArticleGradient">
                     <?php
 
-                    $count = file_get_contents("visits-$i" );
+                    $count = file_get_contents(__DIR__."/../../articles/visits/visits-$i");
 
                     echo $count;
 
