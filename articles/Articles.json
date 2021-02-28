@@ -3,35 +3,34 @@
     "img": "/resources/img/YouTubeArticle.png",
     "date": "2020-02-27 00:58:00",
     "description": "How I'm creating YouTube videos:",
-    "link": "/articles/0"
-
+    "title": "YouTube"
   },
 
   {
     "img": "/resources/img/GitHubArticle.png",
     "date": "2020-02-27 00:58:00",
     "description": "My GitHub Projects:",
-    "link": "#"
+    "title": "GitHub"
   },
 
   {
     "img": "/resources/img/RainbowSixArticle.png",
     "date": "2020-02-27 00:58:00",
     "description": "Rainbow Six Siege Full Guide:",
-    "link": "#"
+    "title": "Rainbow Six Siege"
   },
 
   {
     "img": "/resources/img/EscapeFromTarkovArticle.png",
     "date": "2020-02-27 00:58:00",
     "description": "Escape From Tarkov Full Guide:",
-    "link": "#"
+    "title": "Eshcerp From Krakof"
   },
 
   {
     "img": "/resources/img/ApiArticle.png",
     "date": "2020-02-27 00:58:00",
     "description": "Api Usage:",
-    "link": "#"
+    "title": "Api"
   }
 ]
