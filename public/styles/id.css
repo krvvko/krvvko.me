@@ -10,6 +10,7 @@
     text-align: center;
     padding: 4px;
     height: 20px;
+    z-index: 1000000000;
 }
 
 
