@@ -31,7 +31,7 @@
 
         <?php
 
-        switch ($_SERVER ["REQUEST_URI"]) {
+        switch (parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)) {
 
             case "/AboutMe":
                 echo "About Me";
@@ -43,6 +43,13 @@
 
             case "/":
                 echo "Home";
+                break;
+
+            case "/articles":
+                $Articles = json_decode(file_get_contents(__DIR__ . "/../articles/Articles.json"));
+                echo($Articles [$_GET['id']]->title) ;
+                echo (' Article');
+
                 break;
 
             default:
@@ -71,10 +78,10 @@
 
     <div id="HeaderMenuBlock" class="HeaderMenu">
 
-        <a href="https://github.com/krvvko"><img src="/icons/free-icon-github-sign-25657.svg"></a>
-        <a href="https://www.youtube.com/channel/UCse1yKfPXvG6phJXWys-8kw"><img src="/icons/free-icon-youtube-174883.svg"></a>
-        <a href="https://steamcommunity.com/id/RealKrvvkoNoJokes/"><img src="/icons/steam-logo.svg"></a>
-        <a href=""><img src="/icons/telegram.svg"></a>
+        <a target="_blank" href="https://github.com/krvvko"><img src="/icons/free-icon-github-sign-25657.svg"></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCse1yKfPXvG6phJXWys-8kw"><img src="/icons/free-icon-youtube-174883.svg"></a>
+        <a target="_blank" href="https://steamcommunity.com/id/RealKrvvkoNoJokes/"><img src="/icons/steam-logo.svg"></a>
+        <a target="_blank" href=""><img src="/icons/telegram.svg"></a>
 
 
     </div>
@@ -83,7 +90,7 @@
 <main>
     <?php
 
-    switch ($_SERVER ["PATH_INFO"]) {
+    switch (parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)) {
 
         case "/AboutMe":
             require("../pages/content/AboutMe.php");
@@ -93,13 +100,14 @@
             require("../pages/content/MyProjects.php");
             break;
 
-        case "":
+
         case "/":
             require("../pages/content/Home.php");
             break;
 
         case "/articles":
-            echo $_GET ["id"];
+            require(__DIR__ . "/../articles/".$_GET ["id"].".php");
+            require(__DIR__ . "/../articles/counter.php");
             break;
 
         default:
