@@ -1,0 +1,37 @@
+[
+  {
+    "img": "/resources/img/YouTubeArticle.png",
+    "date": "2020-02-27 00:58:00",
+    "description": "How I'm creating YouTube videos:",
+    "link": "/articles/0"
+
+  },
+
+  {
+    "img": "/resources/img/GitHubArticle.png",
+    "date": "2020-02-27 00:58:00",
+    "description": "My GitHub Projects:",
+    "link": "#"
+  },
+
+  {
+    "img": "/resources/img/RainbowSixArticle.png",
+    "date": "2020-02-27 00:58:00",
+    "description": "Rainbow Six Siege Full Guide:",
+    "link": "#"
+  },
+
+  {
+    "img": "/resources/img/EscapeFromTarkovArticle.png",
+    "date": "2020-02-27 00:58:00",
+    "description": "Escape From Tarkov Full Guide:",
+    "link": "#"
+  },
+
+  {
+    "img": "/resources/img/ApiArticle.png",
+    "date": "2020-02-27 00:58:00",
+    "description": "Api Usage:",
+    "link": "#"
+  }
+]
