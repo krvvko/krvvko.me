@@ -14,10 +14,10 @@
   },
 
   {
-    "img": "/resources/img/RainbowSixArticle.png",
+    "img": "/resources/img/ApiArticle.png",
     "date": "2020-02-27 00:58:00",
-    "description": "Rainbow Six Siege Full Guide:",
-    "title": "Rainbow Six Siege"
+    "description": "Api Usage:",
+    "title": "Api"
   },
 
   {
@@ -28,9 +28,16 @@
   },
 
   {
-    "img": "/resources/img/ApiArticle.png",
+    "img": "/resources/img/RainbowSixArticle.png",
     "date": "2020-02-27 00:58:00",
-    "description": "Api Usage:",
-    "title": "Api"
+    "description": "Rainbow Six Siege Full Guide:",
+    "title": "Rainbow Six Siege"
+  },
+
+  {
+    "img": "/resources/img/CsArticle.png",
+    "date": "2020-02-27 00:58:00",
+    "description": "CS:GO Full Guide:",
+    "title": "CSGO"
   }
 ]
