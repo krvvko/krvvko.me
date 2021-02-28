@@ -16,9 +16,9 @@
 
             echo (new DateTime())->diff(new DateTime('2001-09-26 12:35:54'))->y;
 
-            ?> years old (btw my age text was created with the <a style="text-decoration: none"
-                                                                  href="https://en.wikipedia.org/wiki/PHP"><span
-                        class="ArticleContent"> ?php </span></a>script, it's not just a text :D )
+            ?> years old (btw my age text was created with the <a style="text-decoration: none;" href="https://en.wikipedia.org/wiki/PHP">
+
+                <span style="color: #ff8c00;" class="ArticleContent"> ?php </span></a>script, it's not just a text :D )
 
         </h4>
 
