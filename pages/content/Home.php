@@ -1,12 +1,14 @@
 <br><br><br>
 
-<p >ARTICLES:</p>
+<p>ARTICLES:</p>
 
 <div class="ArticleSections">
+
     <?php
     $Articles = json_decode(file_get_contents(__DIR__ . "/../../articles/Articles.json"));
+
     foreach ($Articles as $i => $article):
-        ?>
+    ?>
         <div class="Article">
             <a href="/articles?id=<?php echo $i; ?>">
                 <img src="<?php echo $article->img; ?>">
