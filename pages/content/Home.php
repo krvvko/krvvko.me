@@ -15,9 +15,13 @@
                 <div class="ArticleGradient">
                     <?php
 
-                    $count = file_get_contents(__DIR__."/../../articles/visits/visits-$i");
+                    $file = __DIR__."/../../articles/visits/visits-$i";
 
-                    echo $count;
+                    if (file_exists($file)) {
+                        echo file_get_contents($file);
+                    } else {
+                        echo 0;
+                    }
 
                     ?> watched
                     <br>

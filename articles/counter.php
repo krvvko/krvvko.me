@@ -1,8 +1,11 @@
 <?php
 
-$_GET ["id"];
-$viewsBefore = file_get_contents(__DIR__."/visits/visits-".$_GET ["id"]);
+$file = __DIR__."/visits/visits-" . $_GET["id"];
 
-$ViewsAfter = $viewsBefore + 1;
+if (! file_exists($file)) {
+     file_put_contents($file, 0);
+}
 
-file_put_contents(__DIR__."/visits/visits-".$_GET ["id"], $ViewsAfter);
+$viewsBefore = file_get_contents($file);
+
+file_put_contents($file, $viewsBefore + 1);
