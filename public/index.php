@@ -1,3 +1,8 @@
+<?php
+$connection = new PDO('sqlite:' . __DIR__ . '/../db.sqlite');
+$route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,14 +36,10 @@
 
         <?php
 
-        switch (parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)) {
+        switch ($route) {
 
             case "/AboutMe":
                 echo "About Me";
-                break;
-
-            case "/MyProjects":
-                echo "My Projects";
                 break;
 
             case "/":
@@ -46,9 +47,11 @@
                 break;
 
             case "/articles":
-                $Articles = json_decode(file_get_contents(__DIR__ . "/../articles/Articles.json"));
-                echo($Articles [$_GET['id']]->title) ;
-                echo (' Article');
+                $query = $connection->prepare('select title from articles where id = :id limit 1');
+                $query->execute([':id' => $_GET['id']]);
+                $article = $query->fetchObject();
+
+                echo $article->title;
 
                 break;
 
@@ -90,28 +93,22 @@
 <main>
     <?php
 
-    switch (parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)) {
+    switch ($route) {
 
         case "/AboutMe":
-            require("../pages/content/AboutMe.php");
+            require(__DIR__ . "/../pages/content/AboutMe.php");
             break;
-
-        case "/MyProjects":
-            require("../pages/content/MyProjects.php");
-            break;
-
 
         case "/":
-            require("../pages/content/Home.php");
+            require(__DIR__ . "/../pages/content/Home.php");
             break;
 
         case "/articles":
-            require(__DIR__ . "/../articles/".$_GET ["id"].".php");
-            require(__DIR__ . "/../articles/counter.php");
+            require(__DIR__ . "/../pages/content/Article.php");
             break;
 
         default:
-            require("../pages/content/404.php");
+            require(__DIR__ . "/../pages/content/404.php");
             break;
 
     }

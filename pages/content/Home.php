@@ -5,29 +5,22 @@
 <div class="ArticleSections">
 
     <?php
-    $Articles = json_decode(file_get_contents(__DIR__ . "/../../articles/Articles.json"));
+
+    /** @var PDO $connection */
+    $Articles = $connection->query('select * from articles order by id');
+
 
     foreach ($Articles as $i => $article):
     ?>
         <div class="Article">
-            <a href="/articles?id=<?php echo $i; ?>">
-                <img src="<?php echo $article->img; ?>">
+            <a href="/articles?id=<?php echo $article['id']; ?>">
+                <img src="<?php echo $article['img']; ?>">
                 <div class="ArticleGradient">
-                    <?php
-
-                    $file = __DIR__."/../../articles/visits/visits-$i";
-
-                    if (file_exists($file)) {
-                        echo file_get_contents($file);
-                    } else {
-                        echo 0;
-                    }
-
-                    ?> watched
+                    <?php echo $article['views']; ?> watched
                     <br>
-                    <?php echo (new DateTime())->diff(new DateTime($article->date))->y; ?> year ago
+                    <?php echo (new DateTime())->diff(new DateTime($article['date']))->y; ?> year ago
                     <br>
-                    <?php echo $article->description; ?>
+                    <?php echo $article['description']; ?>
                 </div>
             </a>
         </div>
