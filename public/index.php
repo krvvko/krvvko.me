@@ -1,24 +1,24 @@
 <?php
 $connection = new PDO('sqlite:' . __DIR__ . '/../db.sqlite');
 $route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+
     <link rel="stylesheet" type="text/css" href="/styles/styles.css"> <!-- Main stylesheet -->
     <link rel="stylesheet" type="text/css" href="/styles/id.css"> <!-- Stylesheet with ids -->
+
     <script src="/scripts/HeaderMenuScript.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Font for headlines -->
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <!-- Font for headlines -->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet"> <!-- Font for headlines -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Font for text -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- Font for text -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> <!-- Font for text -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
@@ -28,7 +28,6 @@ $route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-
 
     <link rel="icon" href="/favicon.png" type="image/png">
 
@@ -107,6 +106,10 @@ $route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
             require(__DIR__ . "/../pages/content/Article.php");
             break;
 
+        case "/test":
+            require(__DIR__. "/../pages/content/test.php");
+            break;
+
         default:
             require(__DIR__ . "/../pages/content/404.php");
             break;
@@ -114,11 +117,14 @@ $route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     }
 
     ?>
+
+
+
 </main>
 
 <footer class="footer">
 
-    © copyright all rights reserved
+    © <?= date('Y') ?> copyright all rights reserved
 
 </footer>
 
