@@ -1,6 +1,8 @@
 <?php
+
 $connection = new PDO('sqlite:' . __DIR__ . '/../db.sqlite');
 $route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
 ?>
 
 <!DOCTYPE html>
