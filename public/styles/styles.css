@@ -4,15 +4,11 @@
 /* font-family: 'Noto Sans', sans-serif; */
 
 html {
-
     color: #eaeaea;
-
 }
 
 header {
-
     z-index: 10;
-
 }
 
 body {
@@ -49,10 +45,7 @@ body {
 }
 
 .headerElements.dot:before {
-
-
     display: none;
-
 }
 
 .headerElements.dot {
@@ -64,20 +57,16 @@ body {
     cursor: pointer;
     margin-top: -4px;
     font-size: 26px;
-
 }
 
 p {
-
     font-size: 30px;
     text-align: center;
     color: #eaeaea;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 h4 {
-
     margin: 7px;
     color: #eaeaea;
     font-family: 'Noto Sans', sans-serif;
