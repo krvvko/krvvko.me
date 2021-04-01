@@ -64,6 +64,13 @@
 
     <div class="ArticleSectionsTextContent">
 
+        <h4 class="ArticleMiddle">HTMl text below is absolutely true</h4>
+
+    </div>
+
+
+    <div class="ArticleSectionsTextContent">
+
         <h4>
 
 
