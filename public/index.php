@@ -56,6 +56,10 @@ $route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
                 break;
 
+            case "/test":
+                echo "test";
+                break;
+
             default:
                 echo "404 not found";
                 break;
