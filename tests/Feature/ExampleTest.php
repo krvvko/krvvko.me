@@ -12,9 +12,23 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_home_page()
     {
         $response = $this->get('/');
+
+        $response->assertStatus(200);
+    }
+
+    public function test_me_page()
+    {
+        $response = $this->get('/me');
+
+        $response->assertStatus(200);
+    }
+
+    public function test_projects_page()
+    {
+        $response = $this->get('/projects');
 
         $response->assertStatus(200);
     }
