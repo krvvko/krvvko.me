@@ -35,7 +35,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
-          extensions: fileinfo, pdo-sqlite
+          extensions: fileinfo, pdo, pdo-sqlite
           # PHP Extras
           coverage: pcov
           tools: pecl
