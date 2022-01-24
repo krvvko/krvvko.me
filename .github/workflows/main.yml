@@ -61,6 +61,8 @@ jobs:
         run: |
           cp .env.example .env
           php artisan key:generate --ansi
+          touch database/db.sqlite
+          php artisan migrate
 
       # Execution
       - name: Execute Tests
