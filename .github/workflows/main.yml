@@ -57,6 +57,10 @@ jobs:
           timeout_minutes: 5
           max_attempts: 5
           command: composer update --${{ matrix.stability }} --prefer-dist --no-interaction --no-progress
+      - name: Install Laravel
+        run: |
+          cp .env.example .env
+          php artisan key:generate --ansi
 
       # Execution
       - name: Execute Tests
