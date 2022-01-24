@@ -3,6 +3,8 @@
 
     <div class="home-main">
 
+        @if($randomArticle)
+
         <div class="main-article">
 
             <img class="main-article-img" src="{{$randomArticle->img}}" alt="asian">
@@ -17,7 +19,7 @@
             </div>
 
         </div>
-
+        @endif
 
         <h1 style="text-align: center; margin: 40px">{{trans("home.Articles")}}</h1>
 
