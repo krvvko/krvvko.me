@@ -1,3 +1,10 @@
+@php
+
+    $dt = \Carbon\Carbon::createFromFormat('Y-m-d', '2004-09-26');
+
+@endphp
+
+
 @extends("layout.main")
 @section("body")
 
@@ -10,7 +17,6 @@
             <img class="main-article-img" src="{{$randomArticle->img}}" alt="asian">
             <div class="main-article-content-container">
                 <div>
-
                     <h1 class="main-article-content-title">{{$randomArticle->title}}</h1>
                     <p class="main-article-content-description">
                         {{$randomArticle->content}}
@@ -22,7 +28,6 @@
         @endif
 
         <h1 style="text-align: center; margin: 40px">{{trans("home.Articles")}}</h1>
-
 
         <div class="container-articles">
 

@@ -72,15 +72,15 @@
     <div class="footer-right-container">
 
         <div class="footer-right-element">{{trans("home.contact me")}}</div>
-        <a class="footer-right-element hover-underline-animation-footer" href="">vk</a>
+        <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://vk.com/krvvko">vk</a>
         <span>&middot;</span>
-        <a class="footer-right-element hover-underline-animation-footer" href="">telegram</a>
+        <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://t.me/krvvko">telegram</a>
         <span>&middot;</span>
-        <a class="footer-right-element hover-underline-animation-footer" href="">instagram</a>
+        <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://www.instagram.com/krvvko/">instagram</a>
         <span>&middot;</span>
-        <a class="footer-right-element hover-underline-animation-footer" href="">github</a>
+        <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://github.com/krvvko">github</a>
         <span>&middot;</span>
-        <a class="footer-right-element hover-underline-animation-footer" href="">discord</a>
+        <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://www.donationalerts.com/r/krvvko">donation alerts</a>
 
     </div>
 
