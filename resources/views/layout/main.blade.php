@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield("title") - krvvko</title>
 
+    <link rel="icon" href="{{asset("src/img/icon_white.png")}}" type="image/icon type">
+
     <link rel="stylesheet" href="{{asset("styles/normalizer.css")}}">
     <link rel="stylesheet" href="{{asset("styles/main.css")}}">
 
