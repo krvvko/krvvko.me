@@ -1,7 +1,15 @@
 @extends("layout.main")
 @section("body")
 
-    <h1>{{$article->title}}</h1>
+    <div class="article-container">
+
+        <span class="article-title"><h1>{{$article->title}}</h1></span>
+
+        <p class="article-paragraph">asdadas</p>
+
+    </div>
+
+
 
 @endsection
 

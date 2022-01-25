@@ -494,3 +494,27 @@ main {
 
 }
 
+.article-container {
+
+    margin: 0 30%;
+    padding-top: 1px;
+    background-color: var(--color-lightgrey);
+
+
+
+}
+
+.article-title {
+
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.article-paragraph {
+
+    margin: 10px;
+    font-size: 20px;
+
+}
