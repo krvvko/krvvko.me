@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield("title") - krvvko</title>
 
+    <script src="{{asset("src/js/main.js")}}"></script>
+
     <link rel="icon" href="{{asset("src/img/icon_white.png")}}" type="image/icon type">
 
     <link rel="stylesheet" href="{{asset("styles/normalizer.css")}}">
@@ -33,8 +35,8 @@
 
         <nav class="header-container-right">
 
-            <a class="header-element-right hover-underline-animation" href="{{route("home")}}">{{trans("home.home")}}</a>
-            <span>&middot;</span>
+            <a class="header-element-right hover-underline-animation home-SFEADFG2" href="{{route("home")}}">{{trans("home.home")}}</a>
+            <span class="home-SFEADFG2">&middot;</span>
             <a class="header-element-right hover-underline-animation" href="{{route("me")}}">{{trans("home.about me")}}</a>
             <span>&middot;</span>
             <a class="header-element-right hover-underline-animation" href="{{route("projects")}}">{{trans("home.my projects")}}</a>
@@ -76,8 +78,6 @@
         <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://vk.com/krvvko">vk</a>
         <span>&middot;</span>
         <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://t.me/krvvko">telegram</a>
-        <span>&middot;</span>
-        <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://www.instagram.com/krvvko/">instagram</a>
         <span>&middot;</span>
         <a target="_blank" class="footer-right-element hover-underline-animation-footer" href="https://github.com/krvvko">github</a>
         <span>&middot;</span>

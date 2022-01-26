@@ -15,13 +15,17 @@
         <div class="main-article">
 
             <img class="main-article-img" src="{{$randomArticle->img}}" alt="asian">
-            <div class="main-article-content-container">
+
+            <a id="HeaderMenuButton" class="show-article-button">Show Article</a>
+
+            <div id="main-article-content-container">
                 <div>
                     <h1 class="main-article-content-title">{{$randomArticle->title}}</h1>
                     <p class="main-article-content-description">
                         {{$randomArticle->content}}
                     </p>
                 </div>
+                <a id="HeaderMenuButton2" class="show-article-button">Hide Article</a>
             </div>
 
         </div>
