@@ -42,3 +42,4 @@ Route::get('name', function () {
 - [ ] My projects page
 - [x] Domain [krvvko.com](krvvko.com)
 - [x] Https used 
+- [x] Mobile adoptation 
