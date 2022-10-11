@@ -1,4 +1,4 @@
-# [krvvko.com](krvvko.com) - Website 
+# [krvvko.me](krvvko.me) - Website 
 
 ### Tests:
 <a href="https://github.com/krvvko/krvvko.com/actions"><img src="https://github.com/krvvko/krvvko.com/workflows/build/badge.svg"></a>
