@@ -40,6 +40,6 @@ Route::get('name', function () {
     - [x] Animated logo-link in the middle
 - [ ] About Me page
 - [ ] My projects page
-- [x] Domain [krvvko.com](krvvko.com)
+- [x] Domain [krvvko.me](krvvko.me)
 - [x] Https used 
 - [x] Mobile adoptation 
