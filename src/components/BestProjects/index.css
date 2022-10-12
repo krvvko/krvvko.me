@@ -1,0 +1,61 @@
+.best-projects {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.bp-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bp-main-container > h3 {
+    margin: 20px 0;
+
+}
+.bp-container:hover .bp-svg path {
+    fill: var(--text-color);
+}
+
+.bp-container {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    min-width: 47%;
+    max-width: 47%;
+}
+
+.bp-svg {
+    min-width: 60px;
+    min-height: 60px;
+    margin-right: 30px;
+    align-self: center;
+}
+
+.bp-title {
+    transition-duration: 0.2s;
+    color: var(--text-color)
+}
+.bp-desc {
+    transition-duration: 0.2s;
+    color: var(--dark-grey);
+}
+
+.bp-svg path {
+    fill: var(--dark-grey);
+    transition-duration: 0.2s;
+}
+.bp-content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bp-container:hover:hover .bp-title {
+    color: var(--headline-color);
+}
+
+.bp-container:hover:hover .bp-desc {
+    color: var(--text-color);
+}

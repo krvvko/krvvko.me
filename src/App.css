@@ -3,6 +3,7 @@
   --text-color: #BBBBBB;
   --background-color: #050505;
   --dark-grey: #7c7c7c;
+  --light-black: #5a5a5a;
 }
 
 html {
@@ -20,23 +21,30 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
+
 h1:hover::before {
   position: absolute;
-  left: -35px;
   content: "#";
+  left: -35px;
+  opacity: 1;
   color: var(--dark-grey);
 }
 
 h2:hover::before {
   position: absolute;
-  left: -30px;
   content: "#";
+  left: -30px;
   color: var(--dark-grey);
 }
 
 body {
   background-color: var(--background-color);
   min-height: 100vh;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 main {
@@ -47,7 +55,7 @@ main {
 
 .main-content {
   flex: 1;
-  margin: 100px 0;
+  margin: 0 30%;
   display: flex;
   justify-content: center;
   align-items: center;

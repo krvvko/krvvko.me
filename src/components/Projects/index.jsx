@@ -3,7 +3,8 @@ import './index.css';
 import React, {useState, useEffect} from "react";
 
 import {GithubRepoDisplay} from "github-repo-display-react"
-import "github-repo-display-react/dist/index.css" // default github styling
+import "github-repo-display-react/dist/index.css"
+import BestProjects from "../BestProjects"; // default github styling
 
 
 const Projects = () => {
@@ -25,24 +26,25 @@ const Projects = () => {
                 How long has it been since I became a programmer? Good question, by my count (okay, not mine),
                 I've been in programming for about <a href="" className="default-link">{imProgr}</a> now. All this time I have been practicing in old and new
                 languages and frameworks for me. The branch of programming in which I practice is frontend development.
-                Here are some of my <a href="" className="default-link">GitHub</a> projects:
+                Here are some of my best projects, that required effort and time:
             </p>
 
+            <BestProjects />
+            <div className="div-separator"></div>
+            <p>**All the usages examples and explanations you can find <a href="" className="default-link">here</a>.</p>
+
+            <h2>My Experience</h2>
+
+            <div className="exp-table">
+                <ExperienceTable/>
+            </div>
+
+            <h2>My GitHub</h2>
             <GithubRepoDisplay
                 numOfrepos={4} // must be included
                 userName='krvvko' // must be included
                 showLanguage={true}
             />
-
-            <p>**All the usages examples and explanations you can find <a href="" className="default-link">here</a>.</p>
-
-            <div className="div-separator"></div>
-
-            <h2>My experience</h2>
-
-            <div className="exp-table">
-                <ExperienceTable/>
-            </div>
 
         </div>
     );
