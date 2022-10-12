@@ -1,0 +1,45 @@
+.paper {
+    width: 600px;
+    background-color: var(--background-color);
+    color: var(--headline-color);
+}
+
+.css-j6j1fo-MuiToolbar-root.Toolbar-toolbar { /* top box */
+    background-color: var(--background-color);
+}
+
+.css-xhtqz8-MuiTableCell-root.TableCell-cellNoWrap { /* array text color */
+    color: var(--text-color) !important;
+}
+
+.css-o7vo1z.Layout-root {
+    background-color: var(--background-color) !important;
+}
+
+.TableContainer-root {
+}
+
+.css-69og1k-MuiInputBase-root-MuiInput-root:after {
+    border-bottom: 2px solid var(--headline-color) !important;
+}
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active .MuiTableSortLabel-icon { /* sort arrow */
+    color: var(--headline-color) !important;
+}
+.css-1qgma8u-MuiButtonBase-root-MuiTableSortLabel-root:hover {
+    color: var(--headline-color) !important;
+}
+.css-69og1k-MuiInputBase-root-MuiInput-root.SearchPanelInput-root { /* search panel */
+    color: var(--text-color) !important;
+}
+.css-ittuaa-MuiInputAdornment-root { /* lupa */
+    color: var(--text-color) !important;
+}
+.css-69og1k-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: 1px solid rgb(255, 255, 255, 42%) !important;
+}
+.css-69og1k-MuiInputBase-root-MuiInput-root {
+    transition-duration: 0.2s;
+}
+.Title-title {
+    color: var(--headline-color) !important;
+}

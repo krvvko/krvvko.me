@@ -8,9 +8,9 @@ import {
     IntegratedSorting,
 } from '@devexpress/dx-react-grid';
 import {IntegratedFiltering, SearchState,} from '@devexpress/dx-react-grid';
-import {Grid, SearchPanel, Table, TableHeaderRow, Toolbar, VirtualTable} from '@devexpress/dx-react-grid-material-ui';
+import {Grid, SearchPanel, Table, TableHeaderRow, Toolbar} from '@devexpress/dx-react-grid-material-ui';
 
-export default () => {
+const ExperienceTable = () => {
 
     function calculateExp(startDate) {
         let start = new Date(startDate);
@@ -20,11 +20,19 @@ export default () => {
         let myExp = now - start;
 
         if (myExp/1000/60/60/24 > 1) {
-            if(myExp/1000/60/60/24/365 > 1) {
-                return ""+Math.round(myExp/1000/60/60/24/365) + " Years"
-            } else {
-                return Math.round(myExp/1000/60/60/24)  + " Days";
-            }
+            return Math.round(myExp/1000/60/60/24);
+            // if(myExp/1000/60/60/24/365 > 1) {
+            //
+            //     if (Math.round(myExp/1000/60/60/24/365) === 1) {
+            //         return "Year: "+Math.round(myExp/1000/60/60/24/365)
+            //     } else {
+            //         return "Years: "+Math.round(myExp/1000/60/60/24/365)
+            //     }
+            //
+            //
+            // } else {
+            //     return "Days: " + Math.round(myExp/1000/60/60/24);
+            // }
         } else {
             return "less than 1 day";
         }
@@ -34,33 +42,28 @@ export default () => {
     const [columns] = useState([
         { name: 'language', title: 'Language' },
         { name: 'framework', title: 'Framework/Lib' },
-        { name: 'experience', title: 'Experience' },
+        { name: 'experience', title: 'Experience (Days)' },
     ]);
 
     const [rows] = useState([
         {framework: 'React', experience: calculateExp("10/8/2022"), language:'JavaScript'},
-        {framework: 'Laravel', experience: calculateExp("10/5/2022"), language:'PHP'},
-        {framework: 'ASP.net', experience:calculateExp("10/5/2022"), language:'C#'},
-        {framework: 'D#', experience:calculateExp("10/5/2022"), language:'C#'},
-        {framework: 'Pure', experience:calculateExp("10/5/2022"), language:'HTML'},
-        {framework: 'Pure', experience:calculateExp("10/5/2022"), language:'PHP'},
-        {framework: 'Pure', experience:calculateExp("10/3/2022"), language:'JavaScript'},
-        {framework: 'Pure', experience:calculateExp("10/5/2022"), language:'CSS'},
-        {framework: 'Discord.py', experience:calculateExp("10/6/2022"), language:'Python'}
+        {framework: 'Laravel', experience: calculateExp("4/21/2021"), language:'PHP'},
+        {framework: 'ASP.net', experience:calculateExp("1/22/2022"), language:'C#'},
+        {framework: 'D#', experience:calculateExp("2/21/2022"), language:'C#'},
+        {framework: 'Pure', experience:calculateExp("11/3/2020"), language:'HTML'},
+        {framework: 'Pure', experience:calculateExp("2/25/2021"), language:'PHP'},
+        {framework: 'Pure', experience:calculateExp("5/3/2021"), language:'JavaScript'},
+        {framework: 'Pure', experience:calculateExp("11/3/2020"), language:'CSS'},
+        {framework: 'Discord.py', experience:calculateExp("3/27/2022"), language:'Python'}
     ]);
     const [searchValue, setSearchState] = useState('');
-    const [sorting, setSorting] = useState([{ columnName: 'Experience', direction: 'asc' }]);
-
     return (
         <Paper>
             <Grid
                 rows={rows}
                 columns={columns}
             >
-                <SortingState
-                    sorting={sorting}
-                    onSortingChange={setSorting}
-                />
+                <SortingState />
                 <SearchState
                     value={searchValue}
                     onValueChange={setSearchState}
@@ -71,7 +74,10 @@ export default () => {
                 <TableHeaderRow showSortingControls/>
                 <Toolbar />
                 <SearchPanel />
+
             </Grid>
         </Paper>
     );
 };
+
+export default ExperienceTable;

@@ -1,0 +1,54 @@
+.projects {
+    margin: 0 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 45px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 33px;
+    margin: 20px 0;
+}
+
+p {
+    line-height: 25px;
+}
+
+.date {
+    color: var(--dark-grey);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+._2ICZP {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+._2ICZP ul {
+    display: block;
+    position: relative;
+    width: 300px;
+    border-left: 2px solid var(--headline-color);
+    padding-left: 10px;
+}
+
+.exp-table {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+#title {
+}
+#description {
+}

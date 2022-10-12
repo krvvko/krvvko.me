@@ -1,21 +1,23 @@
 import './App.css';
-import Header from "./pages/Header";
+
 import {Route, Routes} from "react-router-dom";
-import Home from "./pages/Home";
-import Blbl from "./pages/Blbl";
 import React from "react";
-import Experience from "./components/Experience";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import Projects from "./components/Projects";
 
 function App() {
   return (
-      <>
+      <main>
           <Header />
-          <Routes>
-              <Route path="/" element={ <Home /> }></Route>
-              <Route path="/experience" element={ <Experience /> }></Route>
-              <Route path="/blbl" element={ <Blbl /> }></Route>
-          </Routes>
-      </>
+          <div className="main-content">
+              <Routes>
+                  <Route path="/" element={ <Home /> }></Route>
+                  <Route path="/projects" element={ <Projects /> }></Route>
+              </Routes>
+          </div>
+
+      </main>
   );
 }
 

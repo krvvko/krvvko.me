@@ -1,10 +1,13 @@
 import './index.css';
-import {dialogClasses} from "@mui/material";
+
 
 const Header = () => {
-    return (
+    let href = window.location.href;
+
+    return(
         <header>
-            <h1>header</h1>
+            <a href="/">Home</a> <br/>
+            <a href="/projects">Projects</a> <br/>
         </header>
     )
 }
