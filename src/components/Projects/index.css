@@ -6,12 +6,10 @@
 
 h1 {
     font-size: 45px;
-    margin: 20px 0;
 }
 
 h2 {
     font-size: 33px;
-    margin: 20px 0;
 }
 
 p {
@@ -45,10 +43,6 @@ p {
     align-self: center;
     display: flex;
     justify-content: center;
-    width: 80%;
-}
-
-#title {
-}
-#description {
+    width: 100%;
+    margin-bottom: 8px;
 }

@@ -15,7 +15,7 @@ header {
     flex-direction: row;
 }
 .nav-bar-link {
-    font-size: 20px;
+    font-size: 18px;
     text-transform: capitalize;
     font-weight: 500;
     display: flex;
@@ -35,6 +35,14 @@ header {
 .nav-bar-link:hover {
     color: var(--headline-color);
 }
+.active {
+     color: var(--headline-color);
+     fill: var(--headline-color);
+ }
+.active svg path{
+     color: var(--headline-color);
+     fill: var(--headline-color);
+ }
 .header-svg {
     fill: var(--dark-grey);
     transition-duration: 0.1s;
@@ -48,7 +56,3 @@ header {
 }
 
 
-.active {
-    color: var(--headline-color);
-    fill: var(--headline-color) !important;
-}

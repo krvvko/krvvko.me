@@ -1,5 +1,5 @@
 .paper {
-    width: 600px;
+    width: 100%;
     background-color: var(--background-color);
     color: var(--headline-color);
 }

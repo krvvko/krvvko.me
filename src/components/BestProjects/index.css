@@ -24,6 +24,11 @@
     text-decoration: none;
     min-width: 47%;
     max-width: 47%;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+.bp-container:hover {
+    background-color: #88888808;
 }
 
 .bp-svg {

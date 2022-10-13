@@ -4,8 +4,7 @@ import React, {useState, useEffect} from "react";
 
 import {GithubRepoDisplay} from "github-repo-display-react"
 import "github-repo-display-react/dist/index.css"
-import BestProjects from "../BestProjects"; // default github styling
-
+import BestProjects from "../BestProjects";
 
 const Projects = () => {
 
@@ -31,13 +30,28 @@ const Projects = () => {
 
             <BestProjects />
             <div className="div-separator"></div>
+
             <p>**All the usages examples and explanations you can find <a href="" className="default-link">here</a>.</p>
 
             <h2>My Experience</h2>
 
+            <p>
+                As I already noted, my experience is constantly growing, and with the help of this ingenious table, and no less ingenious computing
+                functions, you can track how much time has passed since you started learning a particular language / framework
+            </p>
+
             <div className="exp-table">
                 <ExperienceTable/>
             </div>
+
+            <div className="div-separator"></div>
+
+            <p>
+                And in fact, it's hard to believe that 11 days have already passed since the beginning of the immersion in the magical world, being
+                in which thoughts never leave my head: "Where is the mistake?", Or "It's not me who is stupid, but the compiler does not understand me."
+            </p>
+            <br/>
+            <p>Startlingly.</p>
 
             <h2>My GitHub</h2>
             <GithubRepoDisplay
