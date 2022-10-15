@@ -5,6 +5,8 @@ import React, {useState, useEffect} from "react";
 import {GithubRepoDisplay} from "github-repo-display-react"
 import "github-repo-display-react/dist/index.css"
 import BestProjects from "../BestProjects";
+import Cd from "../Cd";
+import Title from "../Title";
 
 const Projects = () => {
 
@@ -13,9 +15,9 @@ const Projects = () => {
 
     let imProgr = Math.round((now - start) / 1000 / 60 / 60 / 24 / 365) + " Years";
 
-
     return (
         <div className="projects">
+            <Title />
 
             <h1>Projects</h1>
 
@@ -47,7 +49,7 @@ const Projects = () => {
             <div className="div-separator"></div>
 
             <p>
-                And in fact, it's hard to believe that 11 days have already passed since the beginning of the immersion in the magical world, being
+                And in fact, it's hard to believe that <span style={{color: 'var(--headline-color)'}}>{Math.round((now - start) / 1000 / 60 / 60 / 24)}</span> days have already passed since the beginning of the immersion in the magical world, being
                 in which thoughts never leave my head: "Where is the mistake?", Or "It's not me who is stupid, but the compiler does not understand me."
             </p>
             <br/>
@@ -59,7 +61,7 @@ const Projects = () => {
                 userName='krvvko' // must be included
                 showLanguage={true}
             />
-
+            <Cd />
         </div>
     );
 

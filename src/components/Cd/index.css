@@ -1,0 +1,12 @@
+.cd-cd {
+    font-family: 'DM Mono', monospace;
+    text-decoration: underline 2px rgba(255, 255, 255, 0.16);
+    text-underline-offset: 5px;
+    color: var(--text-color);
+    transition-duration: 0.2s;
+    font-size: 20px;
+}
+.cd-cd:hover {
+    color: var(--headline-color);
+    text-decoration: underline 2px var(--headline-color);
+}
