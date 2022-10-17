@@ -2,10 +2,6 @@ import './index.css';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-    let href = window.location.href;
-
-
-
     return(
         <header>
             <div className="header-left">
@@ -43,8 +39,8 @@ const Header = () => {
                 <NavLink to="/projects" className="nav-bar-link">
                     Projects
                 </NavLink>
-                <NavLink to="/contact" className="nav-bar-link">
-                    Contact
+                <NavLink to="/contacts" className="nav-bar-link">
+                    Contacts
                 </NavLink>
                 <NavLink to="/creation" className="nav-bar-link">
                     <svg className="header-svg" width="15px" height="15px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">

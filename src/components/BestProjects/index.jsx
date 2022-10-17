@@ -5,7 +5,7 @@ const BestProjects = () => {
         <div className="bp-main-container">
             <h3>Websites</h3>
             <div className="best-projects">
-                <a href="https://uploads.krvvko.me/" target="_blank" className="bp-container">
+                <a href="https://uploads.krvvko.me/" target="_blank" className="bp-container" rel="noreferrer">
                     <svg className="bp-svg" width="15px" height="15px" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.85236 1.88461L4.1171 0.333984L3.21353 0.762432L3.9488 2.31306L4.85236 1.88461Z" fill="black"/>
                         <path d="M2.39784 3.00226L1.66257 1.45163L0.759003 1.88008L1.49427 3.4307L2.39784 3.00226Z" fill="black"/>
@@ -24,7 +24,7 @@ const BestProjects = () => {
                     </div>
                 </a>
 
-                <a href="https://github.com/krvvko/krvvko.me/tree/krvvko.me-react" target="_blank" className="bp-container">
+                <a href="https://github.com/krvvko/krvvko.me/tree/krvvko.me-react" target="_blank" className="bp-container" rel="noreferrer">
                     <svg className="bp-svg" xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 64 64">
                         <path d="M62,5H2C0.896,5,0,5.896,0,7v50c0,1.104,0.896,2,2,2h60c1.104,0,2-0.896,2-2V7C64,5.896,63.104,5,62,5z M60,9v8H4V9H60zM4,55V21h56v34H4z"/>
                         <path d="M10,15c0.52,0,1.04-0.21,1.41-0.59C11.79,14.04,12,13.52,12,13s-0.21-1.04-0.59-1.42c-0.74-0.74-2.08-0.74-2.83,0.01C8.21,11.96,8,12.47,8,13c0,0.53,0.21,1.04,0.59,1.42C8.96,14.79,9.479,15,10,15z"/>
@@ -44,7 +44,7 @@ const BestProjects = () => {
             </div>
             <h3>Scripts</h3>
             <div className="best-projects">
-                <a href="https://github.com/krvvko/super-hack-script" target="_blank" className="bp-container">
+                <a href="https://github.com/krvvko/super-hack-script" target="_blank" className="bp-container" rel="noreferrer">
                     <svg className="bp-svg" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path fill="none" stroke="#000" stroke-width="2" d="M9,23 C12.8659932,23 16,19.8659932 16,16 C16,12.1340068 12.8659932,9 9,9 C5.13400675,9 2,12.1340068 2,16 C2,19.8659932 5.13400675,23 9,23 Z M9,6 C9,6 9,8 9,5 C9,2 11,1 13,1 C15,1 17,2 17,5 L17,8 C17,9 17,11 19,11 C21,11 21,9 21,8 C21,6 22,6 23,6 M12,13 L6,19 M6,13 L12,19 M6,10 L6,6 L12,6 L12,10"/>
                     </svg>
@@ -55,7 +55,7 @@ const BestProjects = () => {
                     </div>
                 </a>
 
-                <a href="https://github.com/krvvko/VK-API" target="_blank" className="bp-container">
+                <a href="https://github.com/krvvko/VK-API" target="_blank" className="bp-container" rel="noreferrer">
                     <svg className="bp-svg" width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.802 12.298s1.617 1.597 2.017 2.336a.127.127 0 0 1 .018.035c.163.273.203.487.123.645-.135.261-.592.392-.747.403h-2.858c-.199 0-.613-.052-1.117-.4-.385-.269-.768-.712-1.139-1.145-.554-.643-1.033-1.201-1.518-1.201a.548.548 0 0 0-.18.03c-.367.116-.833.639-.833 2.032 0 .436-.344.684-.585.684H9.674c-.446 0-2.768-.156-4.827-2.327C2.324 10.732.058 5.4.036 5.353c-.141-.345.155-.533.475-.533h2.886c.387 0 .513.234.601.444.102.241.48 1.205 1.1 2.288 1.004 1.762 1.621 2.479 2.114 2.479a.527.527 0 0 0 .264-.07c.644-.354.524-2.654.494-3.128 0-.092-.001-1.027-.331-1.479-.236-.324-.638-.45-.881-.496.065-.094.203-.238.38-.323.441-.22 1.238-.252 2.029-.252h.439c.858.012 1.08.067 1.392.146.628.15.64.557.585 1.943-.016.396-.033.842-.033 1.367 0 .112-.005.237-.005.364-.019.711-.044 1.512.458 1.841a.41.41 0 0 0 .217.062c.174 0 .695 0 2.108-2.425.62-1.071 1.1-2.334 1.133-2.429.028-.053.112-.202.214-.262a.479.479 0 0 1 .236-.056h3.395c.37 0 .621.056.67.196.082.227-.016.92-1.566 3.016-.261.349-.49.651-.691.915-1.405 1.844-1.405 1.937.083 3.337z"/></svg>
                     <div className="bp-content-right">
                         <h3 className="bp-title">VK api</h3>
@@ -63,7 +63,7 @@ const BestProjects = () => {
                     </div>
                 </a>
 
-                <a href="https://github.com/krvvko/Python-Discord-Slash" target="_blank" className="bp-container">
+                <a href="https://github.com/krvvko/Python-Discord-Slash" target="_blank" className="bp-container" rel="noreferrer">
                     <svg className="bp-svg" width="15px" height="15px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M9.96424 2.68571C10.0668 2.42931 9.94209 2.13833 9.6857 2.03577C9.4293 1.93322 9.13832 2.05792 9.03576 2.31432L5.03576 12.3143C4.9332 12.5707 5.05791 12.8617 5.3143 12.9642C5.5707 13.0668 5.86168 12.9421 5.96424 12.6857L9.96424 2.68571ZM3.85355 5.14646C4.04882 5.34172 4.04882 5.6583 3.85355 5.85356L2.20711 7.50001L3.85355 9.14646C4.04882 9.34172 4.04882 9.6583 3.85355 9.85356C3.65829 10.0488 3.34171 10.0488 3.14645 9.85356L1.14645 7.85356C0.951184 7.6583 0.951184 7.34172 1.14645 7.14646L3.14645 5.14646C3.34171 4.9512 3.65829 4.9512 3.85355 5.14646ZM11.1464 5.14646C11.3417 4.9512 11.6583 4.9512 11.8536 5.14646L13.8536 7.14646C14.0488 7.34172 14.0488 7.6583 13.8536 7.85356L11.8536 9.85356C11.6583 10.0488 11.3417 10.0488 11.1464 9.85356C10.9512 9.6583 10.9512 9.34172 11.1464 9.14646L12.7929 7.50001L11.1464 5.85356C10.9512 5.6583 10.9512 5.34172 11.1464 5.14646Z"

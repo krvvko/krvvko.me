@@ -1,0 +1,6 @@
+.creation-header {
+    display: flex;
+    min-height: 92vh;
+    justify-content: center;
+    align-items: center;
+}

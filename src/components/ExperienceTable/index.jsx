@@ -1,7 +1,5 @@
-'use strict';
-
 import './index.css';
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import Paper from '@mui/material/Paper';
 import {
     SortingState,
@@ -37,7 +35,6 @@ const ExperienceTable = () => {
             return "less than 1 day";
         }
     }
-    const URL = 'https://js.devexpress.com/Demos/WidgetsGalleryDataService/api/orders?requireTotalCount=true';
 
     const [columns] = useState([
         { name: 'language', title: 'Language' },

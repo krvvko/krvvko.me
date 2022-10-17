@@ -6,20 +6,22 @@ import Home from "./components/Home";
 import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import { Helmet } from 'react-helmet'
-import {useState, useEffect} from "react";
-import Title from "./components/Title";
+import Bookmarks from "./components/Bookmarks";
+import Contacts from "./components/Contacts";
+import Creation from "./components/Creation";
 
 function App() {
 
   return (
       <main>
-          <Title />
           <Header />
-          <div className="main-content">
+          <div className="main-content" id="main-content">
               <Routes>
                   <Route path="/" element={ <Home /> }></Route>
                   <Route path="/projects" element={ <Projects /> }></Route>
+                  <Route path="/creation" element={ <Creation /> }></Route>
+                  <Route path="/bookmarks" element={ <Bookmarks /> }></Route>
+                  <Route path="/contacts" element={ <Contacts /> }></Route>
               </Routes>
           </div>
           <Footer />

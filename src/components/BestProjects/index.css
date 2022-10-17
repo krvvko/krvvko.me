@@ -26,6 +26,7 @@
     max-width: 47%;
     padding: 10px 15px;
     border-radius: 6px;
+    transition-duration: 0.2s;
 }
 .bp-container:hover {
     background-color: #88888808;

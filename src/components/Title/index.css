@@ -1,0 +1,21 @@
+.creation-header {
+    display: flex;
+    min-height: 92vh;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.no-before::before {
+    display: none;
+}
+
+.no-before {
+    align-self: center;
+    color: var(--dark-grey);
+    transition-duration: 0.2s;
+}
+
+.no-before:hover {
+    color: var(--headline-color);
+}

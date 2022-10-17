@@ -1,13 +1,16 @@
 import './index.css';
-import Title from "../Title";
 import React from "react";
+import {Helmet} from "react-helmet";
 
 
 const Home = () => {
 
     return(
-        <div>
-            <Title />
+        <div className="d-container">
+            <Helmet>
+                <title>{`Home - krvvko`}</title>
+            </Helmet>
+                <h1>Hello</h1>
         </div>
     )
 }

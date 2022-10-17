@@ -3,11 +3,18 @@
   --text-color: #BBBBBB;
   --background-color: #050505;
   --dark-grey: #7c7c7c;
-  --light-black: #5a5a5a;
+  --light-black: #3f3f3f;
+}
+
+.d-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 html {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior:smooth;
 }
 
 span, p {
@@ -21,9 +28,26 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
-
 h1, h2 {
   margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 33px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.date {
+  color: var(--dark-grey);
+  font-weight: 500;
   margin-bottom: 20px;
 }
 
@@ -65,7 +89,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 92vh;
 }
 
 .default-link {
