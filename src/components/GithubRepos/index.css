@@ -8,7 +8,6 @@
     justify-content: center;
 }
 .repo-container {
-    margin: 10px 0;
     width: 48%;
     display: flex;
     flex-direction: row;
@@ -70,7 +69,12 @@
     color: var(--text-color);
     align-self: flex-end;
 }
-.repo-date-numbers {}
+.repo-date-numbers {
+    font-weight: 500;
+    color: var(--light-black);
+    font-size: 13px;
+    transition-duration: 0.2s;
+}
 
 .repo-container:hover .repo-description{
     color: var(--text-color);
@@ -80,4 +84,7 @@
 }
 .repo-container:hover .repo-svg{
     fill: var(--text-color);
+}
+.repo-container:hover .repo-date-numbers {
+    color: var(--dark-grey);
 }

@@ -26,6 +26,9 @@ const GithubRepos = ({sortBy, reposAmount}) => {
     };
 
     const getReposList = (name, description, date, language, id, stargazers_count) => {
+        const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+        let date_n = new Date(date);
+        let month = months[date_n.getMonth()];
         return (
             <a key={id} className="repo-container" href={`https://github.com/krvvko/${name}`} target="_blank">
                     <svg className="repo-svg" width="32px" height="32px" viewBox="0 0 32 32"
@@ -40,7 +43,7 @@ const GithubRepos = ({sortBy, reposAmount}) => {
                             <span className="repo-stars">☆{stargazers_count}</span>
                         </div>
                         <p className="repo-description bp-desc">{description}</p>
-                        <p className="repo-date bp-date">Created at: <span className="repo-date-numbers">{date}</span></p>
+                        <p className="repo-date bp-date"><span className="repo-date-numbers">{`${month} ${date_n.getDate()}, ${date_n.getFullYear()}`}</span></p>
                     </div>
             </a>
         );

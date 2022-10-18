@@ -1,6 +1,5 @@
 import ExperienceTable from "../ExperienceTable";
 import './index.css';
-import {GithubRepoDisplay} from "github-repo-display-react"
 import "github-repo-display-react/dist/index.css"
 import BestProjects from "../BestProjects";
 import Cd from "../Cd";
@@ -58,9 +57,9 @@ const Projects = () => {
 
             <GithubRepos
                 sortBy="stars"
-                reposAmount={4}
+                reposAmount={6}
             />
-
+            <div className="div-separator"></div>
             <Cd />
         </div>
     );
