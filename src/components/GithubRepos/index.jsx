@@ -30,7 +30,7 @@ const GithubRepos = ({sortBy, reposAmount}) => {
         let date_n = new Date(date);
         let month = months[date_n.getMonth()];
         return (
-            <a key={id} className="repo-container" href={`https://github.com/krvvko/${name}`} target="_blank">
+            <a rel="noreferrer" key={id} className="repo-container" href={`https://github.com/krvvko/${name}`} target="_blank">
                     <svg className="repo-svg" width="32px" height="32px" viewBox="0 0 32 32"
                          xmlns="http://www.w3.org/2000/svg">
                         <path
