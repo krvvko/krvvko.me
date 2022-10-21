@@ -55,4 +55,16 @@ header {
     fill: var(--headline-color);
 }
 
+.header-left svg path {
+    transition-duration: 0.2s;
+    fill: var(--dark-grey);
+}
+.header-left:hover svg path {
+    fill: var(--headline-color);
+}
 
+@media (orientation: portrait) {
+    header {
+        padding: 0 3%;
+    }
+}

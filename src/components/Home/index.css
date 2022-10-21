@@ -1,0 +1,24 @@
+.home-pics {
+    display: flex;
+    flex-direction: row;
+}
+.home-img {
+    margin: 20px;
+    border-radius: 3px;
+    width: 30%;
+    align-self: center;
+}
+
+
+@media (orientation: portrait) {
+    .home-pics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .home-img {
+        width: 25%;
+        margin: 3%;
+    }
+}

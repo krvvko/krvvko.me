@@ -8,7 +8,7 @@
     background-color: var(--background-color);
 }
 
-.css-xhtqz8-MuiTableCell-root.TableCell-cellNoWrap { /* array text color */
+.MuiTableCell-root { /* array text color */
     color: var(--text-color) !important;
 }
 
@@ -43,3 +43,14 @@
 .Title-title {
     color: var(--headline-color) !important;
 }
+
+@media (orientation: portrait) {
+    .MuiToolbar-root {
+        justify-content: center;
+        display: flex;
+    }
+    .MuiToolbar-root > div {
+        display: none;
+    }
+}
+

@@ -6,6 +6,7 @@
     flex-wrap: wrap;
     gap:20px;
     justify-content: center;
+    margin-top: 20px;
 }
 .repo-container {
     width: 48%;
@@ -87,4 +88,10 @@
 }
 .repo-container:hover .repo-date-numbers {
     color: var(--dark-grey);
+}
+
+@media (orientation: portrait) {
+    .all-repos-container {
+        justify-content: normal;
+    }
 }

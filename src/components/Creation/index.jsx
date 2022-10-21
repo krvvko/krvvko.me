@@ -1,6 +1,8 @@
 import './index.scss'
 import Title from "../Title";
 import {anOldHope, CodeBlock,} from "react-code-blocks";
+import axios from "axios";
+import Cd from "../Cd";
 
 const Creation = () => {
 
@@ -19,7 +21,13 @@ const Creation = () => {
             <br/>
             <p>This article will have several described functions. By itself, the code in them can be quite simple
                 and logical, but let me remind you that this is my first experience using this language in the way you see now. If you find an error in my code,
-                or want to give some advice, then welcome to <a href="/contacts" className="default-link">Contacts</a>!</p>
+                or want to give some advice, then welcome to <a href="/contacts" className="default-link">Contacts</a>!
+            </p>
+            <br/>
+            <p>
+                In order not to stretch this page for kilometers, I will describe only the key lines in it, but if you
+                want to fully look at the code of this website - welcome to this <a href="https://github.com/krvvko/krvvko.me/tree/krvvko.me-react" className="default-link">Repository</a>
+            </p>
 
 
             <h2>These Code Blocks</h2>
@@ -104,6 +112,61 @@ const Creation = () => {
                     wrapLines
                 />
             </span>
+
+
+            <h2>GitHub API</h2>
+            <p>
+                On the <a href="/projects" className="default-link">Projects</a> page, you can see my github repositories with the highest number of stars. 
+                This was done through the <a href="https://docs.github.com/en/rest" className="default-link">GitHub API</a>, first we get all the information about the repositories,
+                then we take what we need, then we create a filter with a small script that can filter both by 
+                the date of the repository and by the number of stars in it. And then we display it all in beautiful 
+                html blocks.
+            </p>
+
+            <h3>Getting repo's data:</h3>
+            <span className="code-block">
+                <CodeBlock
+                    text={
+                        "async function getRepos() { \n" +
+                        "await axios \n" +
+                        "   .get('https://api.github.com/users/krvvko/repos') \n" +
+                        "   .then((res) => { \n" +
+                        "       const reposData = res.data; \n" +
+                        "       setRepos(reposData); \n" +
+                        "   }); \n" +
+                        "}"
+                    }
+                    language={"jsx"}
+                    showLineNumbers={true}
+                    startingLineNumber={1}
+                    theme={theme}
+                    wrapLines
+                />
+            </span>
+
+            <h3>Creating a filter:</h3>
+            <span className="code-block">
+                <CodeBlock
+                    text={
+                        "const getSortType = (a, b) => { \n" +
+                        "   const result =\n" +
+                        "   sortType === `date`\n" +
+                        "       ? new Date(b[`created_at`]) - new Date(a[`created_at`])\n" +
+                        "       : sortType === `stars`\n" +
+                        "           ? b[`stargazers_count`] - a[`stargazers_count`]\n" +
+                        "           : setSortType(`stars`);\n" +
+                        "   return Number(result);\n"+
+                        "}"
+                    }
+                    language={"jsx"}
+                    showLineNumbers={true}
+                    startingLineNumber={1}
+                    theme={theme}
+                    wrapLines
+                />
+            </span>
+
+            <Cd />
 
         </div>
     )

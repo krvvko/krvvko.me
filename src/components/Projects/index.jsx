@@ -55,11 +55,19 @@ const Projects = () => {
 
             <h2>My GitHub</h2>
 
+            <p>Here are my most starred GitHub projects, the display of which is also located in <a href="/creation" className="default-link">Creation</a> page.</p>
+
             <GithubRepos
                 sortBy="stars"
                 reposAmount={6}
             />
             <div className="div-separator"></div>
+
+            <p> Most programmers use Git
+                technology for group/own projects, as it has many more advantages than just keeping their code
+                locally on the device, or on other file sharing sites. I did not become an exception, and I also
+                keep most of my projects related to programming on GitHub</p>
+
             <Cd />
         </div>
     );

@@ -65,3 +65,9 @@
 .bp-container:hover:hover .bp-desc {
     color: var(--text-color);
 }
+
+@media (orientation: portrait) {
+    .bp-container {
+        max-width: 100%;
+    }
+}

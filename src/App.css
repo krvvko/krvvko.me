@@ -110,3 +110,12 @@ main {
   background-color: var(--dark-grey);
   margin: 20px 0;
 }
+
+@media (orientation: portrait) {
+  .main-content {
+    margin: 0 8%;
+  }
+  h1 {
+    margin-top: 10px;
+  }
+}
