@@ -94,4 +94,7 @@
     .all-repos-container {
         justify-content: normal;
     }
+    .repo-container {
+        width: auto;
+    }
 }
