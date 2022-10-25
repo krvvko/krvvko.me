@@ -84,7 +84,8 @@ main {
 
 .main-content {
   flex: 1;
-  margin: 0 30%;
+  margin: 0 auto;
+  max-width: 750px;
   display: flex;
   justify-content: center;
   align-items: center;
