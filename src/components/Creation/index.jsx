@@ -1,7 +1,6 @@
 import './index.scss'
 import Title from "../Title";
 import {anOldHope, CodeBlock,} from "react-code-blocks";
-import axios from "axios";
 import Cd from "../Cd";
 
 const Creation = () => {
@@ -26,7 +25,7 @@ const Creation = () => {
             <br/>
             <p>
                 In order not to stretch this page for kilometers, I will describe only the key lines in it, but if you
-                want to fully look at the code of this website - welcome to this <a href="https://github.com/krvvko/krvvko.me/tree/krvvko.me-react" className="default-link">Repository</a>
+                want to fully look at the code of this website - welcome to this <a target="_blank" href="https://github.com/krvvko/krvvko.me/tree/krvvko.me-react" className="default-link" rel="noreferrer">Repository</a>
             </p>
 
 
