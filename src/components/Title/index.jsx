@@ -1,6 +1,5 @@
 import './index.css'
 import {Helmet} from "react-helmet";
-import {useEffect} from "react";
 
 const Title = () => {
 
@@ -10,11 +9,45 @@ const Title = () => {
     const handleClick = async event => {
         const box = event.currentTarget;
         const container = event.currentTarget.parentElement;
-        document.getElementById("root").style.height = "100%";
+        document.getElementById("blinkId").style.display = "none";
+        let timeout = 1700;
+
+        function meow(elId, strP) {
+            let i1 = 0;
+            let newString1 = "";
+            let stringL = strP;
+            timeout += stringL.length*60;
+            const printStr = setInterval(function () {
+                newString1 += stringL[i1++];
+                document.getElementById(elId).innerHTML = newString1 + "</br>";
+                if (i1 >= stringL.length) {
+                    clearInterval(printStr);
+                }
+            }, 60);
+        }
+
+        document.getElementById("line3").style.color = "#ec4e17";
+        setTimeout(()=>{
+            meow("line3","Meow")
+            document.getElementById("line2").style.color = "#99ec8f";
+            timeout += 5000;
+        },5000);
+        setTimeout(()=>{
+            document.getElementById("line1").style.color = "#99ec8f";
+            meow("line2","Rendering a result")
+            timeout += 3000;
+        },3000)
+        timeout += 3000;
+        meow("line1","Building an optimized output")
+
+        setTimeout(() => {
+            document.getElementById("root").style.height = "100%";
+            document.location.hash = "#main";
+        }, timeout)
         setTimeout(() => {
             container.style.display = 'none';
             box.style.display = 'none';
-        }, 700);
+        }, timeout+700);
     };
 
     // setting title
@@ -65,16 +98,18 @@ const Title = () => {
                 <title>{setTitle() + ` - krvvko`}</title>
             </Helmet>
             <div className="creation-header" style={disableWriter}>
-                <a href="#main" className="creation-header-a" onClick={handleClick}>
+                <a className="creation-header-a" onClick={handleClick}>
                     <div className="main-anim-container">
                         <div className="anim-container">
                             <h3 className="root-anim">root@krvvko-me:~#</h3>
                             <div className="code-blink-js">
                                 <h3 id="code"></h3>
-                                <h3 className="blink">|</h3>
+                                <h3 id="blinkId" className="blink">|</h3>
                             </div>
-
                         </div>
+                        <h3 className="anim-lines" id="line1"></h3>
+                        <h3 className="anim-lines" id="line2"></h3>
+                        <h3 className="anim-lines" id="line3"></h3>
                         <div className="anim-container invisible">
                             <h3 className="root-anim">root@krvvko-me:~#</h3>
                             <h3>cd {setTitle()}/|</h3>
