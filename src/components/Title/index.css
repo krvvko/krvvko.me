@@ -1,11 +1,21 @@
 .creation-header {
     display: flex;
     min-height: 92vh;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    font-family: 'DM Mono', monospace !important;
+    width: 100vw;
+    align-self: center;
 }
-
+.creation-header-a {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+}
 .no-before::before {
     display: none;
 }
@@ -18,4 +28,62 @@
 
 .no-before:hover {
     color: var(--headline-color);
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.0;
+    }
+}
+.blink {
+    --time: 0.7s;
+    animation: blink var(--time) step-start var(--time) infinite;
+    color: var(--dark-grey);
+}
+.anim-container {
+    display: flex;
+    min-width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-size: 40px;
+}
+.anim-container > div > h3 {
+    color: var(--dark-grey);
+    transition-duration: 0.2S;
+}
+
+.creation-header-a:hover #code {
+    color: var(--headline-color);
+}
+
+.root-anim {
+    margin-right: 30px !important;
+    color: var(--orange) !important;
+}
+.main-anim-container {
+    min-width: auto;
+}
+.invisible {
+    height: 0;
+    visibility: hidden;
+}
+.code-blink-js {
+    display: flex;
+    flex-direction: row;
+}
+.displayNoneClass {
+    display: none;
+}
+
+@media (orientation: portrait) {
+    .anim-container {
+        flex-direction: column;
+        font-size: 30px;
+    }
+    .code-blink-js {
+        align-self: center;
+    }
+    .root-anim {
+        margin-right: 0 !important;
+    }
 }
