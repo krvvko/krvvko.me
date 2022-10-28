@@ -63,10 +63,12 @@ const Projects = () => {
             />
             <div className="div-separator"></div>
 
-            <p> Most programmers use Git
+            <p>
+                Most programmers use Git
                 technology for group/own projects, as it has many more advantages than just keeping their code
                 locally on the device, or on other file sharing sites. I did not become an exception, and I also
-                keep most of my projects related to programming on GitHub</p>
+                keep most of my projects related to programming on GitHub
+            </p>
 
             <Cd />
         </div>
