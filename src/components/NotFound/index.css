@@ -4,3 +4,36 @@
     align-items: center;
     justify-content: center;
 }
+.nf-anim-container {
+    font-weight: bold;
+    font-size: 45px;
+    display: flex;
+    flex-direction: row;
+}
+.nf-anim {
+    color: var(--orange);
+    font-weight: bold;
+    margin-right: 10px;
+}
+.nf-return {
+    align-self: center;
+    font-size: 23px;
+}
+.nf-return > a {
+    font-family: 'DM Mono', monospace;
+}
+
+@media (orientation: portrait) {
+    .nf-anim {
+        margin: 0;
+    }
+    .nf-anim-container {
+        flex-direction: column;
+    }
+    .nf-anim-container > span {
+        align-self: center;
+    }
+    .blink {
+        display: none;
+    }
+}
