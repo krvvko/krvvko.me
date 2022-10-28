@@ -63,6 +63,7 @@
 }
 .main-anim-container {
     min-width: auto;
+    position: relative;
 }
 .invisible {
     height: 0;
@@ -86,10 +87,16 @@
         flex-direction: column;
         font-size: 30px;
     }
+    .anim-lines {
+        align-self: center;
+        text-align: center;
+        max-width: 92% !important;
+    }
     .code-blink-js {
         align-self: center;
     }
     .root-anim {
         margin-right: 0 !important;
+        align-self: center;
     }
 }
