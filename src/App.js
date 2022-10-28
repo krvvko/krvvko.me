@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Bookmarks from "./components/Bookmarks";
 import Contacts from "./components/Contacts";
 import Creation from "./components/Creation";
+import NotFound from "./components/NotFound";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
                   <Route path="/creation" element={ <Creation /> }></Route>
                   <Route path="/bookmarks" element={ <Bookmarks /> }></Route>
                   <Route path="/contacts" element={ <Contacts /> }></Route>
+                  <Route path="*" element={<NotFound />} />
               </Routes>
           </div>
           <Footer />
