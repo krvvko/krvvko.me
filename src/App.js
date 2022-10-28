@@ -1,5 +1,4 @@
 import './App.css';
-
 import {Route, Routes} from "react-router-dom";
 import React from "react";
 import Home from "./components/Home";
@@ -12,7 +11,6 @@ import Creation from "./components/Creation";
 import NotFound from "./components/NotFound";
 
 function App() {
-
   return (
       <main>
           <Header />
