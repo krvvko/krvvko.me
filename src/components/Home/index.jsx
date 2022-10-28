@@ -13,7 +13,7 @@ const Home = () => {
             <Helmet>
                 <title>{`Home - krvvko`}</title>
             </Helmet>
-            <h1>Kostya - Krevvekta</h1>
+            <h1>Kostya - Krevvetka</h1>
             <span className="date">Oct 20, 2022</span>
             <p>Welcome to <a href="/" className="default-link">krvvko.me</a>, the website of a young developer who is on his way to gaining new knowledge and experience</p>
             <div className="home-pics">
