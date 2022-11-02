@@ -9,7 +9,7 @@ const Creation = () => {
 
     return (
 
-        <div className="d-container">
+        <div id="d-container" className="d-container">
             <Title />
 
             <h1 id="main">Creation</h1>
