@@ -1,7 +1,9 @@
 import './index.css'
 import {Helmet} from "react-helmet";
+import useEventListener from '@use-it/event-listener'
 
 const Title = () => {
+    const ENTER_KEY = ['13', 'Enter'];
     let randomN = Math.floor(Math.random() * 1000);
     document.getElementById("root").style.height = "100vh";
     document.getElementById("root").style.overflowY = "hidden";
@@ -119,13 +121,20 @@ const Title = () => {
         disableWriter = {display: 'none'}
     }
 
+    function handler({ key }) {
+        if (ENTER_KEY.includes(String(key))) {
+            document.getElementById("clicker").click()
+        }
+    }
+    useEventListener('keydown', handler);
+
     return (
         <>
             <Helmet>
                 <title>{setTitle() + ` - krvvko`}</title>
             </Helmet>
             <div className="creation-header" style={disableWriter}>
-                <a className="creation-header-a" onClick={handleClick}>
+                <a className="creation-header-a" id="clicker" onClick={handleClick}>
                     <div className="main-anim-container">
                         <div className="anim-container">
                             <h3 className="root-anim">root@krvvko-me:~#</h3>
