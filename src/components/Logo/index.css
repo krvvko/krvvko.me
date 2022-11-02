@@ -1,0 +1,39 @@
+.logo-container {
+    position: relative;
+}
+.logo-container > svg {
+    rotate: 0deg;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.655, 0.060, 0.000, 1.365); /* custom */
+}
+.logo-container:hover > svg {
+    rotate: 360deg;
+}
+.header-text-block {
+    position: absolute;
+    overflow: hidden;
+    height: 30px;
+    width: 30px;
+    transition-delay: 1s;
+}
+.logo-container:hover > .header-text-block {
+    width: 100px;
+    transition-delay: 0s;
+}
+.header-title {
+    position: absolute;
+    color: var(--headline-color);
+    opacity: 0;
+    top: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.655, 0.060, 0.000, 1.365); /* custom */
+    transition-delay: 0.3s;
+    left: 120px;
+    text-transform: lowercase;
+}
+.logo-container:hover .header-title {
+    left: 40px;
+    opacity: 1;
+}
