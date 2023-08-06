@@ -1,0 +1,5 @@
+.projects-bottom-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}

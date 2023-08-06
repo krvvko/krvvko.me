@@ -1,0 +1,31 @@
+.welcome-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 var(--x-offset);
+    position: relative;
+}
+.welcome-screen > div {
+    display: flex;
+    align-items: center;
+}
+.welcome-left {
+    flex: 1.5;
+}
+.welcome-right {
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-right::before {
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 60%;
+    top: 70%;
+    opacity: 0.5;
+    background: radial-gradient(black 10%, transparent 60%);
+    z-index: 0;
+}

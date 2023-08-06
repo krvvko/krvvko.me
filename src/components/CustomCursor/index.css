@@ -1,0 +1,31 @@
+* {
+    cursor: none;
+}
+
+.cursor {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: currentColor;
+    color: var(--color-1);
+    border: 2px solid transparent;
+    position: fixed;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 4px 1px var(--primary-color);
+    transition: height 0.2s ease, width 0.2s ease, border 0.2s ease, background-color 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.cursor--hovering {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid currentColor;
+    box-shadow: 0 0 7px 2px currentColor;
+}
+.cursor--hidden {
+    transition: opacity 0.2s 0.2s ease;
+    opacity: 0;
+}

@@ -1,0 +1,15 @@
+.purple-wave-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("./../../../media/svg/purpleWave.svg");
+    background-size: 100%;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.9;
+}

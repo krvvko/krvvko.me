@@ -1,0 +1,290 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        11.577301979064941,
+        27.910058975219727,
+        4.364162921905518
+      ],
+      "min": [
+        -11.612150192260742,
+        2.1638631153564347e-07,
+        -4.364162921905518
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 948,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        0.9991486668586731,
+        0.9822089076042175,
+        0.9992122650146484
+      ],
+      "min": [
+        -0.9992921948432922,
+        -0.9999942779541016,
+        -0.9999586343765259
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        0.9999967217445374,
+        0.9949050545692444,
+        0.9993076324462891,
+        1.0
+      ],
+      "min": [
+        -0.9999945163726807,
+        -0.6839056015014648,
+        -0.9995611906051636,
+        -1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        0.43651509284973145,
+        0.2946203947067261
+      ],
+      "min": [
+        0.0032236576080322266,
+        0.0020045042037963867
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 632,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        0.9947307705879211,
+        0.6531186699867249
+      ],
+      "min": [
+        0.7912409901618958,
+        0.01229405403137207
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1264,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        0.43651509284973145,
+        0.2946203947067261
+      ],
+      "min": [
+        0.0032236576080322266,
+        0.0020045042037963867
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 246,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Marc Wheeler (https://sketchfab.com/mw3dart)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/frozen-shrimp-13e2d23bfe944dc1a0ef6673f8208ff6",
+      "title": "Frozen Shrimp"
+    },
+    "generator": "Sketchfab-14.56.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 984,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1896,
+      "byteOffset": 984,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1896,
+      "byteOffset": 2880,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1264,
+      "byteOffset": 4776,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 6040,
+      "uri": "shrimpPack.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/frozen_food_001_M_baseColor.png"
+    },
+    {
+      "uri": "textures/frozen_food_001_M_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "frozen_food_001_M",
+      "normalTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9834796211161627
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "frozen_shrimp_LOD00_frozen_food_001_M_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5
+          },
+          "indices": 6,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.012048192322254181,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.675236104255725e-18,
+        -0.012048192322254181,
+        0.0,
+        0.0,
+        0.012048192322254181,
+        2.675236104255725e-18,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "71aa324e20cc4398a2158fcf7a29224b.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "frozen_shrimp_LOD00"
+    },
+    {
+      "mesh": 0,
+      "name": "frozen_shrimp_LOD00_frozen_food_001_M_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+.scroll-down-container {
+    position: absolute;
+    bottom: 2vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    transition: opacity 0.2s ease, transform 0.4s ease;
+    opacity: 1;
+}
+.scroll-down-container.not-visible {
+    opacity: 0;
+    transform: scale(0.6);
+    pointer-events: none;
+}
+.scroll-down-button-container {
+    display: flex;
+    position: relative;
+}
+.scroll-down-btn {
+    display: flex;
+    gap: 4px;
+    padding: 0.8em 1.4em;
+    border-radius: var(--border-radius-btn);
+    font-size: 1.1rem;
+    color: var(--incerse-color-1);
+    background: rgba(255, 255, 255, 0.3);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+    transition-duration: 0.2s;
+}
+.scroll-down-btn:hover {
+    transform: translateY(8px) scale(0.95);
+    background: rgba(255, 255, 255, 0.55);
+}
+.scroll-down-button-offset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--main-gradient);
+    z-index: -1;
+    border-radius: var(--border-radius-btn);
+    transform: translateY(8px) scale(0.95);
+}
+.icon.scrolldown {
+    animation: scroll-down-icon-animation 2s infinite ease;
+}
+
+@keyframes scroll-down-icon-animation {
+    0%, 100% {
+        transform: translateY(-2px) scale(1.05);
+    }
+    50% {
+        transform: translateY(2px) scale(0.95);
+    }
+}

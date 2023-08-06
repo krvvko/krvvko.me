@@ -1,0 +1,96 @@
+.contact-me-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+footer {
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me-main {
+    padding: 12vh var(--x-offset);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--block-color-1);
+    padding: 0.5em 1em;
+    color: var(--color-2);
+    border-radius: var(--border-radius-block);
+    border: 2px solid var(--border-color-on-black-1);
+}
+.footer-red {
+    color: var(--primary-color);
+}
+.contact-me-top > div > span:nth-child(1) {
+    font-size: 3rem;
+    position: relative;
+}
+.contact-me-top > div > span:nth-child(1)::before {
+    content: '';
+    background: var(--secondary-color);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    border-radius: 2px;
+}
+
+.contact-me-top > div > span:nth-child(2) {
+    font-size: 2rem;
+    color: var(--bg-color);
+    text-shadow: -1px 0 var(--secondary-color), 0 1px var(--secondary-color), 1px 0 var(--secondary-color), 0 -1px var(--secondary-color);
+}
+.contact-me-top > div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: flex-end;
+}
+.contact-me-main-left {
+    flex: 2;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me-main-left::before {
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 60%;
+    align-self: center;
+    bottom: -15%;
+    opacity: 0.5;
+    background: radial-gradient(black 10%, transparent 60%);
+    z-index: 1;
+}
+.contact-me-main-right {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+}
+.footer-btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.footer-btn-container > a:hover > .btn-text {
+    transform: translate(8px, 8px);
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.footer-btn-container > a {
+    color: var(--incerse-color-1);
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    position: relative;
+}

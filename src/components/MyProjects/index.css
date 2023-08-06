@@ -1,0 +1,6 @@
+.projects-container {
+    padding: 10vh var(--x-offset);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

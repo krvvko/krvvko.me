@@ -1,0 +1,75 @@
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.welcome-text-top {
+    display: flex;
+    align-items: flex-end;
+    gap: 1em;
+}
+.welcome-text-top > span:nth-child(1) {
+    font-size: 3.5rem;
+    position: relative;
+}
+.welcome-text-top > span:nth-child(1)::before {
+    content: '';
+    background: var(--main-gradient);
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    border-radius: 2px;
+}
+.welcome-text-top > span:nth-child(2) {
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color);
+}
+.welcome-text-bottom {
+    color: var(--color-2);
+    font-size: 1.2rem;
+    max-width: 80%;
+    line-height: 2.5rem;
+}
+.welcome-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+.welcome-buttons > a {
+    color: var(--incerse-color-1);
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    position: relative;
+}
+.btn-text {
+    border-radius: var(--border-radius-btn);
+    position: relative;
+    background: rgba(255, 255, 255, 0.35);
+    padding: 0.8em 1.4em;
+    backdrop-filter: blur(4px);
+    transition-duration: 0.2s;
+}
+.btn-layer {
+    position: absolute;
+    padding: 0.8em 1.4em;
+    top: 8px;
+    left: 8px;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-btn);
+    z-index: -1;
+    transition-duration: 0.2s;
+}
+.welcome-buttons > a:hover > .btn-text {
+    transform: translate(8px, 8px);
+    background: rgba(255, 255, 255, 0.55);
+}
+.getintouch-btn > .btn-layer {
+    background: var(--priary-gradient);
+}
+.projects-btn > .btn-layer {
+    background: var(--secondary-gradient);
+}

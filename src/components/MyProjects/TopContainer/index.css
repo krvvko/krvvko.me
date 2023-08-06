@@ -1,0 +1,153 @@
+.project-top-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.project-top-element {
+    flex: 1;
+    height: 300px;
+    box-shadow: 0 0 0 2px var(--border-color-on-black-1);
+    border-radius: var(--border-radius-block);
+    transition-duration: 0.2s;
+    background: transparent;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.project-top-element.hover:hover {
+    background: var(--block-color-1);
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+.project-github {
+    align-items: flex-end;
+}
+.github-logo {
+    position: absolute;
+    right: 0;
+    transform: translateX(50%);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    width: unset;
+    aspect-ratio: 1/1;
+    background: var(--border-color-on-black-1);
+    transition-duration: 0.2s;
+}
+.github-span {
+    z-index: 1;
+    color: var(--color-2);
+    font-size: 2.5rem;
+    padding: 20px;
+}
+.project-top-element.hover:hover > .github-logo {
+    background: var(--primary-color);
+}
+.project-top-element.hover:hover > .github-span {
+    color: var(--color-1);
+}
+.project-technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.technologies-span {
+    font-size: 2.5rem;
+    padding: 20px;
+}
+.tech-stack-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 20px;
+}
+.tech-stack-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    flex: 20%;
+}
+.tech-stack-item > span {
+    color: var(--color-2);
+    font-size: 1.2rem;
+}
+.tech-stack-item > .icon {
+    height: 44px;
+    width: 44px;
+}
+.project-icon {
+    height: 44px;
+    width: 44px;
+    background-size: 100%;
+}
+.project-icon.js {
+    background-image: url("./../../../media/svg/js.svg");
+}
+.project-icon.html {
+    background-image: url("./../../../media/svg/html.svg");
+}
+.project-icon.css {
+    background-image: url("./../../../media/svg/css.svg");
+}
+.project-icon.nodejs {
+    background-image: url("./../../../media/svg/nodejs.svg");
+}
+.project-icon.react {
+    background-image: url("./../../../media/svg/react.svg");
+}
+.project-icon.rest {
+    background-image: url("./../../../media/svg/rest.svg");
+}
+.project-icon.php {
+    background-image: url("./../../../media/svg/php.svg");
+}
+.project-icon.laravel {
+    background-image: url("./../../../media/svg/laravel.svg");
+}
+
+.project-addons {
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    overflow: unset;
+}
+.project-addons > div {
+    flex: 1;
+}
+.project-addons-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+}
+.project-addons-element {
+    flex: 1;
+    background: var(--block-color-1);
+    border-radius: var(--border-radius-block);
+    border: 2px solid var(--border-color-on-black-1);
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+.project-addons-element > span:nth-child(1) {
+    line-height: 1.4rem;
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+.project-addons-element > span:nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.experience-date {
+    color: var(--primary-color);
+}
+.current-state {
+    color: #5dd15d;
+}

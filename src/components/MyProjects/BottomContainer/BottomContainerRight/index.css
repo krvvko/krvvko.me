@@ -1,0 +1,133 @@
+.bottom-container-right {
+    flex: 1;
+    min-width: calc(33.2% - 8px);
+    max-width: calc(33.2% - 8px);
+    box-shadow: 0 0 0 2px var(--border-color-on-black-1);
+    border-radius: var(--border-radius-block);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.project-swiper {
+    flex: 1;
+    width: 100%;
+    border-radius: var(--border-radius-block);
+    overflow: hidden;
+    box-shadow: 0 0 0 2px var(--secondary-color);
+}
+.swiper-buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: flex-end;
+}
+.swiper-button {
+    height: 50px;
+    width: 50px;
+    background: var(--block-color-1);
+    border-radius: var(--border-radius-btn);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 2px var(--border-color-on-black-1);
+    transition-duration: 0.2s;
+}
+.swiper-button:hover {
+    box-shadow: 0 0 0 2px var(--border-color-on-black-2);
+}
+.swiper-button:hover > .swiper-button-icon {
+    background: var(--color-1);
+}
+.swiper-button:active {
+    box-shadow: 0 0 0 2px var(--secondary-color);
+    background: var(--block-color-2);
+}
+.swiper-button:active > .swiper-button-icon {
+    background: var(--secondary-color);
+}
+.swiper-button-icon {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background: var(--color-2);
+}
+.swiper-button-icon.left {
+    -webkit-mask: url('./../../../../media/svg/arrow-down.svg') no-repeat center / contain;
+    mask: url('./../../../../media/svg/arrow-down.svg') no-repeat center / contain;
+    transform: rotate(90deg);
+}
+.swiper-button-icon.right {
+    -webkit-mask: url('./../../../../media/svg/arrow-down.svg') no-repeat center / contain;
+    mask: url('./../../../../media/svg/arrow-down.svg') no-repeat center / contain;
+    transform: rotate(-90deg);
+}
+.swiper-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.swiper-bottom > span {
+    font-size: 1.4rem;
+}
+.swiper-slide {
+    background: var(--block-color-1);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-end;
+}
+.swiper-slide-img-container {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide-img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.swiper-slide-nav {
+    z-index: 1;
+    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: var(--border-radius-btn);
+    padding: 0.7em 0.7em 0.7em 1em;
+}
+.swiper-slide-nav > span {
+    font-size: 1rem;
+}
+.swiper-slide-nav-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7em;
+}
+.swiper-slide-nav-btns > a {
+    color: var(--color-1);
+    border-radius: var(--border-radius-btn);
+    padding: 0.2em 1.2em;
+    height: 100%;
+    background: var(--secondary-color);
+    box-shadow: 0 0 0 2px var(--block-color-1);
+    transition-duration: 0.2s;
+}
+.swiper-slide-nav-btns > a:hover {
+    background: var(--bg-color);
+    box-shadow: 0 0 0 2px var(--secondary-color);
+}

@@ -1,0 +1,163 @@
+.grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.card {
+    box-shadow: 0 0 0 2px var(--border-color-on-black-1);
+    padding: 1em;
+    position: relative;
+    transition: opacity 0.2s, transform 0.2s, background 0.2s, box-shadow 0.2s;
+    height: 170px;
+    box-sizing: border-box;
+    border-radius: var(--border-radius-block);
+    overflow: hidden;
+}
+
+.card.active {
+    opacity: 1;
+    background: var(--block-color-1);
+}
+.card:hover {
+    box-shadow: 0 0 0 2px var(--border-color-on-black-2);
+}
+.card.active:hover {
+    box-shadow: 0 0 0 2px var(--primary-color);
+}
+.card.inactive {
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+.card-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.card-content {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.experience-icon {
+    display: flex;
+    aspect-ratio: 1/1;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transform: translateX(40%) scale(0.9);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-duration: 0.2s;
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+.card.active > .experience-icon {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: grayscale(0);
+}
+.experience-icon.js {
+    background-image: url('./../../../../media/svg/js.svg');
+}
+.experience-icon.html {
+    background-image: url('./../../../../media/svg/html.svg');
+}
+.experience-icon.css {
+    background-image: url('./../../../../media/svg/css.svg');
+}
+.experience-icon.react {
+    background-image: url('./../../../../media/svg/react.svg');
+}
+.experience-icon.node {
+    background-image: url('./../../../../media/svg/nodejs.svg');
+}
+.experience-icon.php {
+    background-image: url('./../../../../media/svg/php.svg');
+}
+
+.card-init-info {
+    color: var(--color-1);
+    font-size: 1.4rem;
+}
+.card-active-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.project-technology-card-info {
+    display: flex;
+    flex-direction: column;
+}
+.project-technology-card-info > span:nth-child(2) {
+    color: var(--color-1);
+}
+
+.card-js.active {
+    box-shadow: 0 0 0 2px yellow;
+}
+.card-js.active:hover {
+    box-shadow: 0 0 0 2px yellow;
+}
+.card-js.active > .card-active-info > .project-technology-card-info > span:nth-child(1) {
+    color: yellow;
+}
+
+.card-html.active { box-shadow: 0 0 0 2px var(--html-color); }
+.card-html.active > .card-active-info > .project-technology-card-info > span:nth-child(1) { color: var(--html-color); }
+.card-html.active:hover { box-shadow: 0 0 0 2px var(--html-color); }
+
+.card-css.active { box-shadow: 0 0 0 2px var(--css-color); }
+.card-css.active > .card-active-info > .project-technology-card-info > span:nth-child(1) { color: var(--css-color); }
+.card-css.active:hover { box-shadow: 0 0 0 2px var(--css-color); }
+
+.card-react.active { box-shadow: 0 0 0 2px var(--react-color); }
+.card-react.active > .card-active-info > .project-technology-card-info > span:nth-child(1) { color: var(--react-color); }
+.card-react.active:hover { box-shadow: 0 0 0 2px var(--react-color); }
+
+.card-node.active { box-shadow: 0 0 0 2px var(--node-color); }
+.card-node.active > .card-active-info > .project-technology-card-info > span:nth-child(1) { color: var(--node-color); }
+.card-node.active:hover { box-shadow: 0 0 0 2px var(--node-color); }
+
+.card-php.active { box-shadow: 0 0 0 2px var(--php-color); }
+.card-php.active > .card-active-info > .project-technology-card-info > span:nth-child(1) { color: var(--php-color) }
+.card-php.active:hover { box-shadow: 0 0 0 2px var(--php-color); }

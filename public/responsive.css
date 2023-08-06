@@ -1,0 +1,138 @@
+@media (max-width: 1930px) {
+    .contact-me-top > div > span:nth-child(1) {
+        font-size: 2.5rem;
+    }
+    .contact-me-top > div > span:nth-child(2) {
+        font-size: 1.8rem;
+    }
+    .btn-layer, .btn-text, .scroll-down-button-offset, .scroll-down-btn {
+        padding: 0.6rem 1.2rem;
+    }
+    .welcome-text-top > span:nth-child(1) {
+        font-size: 2.5rem;
+    }
+    .welcome-text-top > span:nth-child(2) {
+        font-size: 1.8rem;
+    }
+    .welcome-text-bottom {
+        font-size: 1.2rem;
+    }
+    .welcome-text, .contact-me-main-right {
+        gap: 1.5em;
+    }
+    .swiper-slide-img {
+        height: 100%;
+        min-height: unset;
+        min-width: unset;
+    }
+
+    .github-span, .technologies-span {
+        font-size: 2.2rem;
+    }
+}
+
+@media (orientation: portrait) {
+    .mobile {
+        display: flex;
+    }
+    :root {
+        --x-offset: 5%;
+    }
+    .projects-bottom-container, .projects-top-container, .contact-me-main, .project-top-container, .contact-me-top > .headline, footer, .welcome-text-top {
+        flex-direction: column;
+    }
+    .welcome-screen {
+        flex-direction: column-reverse;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .project-technologies {
+        height: unset;
+    }
+    .project-top-element {
+        flex: unset;
+    }
+    .welcome-right {
+        min-height: 50vh;
+    }
+    .welcome-text-top, .contact-me-top > .headline {
+        align-items: flex-start;
+    }
+    .welcome-text-bottom {
+        font-size: 1rem;
+        min-width: 100%;
+    }
+    .tech-stack-item {
+        flex: 25%;
+    }
+    .purple-wave-bg, .wave-bg {
+        display: none !important;
+    }
+    .contact-me-main {
+        padding-top: 0;
+    }
+    .contact-me-main-left::before {
+        display: none;
+    }
+    footer {
+        gap: 1em;
+    }
+    .shrimp-donate-buttons {
+        display: none;
+    }
+    .project-top-element {
+        height: unset;
+    }
+    .shrimp-donate-buttons-mobile {
+        display: flex;
+        gap: 1em;
+        justify-content: space-between;
+    }
+    .shrimp-donate-buttons-mobile > a {
+        background: var(--secondary-color);
+        padding: 0.5rem 0;
+        flex: 1;
+        text-align: center;
+        border-radius: var(--border-radius-block);
+        box-shadow: 0 0 0 2px var(--bg-color);
+        color: var(--color-1);
+        transition-duration: 0.2s;
+    }
+    .shrimp-donate-buttons-mobile > a:hover {
+        background: var(--bg-color);
+        box-shadow: 0 0 0 2px var(--secondary-color);
+    }
+    .project-addons-element {
+        gap: 1em;
+    }
+    .welcome-buttons {
+        justify-content: space-evenly;
+    }
+    .footer-btn-container {
+        justify-content: space-between;
+        gap: 0;
+    }
+    .bottom-container-right {
+        min-width: unset;
+        max-width: 100vw;
+        overflow: hidden;
+    }
+    .project-swiper {
+        aspect-ratio: 16/9;
+    }
+    .swiper-slide-nav {
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px 16px;
+    }
+    .swiper-slide-nav-btns {
+        align-self: flex-start;
+    }
+    .cursor {
+        display: none;
+    }
+    .shrimpPack-canvas {
+        pointer-events: none;
+    }
+}
