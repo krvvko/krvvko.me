@@ -1,13 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg: #030300;
+
+    --color-1: rgb(252, 252, 252);
+    --color-2: rgb(204, 204, 204);
+    --color-3: rgb(164, 164, 164);
+    --color-4: rgb(133, 133, 133);
+
+
+    --color-1-r: rgb(3, 3, 3);
+
+    --accent-color-main: #4981e8;
+    --accent-color-second: #3630ef;
+
+    --border-radius-1: 4px;
+    --border-radius-2: 8px;
+    --border-radius-3: 12x;
+    --border-radius-4: 16x;
+
+    --headline-font: 'Work Sans', sans-serif;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    margin: 0;
+    font-family: var(--headline-font);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    background: var(--bg);
+    color: var(--color-1);
+}
+#app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.text-primary-gradient {
+    background: -webkit-linear-gradient(180deg, var(--accent-color-main), var(--accent-color-second));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.delay-25 {
+    animation-delay: 0.25s;
+}
+.delay-50 {
+    animation-delay: 0.5s;
+}
+.delay-75 {
+    animation-delay: 0.75s;
+}
+.delay-100 {
+    animation-delay: 1s;
+}
+.delay-125 {
+    animation-delay: 1.25s;
 }

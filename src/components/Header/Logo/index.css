@@ -1,0 +1,51 @@
+.logo-box {
+    height: 58px;
+    width: 58px;
+    background: var(--color-1);
+    border-radius: var(--border-radius-1);
+    transform: rotate(10deg) scale(0.9);
+    display: flex;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo-img {
+    height: 32px;
+    width: 32px;
+    margin: 14px;
+}
+
+.logo {
+    display: flex;
+    height: 58px;
+    align-items: center;
+}
+
+.logo:hover > .logo-box {
+    transform: rotate(0deg);
+}
+.logo-box > span {
+    text-transform: uppercase;
+    left: 78px;
+    transition-duration: 0.2s;
+    position: absolute;
+    color: var(--color-1-r);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+    opacity: 0;
+}
+.logo:hover > .logo-box {
+    width: 170px;
+    height: 38px;
+}
+.logo:hover > .logo-box > span {
+    left: 54px;
+    opacity: 1;
+}
+.logo:hover > .logo-box > .logo-img {
+    transition-duration: 0.2s;
+    transform: scaleX(-1) rotate(0deg) !important;
+}

@@ -1,0 +1,58 @@
+.animation {
+    z-index: 5;
+    pointer-events: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.animation.start > .animation-wrapper {
+    animation: redirect-start 1s forwards ease-in;
+}
+.animation.end > .animation-wrapper {
+    animation: redirect-end 1s forwards ease-out;
+}
+.animation.start, .animation.end {
+    pointer-events: unset;
+}
+.animation-wrapper {
+    height: 160%;
+    width: 120%;
+    background: var(--bg);
+    transform: rotate(-15deg) translateX(-7%) translateY(-200vh);
+    display: flex;
+    flex-direction: column;
+}
+.animation-black {
+    flex: 1;
+}
+.animation-white {
+    background: #e3e3e3;
+    width: 100%;
+    height: 200px;
+}
+.animation-grey {
+    width: 100%;
+    height: 300px;
+    background: #777777;
+}
+.reduced-motion {
+    display: none !important;
+    animation: none !important;
+}
+@keyframes redirect-start {
+    0% {
+        transform: rotate(-15deg) translateX(-7%) translateY(-200vh);
+    }
+    100% {
+        transform: rotate(-15deg) translateX(-7%) translateY(-30vh);
+    }
+}
+@keyframes redirect-end {
+    0% {
+        transform: rotate(-15deg) translateX(-7%) translateY(-30vh);
+    }
+    100% {
+        transform: rotate(-15deg) translateX(-7%) translateY(200vh);
+    }
+}

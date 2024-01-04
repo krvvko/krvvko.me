@@ -1,0 +1,15 @@
+.donut {
+    font-family: monospace;
+    white-space: pre-wrap;
+    font-size: 1.2rem;
+    animation: gradientText 5s infinite;
+}
+
+@keyframes gradientText {
+    20%, 80% {
+        color: var(--color-1);
+    }
+    40%, 60% {
+        color: var(--accent-color-main);
+    }
+}

@@ -1,0 +1,47 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6em;
+}
+.section-headline {
+    font-weight: 500;
+    font-size: 2.2rem;
+}
+.experience-sections {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 3em 0;
+}
+.experience-button {
+    display: flex;
+    font-weight: 500;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.experience-button > span:nth-child(1) {
+    font-size: 1.3rem;
+    color: var(--color-3);
+    transition-duration: 0.2s;
+}
+.experience-button > span:nth-child(2) {
+    border: 1.8px solid var(--color-1);
+    border-radius: 100px;
+    padding: 0.2em 0.5em;
+    transition-duration: 0.2s;
+}
+.experience-button.active > span:nth-child(1) {
+    color: var(--color-1);
+}
+.experience-button.active > span:nth-child(2) {
+    color: var(--color-1-r);
+    background: var(--color-1);
+}
+.experience-button:hover > span:nth-child(1) {
+    color: var(--color-1);
+}
+.experience-button:hover > span:nth-child(2) {
+    color: var(--color-1-r);
+    background: var(--color-1);
+}

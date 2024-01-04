@@ -1,0 +1,28 @@
+.main-top {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 6em;
+    align-items: center;
+}
+.main-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+}
+.main-text-large {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: var(--headline-font);
+    margin: 0.5em 0;
+}
+.donut-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text-large-span {
+    white-space: nowrap;
+}

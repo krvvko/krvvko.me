@@ -1,0 +1,350 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="margin:auto;background:transparent;display:block;z-index:1;position:relative"
+     width="3000" height="1305" preserveAspectRatio="none" viewBox="0 0 3000 1305">
+    <g transform="translate(1500,652.5) scale(1,1) translate(-1500,-652.5)">
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="0s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="0s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s" begin="0s"
+                     keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-0.6507936507936509s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-0.6507936507936509s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-0.6507936507936509s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-1.3015873015873018s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-1.3015873015873018s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-1.3015873015873018s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-1.9523809523809526s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-1.9523809523809526s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-1.9523809523809526s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-2.6031746031746037s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-2.6031746031746037s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-2.6031746031746037s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-3.253968253968255s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-3.253968253968255s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-3.253968253968255s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-3.904761904761905s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-3.904761904761905s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-3.904761904761905s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-4.555555555555555s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-4.555555555555555s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-4.555555555555555s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-5.206349206349207s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-5.206349206349207s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-5.206349206349207s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-5.857142857142858s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-5.857142857142858s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-5.857142857142858s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-6.50793650793651s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-6.50793650793651s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-6.50793650793651s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-7.15873015873016s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-7.15873015873016s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-7.15873015873016s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0" stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-7.80952380952381s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-7.80952380952381s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-7.80952380952381s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0.09090909090909091"
+              stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-8.460317460317462s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-8.460317460317462s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-8.460317460317462s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0.18181818181818182"
+              stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-9.11111111111111s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-9.11111111111111s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-9.11111111111111s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0.2727272727272727"
+              stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-9.761904761904765s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-9.761904761904765s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-9.761904761904765s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0.36363636363636365"
+              stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-10.412698412698415s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-10.412698412698415s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-10.412698412698415s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0.45454545454545453"
+              stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-11.063492063492065s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-11.063492063492065s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-11.063492063492065s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0.5454545454545454"
+              stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-11.714285714285715s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-11.714285714285715s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-11.714285714285715s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0.6363636363636364"
+              stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-12.365079365079367s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-12.365079365079367s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-12.365079365079367s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+        <path d="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"
+              fill="none" stroke="#0a0a0a" stroke-opacity="0.7272727272727273"
+              stroke-width="3">
+            <animate attributeName="d" calcMode="spline" repeatCount="indefinite"
+                     dur="33.333333333333336s" begin="-13.01587301587302s"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1" keyTimes="0;0.5;1"
+                     values="M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499;M0 902.5c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499;M0 403.5c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499c500 0 1000 499 1500 499c500 0 1000 -499 1500 -499"></animate>
+            <animateTransform attributeName="transform" type="translate"
+                              repeatCount="indefinite" dur="33.333333333333336s"
+                              begin="-13.01587301587302s" keyTimes="0;1"
+                              values="0 0;-3000 0"></animateTransform>
+            <animate attributeName="stroke" calcMode="spline"
+                     keySplines="0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1;0.5 0 0.5 1"
+                     repeatCount="indefinite" dur="33.333333333333336s"
+                     begin="-13.01587301587302s" keyTimes="0.00;0.20;0.40;0.60;0.80;1.00"
+                     values="#0a0a0a;#28292f;#ffffff;#4981e8;#3630ef;#0a0a0a"></animate>
+        </path>
+    </g>
+</svg>
