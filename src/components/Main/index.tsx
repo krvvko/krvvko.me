@@ -4,32 +4,36 @@ import './index.css';
 import {AnimationOnScroll} from "react-animation-on-scroll";
 import 'animate.css/animate.min.css';
 import Experience from "../Experience";
+import {usePreferences} from "../../utils/PreferencesContext";
 
 const Main = () => {
+
+    const {translation} = usePreferences();
+
     return (
         <>
             <section className="main-top">
                 <AnimationOnScroll animateIn="animate__fadeIn">
                     <div className="main-text">
-                        <AnimationOnScroll animateIn="animate__fadeInDown">
-                            <span>Home area</span>
+                        <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+                            <span>{translation.home.area}</span>
                         </AnimationOnScroll>
                         <div className="main-text-large">
-                            <AnimationOnScroll animateIn="animate__fadeInDown delay-25">
+                            <AnimationOnScroll animateIn="animate__fadeInDown delay-25" animateOnce={true}>
                                 <span className="main-text-large-span"><span className="text-primary-gradient">KRVVKO</span>.ME</span>
                             </AnimationOnScroll>
-                            <AnimationOnScroll animateIn="animate__fadeInDown delay-50">
-                                <span className="main-text-large-span">Web Developer - <span className="text-primary-gradient">Frontend</span></span>
+                            <AnimationOnScroll animateIn="animate__fadeInDown delay-50" animateOnce={true}>
+                                <span className="main-text-large-span">{translation.home.webDev} <span className="text-primary-gradient">{translation.home.frontend}</span></span>
                             </AnimationOnScroll>
-                            <AnimationOnScroll animateIn="animate__fadeInDown delay-75">
-                                <span className="main-text-large-span">Crafting <span className="text-primary-gradient">Websites</span> of Any</span>
+                            <AnimationOnScroll animateIn="animate__fadeInDown delay-75" animateOnce={true}>
+                                <span className="main-text-large-span">{translation.home.crafting} <span className="text-primary-gradient">{translation.home.websites}</span> {translation.home.ofAny}</span>
                             </AnimationOnScroll>
-                            <AnimationOnScroll animateIn="animate__fadeInDown delay-100">
-                                <span className="main-text-large-span">Complexity with <span className="text-primary-gradient">Artistic</span> Flair</span>
+                            <AnimationOnScroll animateIn="animate__fadeInDown delay-100" animateOnce={true}>
+                                <span className="main-text-large-span">{translation.home.complexityWith} <span className="text-primary-gradient">{translation.home.artistic}</span> {translation.home.flair}</span>
                             </AnimationOnScroll>
                         </div>
-                        <AnimationOnScroll animateIn="animate__fadeInDown delay-125">
-                            <span>Version: Tanzanite</span>
+                        <AnimationOnScroll animateIn="animate__fadeInDown delay-125" animateOnce={true}>
+                            <span>{translation.home.version} {translation.home.tanzanite}</span>
                         </AnimationOnScroll>
                     </div>
                 </AnimationOnScroll>

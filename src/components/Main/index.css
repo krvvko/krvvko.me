@@ -26,3 +26,9 @@
 .main-text-large-span {
     white-space: nowrap;
 }
+
+@media (min-width: 1081px) and (min-width: 1440px) {
+    .main-text-large {
+        font-size: 2.5rem;
+    }
+}

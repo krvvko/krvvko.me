@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root {
     --bg: #030300;
+
+    --bg-block-1: #333333;
 
     --color-1: rgb(252, 252, 252);
     --color-2: rgb(204, 204, 204);
     --color-3: rgb(164, 164, 164);
     --color-4: rgb(133, 133, 133);
 
+    --border-color-1: rgba(255, 255, 255, 0.2);
 
     --color-1-r: rgb(3, 3, 3);
 
@@ -16,11 +20,60 @@
 
     --border-radius-1: 4px;
     --border-radius-2: 8px;
-    --border-radius-3: 12x;
-    --border-radius-4: 16x;
+    --border-radius-3: 12px;
+    --border-radius-4: 16px;
 
     --headline-font: 'Work Sans', sans-serif;
+
+    --node-color: #6cc24a;
+    --js-color: #F7DF1E;
+    --ts-color: #3178c6;
+    --html-color: #FF5733;
+    --css-color: #3a3aff;
+    --react-color: #61DBFB;
+    --three-color: var(--color-1);
+
+    --green: #34ef34;
+    --red: #ef3434;
 }
+
+.theme-dark {
+    --bg: #111111;
+
+    --bg-block-1: #333333;
+    --bg-block-1-transparent: rgba(51, 51, 51, 0.5);
+
+    --color-1: rgb(252, 252, 252);
+    --color-2: rgb(204, 204, 204);
+    --color-3: rgb(164, 164, 164);
+    --color-4: rgb(133, 133, 133);
+
+    --border-color-1: rgba(255, 255, 255, 0.2);
+
+    --color-1-r: rgb(3, 3, 3);
+    --shadow-color-1: rgba(0, 0, 0, 0.5)
+}
+.theme-light {
+    --bg: #ffffff;
+
+    --bg-block-1: #e3e3e3;
+    --bg-block-1-transparent: rgba(227, 227, 227, 0.5);
+
+    --color-1: rgb(3, 3, 3);
+    --color-2: rgb(40, 40, 40);
+    --color-3: rgb(114, 114, 114);
+    --color-4: rgb(133, 133, 133);
+
+    --border-color-1: rgba(0, 0, 0, 0.2);
+
+    --color-1-r: rgb(252, 252, 252);
+    --shadow-color-1: rgba(0, 0, 0, 0.15)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -29,9 +82,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
     min-height: 100dvh;
+    transition: background 0.2s;
     display: flex;
     background: var(--bg);
     color: var(--color-1);
+}
+* {
+    box-sizing: border-box;
+}
+span {
+    transition-duration: 1s;
 }
 #app {
     flex: 1;
@@ -42,6 +102,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 code {
@@ -61,8 +122,32 @@ button {
     cursor: pointer;
 }
 
+.delay-10 {
+    animation-delay: 0.1s;
+}
+.delay-15 {
+    animation-delay: 0.15s;
+}
+.delay-20 {
+    animation-delay: 0.2s;
+}
 .delay-25 {
     animation-delay: 0.25s;
+}
+.delay-30 {
+    animation-delay: 0.3s;
+}
+.delay-35 {
+    animation-delay: 0.35s;
+}
+.delay-40 {
+    animation-delay: 0.4s;
+}
+.delay-45 {
+    animation-delay: 0.45s;
+}
+.delay-50 {
+    animation-delay: 0.5s;
 }
 .delay-50 {
     animation-delay: 0.5s;
@@ -75,4 +160,80 @@ button {
 }
 .delay-125 {
     animation-delay: 1.25s;
+}
+.icon {
+    display: flex;
+}
+.icon.arrow {
+    mask: url('./media/svg/arrow-right.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/arrow-right.svg') no-repeat center / contain;
+    height: 16px;
+    width: 16px;
+    background: var(--color-3);
+    transition-duration: 0.2s;
+}
+.icon.arrow.i {
+    transform: rotate(-90deg);
+    background: var(--color-1);
+}
+.icon.arrow.d {
+    transform: rotate(90deg);
+    background: var(--color-1);
+}
+.icon.github {
+    mask: url('./media/svg/github.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/github.svg') no-repeat center / contain;
+    height: 26px;
+    width: 26px;
+    background: var(--color-3);
+    transition-duration: 0.2s;
+}
+.icon.web {
+    mask: url('./media/svg/web.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/web.svg') no-repeat center / contain;
+    height: 26px;
+    width: 26px;
+    background: var(--color-3);
+    transition-duration: 0.2s;
+}
+.icon.img {
+    mask: url('./media/svg/img.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/img.svg') no-repeat center / contain;
+    height: 16px;
+    width: 16px;
+    background: var(--color-3);
+}
+.icon.shrimp {
+    mask: url('./media/svg/shrimp-black.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/shrimp-black.svg') no-repeat center / contain;
+    background: var(--color-1-r);
+}
+.icon.moon {
+    height: 20px;
+    width: 20px;
+    mask: url('./media/svg/moon.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/moon.svg') no-repeat center / contain;
+    background: var(--color-1);
+}
+.icon.sun {
+    height: 20px;
+    width: 20px;
+    mask: url('./media/svg/sun.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/sun.svg') no-repeat center / contain;
+    background: var(--color-1);
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color-main);
+    border: 2px solid var(--bg);
+    border-radius: 4px;
+    transition-duration: 0.2s;
 }

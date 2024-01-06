@@ -5,7 +5,6 @@ const Background = () => {
         <>
             <div className="background-lines"></div>
         </>
-
     )
 }
 

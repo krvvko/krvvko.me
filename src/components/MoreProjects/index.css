@@ -1,0 +1,91 @@
+.more-projects {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6em;
+}
+.more-projects > span {
+    margin-bottom: 1.5em;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.more-projects-container {
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    overflow-x: auto;
+    max-width: calc(100vw - 8em - 10px);
+}
+.more-project-element {
+    box-sizing: border-box;
+    height: 215px;
+    min-width: 340px;
+    max-width: 340px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0.75em;
+    border-radius: var(--border-radius-2);
+    transition-duration: 0.2s;
+}
+.more-project-element::before {
+    content: '';
+    position: absolute;
+    height: 180px;
+    width: 300px;
+    bottom: 0;
+    right: 0;
+    background: var(--bg-block-1-transparent);
+    border-radius: var(--border-radius-2);
+    transition-duration: 0.2s;
+    pointer-events: none;
+}
+.more-project-element:hover::before {
+    height: 100%;
+    width: 100%;
+}
+.more-project-bg-img {
+    pointer-events: none;
+    z-index: 0;
+    height: 160px;
+    width: calc(100% - 1.5em);
+    filter: saturate(1);
+    object-fit: cover;
+    position: absolute;
+    transition-duration: 0.2s;
+    border-radius: var(--border-radius-2);
+    box-shadow: 5px 5px 12px 0 var(--shadow-color-1);
+}
+.more-project-element:hover > .more-project-bg-img {
+    box-shadow: 0 0 8px 0 var(--shadow-color-1);
+}
+.more-projects-container:has(> .more-project-element:hover) > .more-project-element:not(:hover) {
+    transform: scale(0.9);
+    opacity: 0.5;
+}
+.more-projects-container:has(> .more-project-element:hover) > .more-project-element:not(:hover) > .more-project-bg-img {
+    filter: saturate(0);
+}
+.more-project-element:hover > .info-bottom > .info-bottom-headline {
+    margin-left: 0;
+}
+.info-bottom {
+    display: flex;
+    align-self: flex-end;
+    flex: 1;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-bottom-headline {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 2em;
+    transition-duration: 0.2s;
+}
+.info-bottom-date {
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-family: 'IBM Plex Mono', monospace;
+    color: var(--color-3);
+}

@@ -1,9 +1,9 @@
 .background-lines {
-    position: absolute;
-    height: 100%;
+    position: fixed;
+    height: 100vh;
     width: 100%;
     z-index: -1;
     opacity: 0.3;
     pointer-events: none;
-    background: url('./../../media/svg/bg.svg');
+    background: url('./../../media/svg/bg.svg') center;
 }

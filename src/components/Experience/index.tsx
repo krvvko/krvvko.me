@@ -1,40 +1,33 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import './index.css';
-import axios from 'axios';
-import { ExperienceData, ExperienceButtonProps } from "../../utils/interfaces";
-import All from "./All";
+import { ExperienceButtonProps } from "../../utils/interfaces";
+import All from "./Projects";
 import Technologies from "./Technologies";
+import {useServerData} from "../../utils/ServerDataContext";
+import Projects from "./Projects";
+import {usePreferences} from "../../utils/PreferencesContext";
 
-const ExperienceButton: React.FC<ExperienceButtonProps> = ({ name, amount, onClick, currentActive }) => {
+const ExperienceButton: React.FC<ExperienceButtonProps> = ({ name,displayedName , amount, onClick, currentActive }) => {
     const isActive = currentActive.toLowerCase() === name.toLowerCase();
-
     return (
         <button className={`experience-button ${isActive ? 'active' : ''}`} onClick={onClick}>
-            <span>{name}</span>
+            <span>{displayedName}</span>
             <span>{amount}</span>
         </button>
     );
 };
 
 const Experience = () => {
-    const [experience, setExperience] = useState<ExperienceData[]>([]);
-    const [activeComponentName, setActiveComponentName] = useState<string>('all');
+    const [activeComponentName, setActiveComponentName] = useState<string>('projects');
+    const {translation} = usePreferences();
 
-    useEffect(() => {
-        axios.get('http://localhost:4001/api/experience')
-            .then(function (response) {
-                setExperience(response.data.data);
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }, []);
+    const { experience, projects } = useServerData();
 
     const renderActiveComponent = () => {
         switch (activeComponentName) {
-            case 'all':
-                return <All />;
             case 'projects':
+                return <Projects />;
+            case 'technologies':
                 return <Technologies />;
             default:
                 return <All />;
@@ -43,19 +36,14 @@ const Experience = () => {
 
     return (
         <section className="experience-container">
-            <span className="section-headline">My Experience:</span>
+            <span className="section-headline" id='experience'>{translation.experience.myExperience}</span>
             <div className="experience-sections">
-                <ExperienceButton currentActive={activeComponentName} amount={10} name='All' onClick={() => setActiveComponentName('all')} />
-                <ExperienceButton currentActive={activeComponentName} amount={12} name='Projects' onClick={() => setActiveComponentName('projects')} />
+                <ExperienceButton currentActive={activeComponentName} amount={projects.length} displayedName={translation.experience.projects} name='Projects' onClick={() => setActiveComponentName('projects')} />
+                <ExperienceButton currentActive={activeComponentName} amount={experience.length} displayedName={translation.experience.technologies} name='Technologies' onClick={() => setActiveComponentName('technologies')} />
             </div>
             <div className="active-experience">
                 {renderActiveComponent()}
             </div>
-            {experience.map((technology) => (
-                <div key={technology.id}>
-                    <span>{technology.TechnologyName}</span>
-                </div>
-            ))}
         </section>
     );
 };

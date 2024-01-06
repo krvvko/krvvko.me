@@ -1,11 +1,12 @@
 import React, {useEffect, useRef, useState} from 'react';
 import './index.css';
-import icon from './../../../media/svg/shrimp-black.svg';
 import AnimatedLink from "../../AnimatedLink";
+import {usePreferences} from "../../../utils/PreferencesContext";
 const Logo: React.FC = () => {
     const logoRef = useRef<HTMLImageElement>(null);
     const [rotation, setRotation] = useState(0);
     const rotationSensitivity = 0.5; // Control the sensitivity of rotation
+    const { reducedMotion } = usePreferences();
 
     const updateRotation = (event: MouseEvent) => {
         if (logoRef.current) {
@@ -19,17 +20,19 @@ const Logo: React.FC = () => {
     };
 
     useEffect(() => {
-        window.addEventListener('mousemove', updateRotation);
+        if(!reducedMotion) {
+            window.addEventListener('mousemove', updateRotation);
 
-        return () => {
-            window.removeEventListener('mousemove', updateRotation);
-        };
-    }, []);
+            return () => {
+                window.removeEventListener('mousemove', updateRotation);
+            };
+        }
+    }, [reducedMotion]);
 
     return (
         <AnimatedLink to="/" linkClass="logo">
             <div className="logo-box">
-                <img ref={logoRef} src={icon} className="logo-img" alt="logo" style={{ transform: `scaleX(-1) rotate(-${rotation}deg)` }}/>
+                <i ref={logoRef} className="icon shrimp logo-img" style={{ transform: `scaleX(-1) rotate(-${rotation}deg)` }}></i>
                 <span>krvvko.me</span>
             </div>
         </AnimatedLink>

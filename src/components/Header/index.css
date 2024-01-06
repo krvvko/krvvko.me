@@ -1,7 +1,7 @@
 header {
     display: flex;
     flex-direction: row;
-    padding: 3em 4em;
+    padding: 2em 4em;
     justify-content: space-between;
     align-items: center;
 }
@@ -23,8 +23,8 @@ header {
     font-size: 1.2rem;
     text-decoration: none;
     transition-duration: 0.2s;
-    font-weight: 500;
-    letter-spacing: 2px;
+    font-weight: 400;
+    letter-spacing: 1px;
     position: relative;
 }
 .header-link:hover {
@@ -34,24 +34,39 @@ header {
     content: '';
     position: absolute;
     bottom: -3px;
-    height: 3px;
+    height: 2px;
     right: 0;
     background: var(--accent-color-main);
     border-radius: 2px;
     width: 0;
     transition-duration: 0.2s;
 }
-.header-link.active::after {
-    left: 0;
-    width: 100%;
-}
 .header-link:hover::after {
     left: 0;
     width: 100%;
+}
+.header-link.active::after {
+    left: 0;
+    width: 100%;
+    background: var(--accent-color-main);
 }
 .header-link.active {
     color: var(--accent-color-main);
 }
 .header-right {
     flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+@media (min-width: 1081px) and (min-width: 1440px) {
+    .header-link {
+        font-size: 1rem;
+    }
+    .header-link::after {
+        bottom: -3px;
+        height: 2px;
+    }
 }

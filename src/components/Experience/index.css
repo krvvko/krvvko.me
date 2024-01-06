@@ -28,8 +28,12 @@
 .experience-button > span:nth-child(2) {
     border: 1.8px solid var(--color-1);
     border-radius: 100px;
-    padding: 0.2em 0.5em;
     transition-duration: 0.2s;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .experience-button.active > span:nth-child(1) {
     color: var(--color-1);
@@ -44,4 +48,77 @@
 .experience-button:hover > span:nth-child(2) {
     color: var(--color-1-r);
     background: var(--color-1);
+}
+.sort-buttons {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 2em 2em 1em 2em;
+    font-size: 0.9rem;
+    color: var(--color-1);
+}
+.sort-buttons.projects {
+    gap: 10px;
+}
+.sort-buttons.projects > .auto {
+    flex: 1;
+}
+
+.sort-project-id {
+    width: 40px;
+}
+.sort-project-technologies {
+    width: 120px;
+}
+.sort-project-images {
+    width: 80px;
+}
+.sort-project-url {
+    width: 80px;
+}
+.sort-project-source {
+    width: 80px;
+}
+.sort-project-deployed {
+    width: 120px;
+}
+
+.sort-buttons > button {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+.sort-buttons > .auto {
+    flex: 1;
+}
+.sort-id {
+    width: 50px;
+}
+.placeholder-desc {
+    flex: 3;
+}
+.sort-data {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 1081px) and (min-width: 1440px) {
+    .section-headline {
+        font-size: 1.8rem;
+    }
+    .experience-button > span:nth-child(1) {
+        font-size: 1.1rem;
+        color: var(--color-3);
+        transition-duration: 0.2s;
+    }
+    .experience-button > span:nth-child(2) {
+        font-size: 0.8rem;
+        border: 1.8px solid var(--color-1);
+        border-radius: 100px;
+        padding: 0.1em 0.3em;
+        transition-duration: 0.2s;
+    }
 }

@@ -5,20 +5,23 @@ import "animate.css/animate.min.css";
 import App from './App';
 import {AnimationProvider} from "./utils/AnimationContext";
 import {BrowserRouter} from "react-router-dom";
-import {ReducedMotionProvider} from "./utils/ReducedMotionContext";
+import {PreferencesProvider} from "./utils/PreferencesContext";
+import {ServerDataProvider} from "./utils/ServerDataContext";
 
 const root = ReactDOM.createRoot(
     document.getElementById('app') as HTMLElement
 );
 
-console.log(`rendered ${Date.now().toLocaleString()}`)
+console.log(`Rendered ${Date.now().toLocaleString()}`)
 
 root.render(
     <BrowserRouter>
-        <ReducedMotionProvider>
-            <AnimationProvider>
-                <App/>
-            </AnimationProvider>
-        </ReducedMotionProvider>
+        <ServerDataProvider>
+            <PreferencesProvider>
+                <AnimationProvider>
+                    <App/>
+                </AnimationProvider>
+            </PreferencesProvider>
+        </ServerDataProvider>
     </BrowserRouter>
 );

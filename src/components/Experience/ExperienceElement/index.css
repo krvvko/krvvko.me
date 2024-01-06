@@ -1,0 +1,51 @@
+.experience-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+    align-items: center;
+}
+.sort-data > div:not(:last-child) > .experience-element {
+    border-bottom: 1px solid var(--border-color-1);
+}
+.experience-id {
+    width: 50px;
+    font-size: 0.7rem;
+    margin-top: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.experience-name {
+    flex: 1;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--accent-color-main)
+}
+.experience-lang {
+    flex: 1;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.experience-description {
+    flex: 3;
+    color: var(--color-2);
+}
+.experience-date {
+    flex: 1;
+    color: var(--color-2);
+    font-size: 0.8rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+.experience-level {
+    flex: 1;
+    height: 4px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: var(--bg-block-1);
+}
+.experience-level-inner {
+    width: 0;
+    transition: 2s;
+    height: 100%;
+    background: var(--accent-color-main);
+}

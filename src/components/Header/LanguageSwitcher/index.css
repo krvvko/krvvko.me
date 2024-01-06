@@ -1,0 +1,45 @@
+.language-switcher-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+.languages-modal-absolute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    background: var(--bg);
+    border: 1px solid var(--border-color-1);
+    border-radius: var(--border-radius-2);
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.2s;
+    overflow: hidden;
+    gap: 1px;
+}
+.languages-modal-absolute.open {
+    opacity: 1;
+    pointer-events: unset;
+}
+.active-lang-button {
+    font-size: 0.8rem;
+}
+.language-button {
+    transition-duration: 0.2s;
+    padding: 4px 10px;
+    align-self: stretch;
+    text-align: center;
+}
+.language-button:hover {
+    background: var(--color-1);
+    color: var(--color-1-r);
+}
+.language-button.active {
+    background: var(--color-1);
+    color: var(--color-1-r);
+}

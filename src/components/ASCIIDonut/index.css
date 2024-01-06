@@ -13,3 +13,9 @@
         color: var(--accent-color-main);
     }
 }
+
+@media (min-width: 1081px) and (max-width: 1440px) {
+    .donut {
+        font-size: 0.7rem;
+    }
+}

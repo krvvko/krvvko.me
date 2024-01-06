@@ -2,7 +2,7 @@ import React, { createContext, useState, useContext, useCallback } from 'react';
 import { useNavigate } from "react-router-dom";
 import './css/RedirectAnimation.css'
 import {AnimationContextType, AnimationProviderProps} from "./interfaces";
-import {useReducedMotion} from "./ReducedMotionContext";
+import {usePreferences} from "./PreferencesContext";
 
 const AnimationContext = createContext<AnimationContextType>({
     startAnimation: (): void => {},
@@ -14,7 +14,7 @@ export const useAnimation = () => useContext(AnimationContext);
 export const AnimationProvider: React.FC<AnimationProviderProps> = ({ children }) => {
     const [animationClass, setAnimationClass] = useState<string>('');
     const [isInProcess, setIsInProcess] = useState<boolean>(false);
-    const { reducedMotion } = useReducedMotion()
+    const { reducedMotion } = usePreferences()
     const navigate = useNavigate();
 
     const startAnimation = useCallback((to: string) => {
@@ -22,6 +22,7 @@ export const AnimationProvider: React.FC<AnimationProviderProps> = ({ children }
         setIsInProcess(true);
         setTimeout(() => {
             navigate(to);
+            window.scrollTo(0, 0);
             setAnimationClass('end');
             setTimeout(()=> {
                 setAnimationClass('');
