@@ -3,6 +3,7 @@
     flex-direction: row;
     margin: 5% 6em;
     align-items: center;
+    min-height: 50vh;
 }
 .main-text {
     display: flex;
@@ -26,9 +27,40 @@
 .main-text-large-span {
     white-space: nowrap;
 }
-
-@media (min-width: 1081px) and (min-width: 1440px) {
+.main-home-area {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--color-3);
+}
+.main-home-version {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--color-3);
+}
+.main-home-version-exact {
+    font-family: var(--headline-font);
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: var(--accent-color-main);
+}
+@media (min-width: 1440px) and (max-width: 1909px) {
     .main-text-large {
         font-size: 2.5rem;
+    }
+}
+@media (min-width: 1910px) and (max-width: 2550px) {
+    .main-text-large {
+        font-size: 3.5rem;
+    }
+    .main-home-area {
+        font-size: 1.1rem;
+    }
+    .main-home-version {
+        font-size: 1rem;
+    }
+    .main-home-version-exact {
+        font-size: 1.1rem;
     }
 }

@@ -50,7 +50,7 @@
     transform: scaleX(-1) rotate(0deg) !important;
 }
 
-@media (min-width: 1081px) and (min-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1979px) {
     .logo-box {
         height: 42px;
         width: 42px;

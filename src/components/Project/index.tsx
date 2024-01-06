@@ -58,8 +58,10 @@ const Project = () => {
                                         ))}
                                     </>
                                 )}
-
                             </div>
+                            <AnimationOnScroll animateIn="animate__fadeInDown delay-55">
+                                <span className="project-main-short-description">{projectData?.ProjectShortDescription}</span>
+                            </AnimationOnScroll>
                         </div>
                         {(projectData?.ProjectUrl || projectData?.ProjectSourceUrl) &&
                             <div className="links-container animate__animated animate__fadeInUp delay-45">

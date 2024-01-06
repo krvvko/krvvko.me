@@ -11,7 +11,6 @@ footer {
     gap: 4px;
 }
 .footer-left > span:nth-child(1) {
-    font-size: 1rem;
     font-weight: 500;
 }
 .footer-left > span:nth-child(2) {
@@ -35,4 +34,29 @@ footer {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.9rem;
     text-transform: uppercase;
+}
+.footer-version {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-3);
+}
+.footer-version-exact {
+    font-family: var(--headline-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-left: -6px;
+    color: var(--accent-color-main);
+}
+.footer-copyright {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 2550px) {
+    .footer-timer-container > span:nth-child(1) {
+        font-size: 1.1rem;
+    }
+    .footer-timer-container > span:nth-child(2) {
+        font-size: 1rem;
+    }
 }

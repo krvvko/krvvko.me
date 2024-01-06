@@ -121,3 +121,51 @@
     font-size: 1.2rem;
     line-height: 2.1rem;
 }
+.project-main-short-description {
+    font-size: 1.2rem;
+    color: var(--color-2);
+}
+@media (min-width: 1910px) and (max-width: 2539px) {
+    .project-main-text > div:nth-child(2) {
+        margin: 1em 0;
+    }
+    div:has(> .project-main-short-description) {
+        margin-top: 2em;
+    }
+}
+@media (min-width: 2540px) {
+    .project-main-text > div:nth-child(2) > span {
+        font-size: 6rem;
+    }
+    .project-main-text > div:nth-child(2) {
+        margin: 1em 0;
+    }
+    div:has(> .project-main-short-description) {
+        margin-top: 2em;
+    }
+    .project-main-short-description {
+        font-size: 1.5rem;
+    }
+    .project-tech-main {
+        font-size: 1.2rem;
+    }
+    .project-main-id {
+        font-size: 1.2rem;
+    }
+    .project-main-link.live {
+        font-size: 1.5rem;
+        gap: 6px;
+    }
+    .project-main-link.live > i {
+        height: 30px;
+        width: 30px;
+    }
+    .project-main-link.gh > i {
+        height: 40px;
+        width: 40px;
+    }
+    .project-long-description {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+}

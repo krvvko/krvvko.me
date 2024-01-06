@@ -14,8 +14,16 @@
     }
 }
 
-@media (min-width: 1081px) and (max-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1909px) {
     .donut {
         font-size: 0.7rem;
     }
+}
+@media (min-width: 1910px) and (max-width: 2539px) {
+    .donut {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 2540px) {
+    font-size: 1.2rem;
 }

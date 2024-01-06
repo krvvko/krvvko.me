@@ -16,7 +16,7 @@ const Main = () => {
                 <AnimationOnScroll animateIn="animate__fadeIn">
                     <div className="main-text">
                         <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
-                            <span>{translation.home.area}</span>
+                            <span className="main-home-area">{translation.home.area}</span>
                         </AnimationOnScroll>
                         <div className="main-text-large">
                             <AnimationOnScroll animateIn="animate__fadeInDown delay-25" animateOnce={true}>
@@ -33,7 +33,7 @@ const Main = () => {
                             </AnimationOnScroll>
                         </div>
                         <AnimationOnScroll animateIn="animate__fadeInDown delay-125" animateOnce={true}>
-                            <span>{translation.home.version} {translation.home.tanzanite}</span>
+                            <span className="main-home-version">{translation.home.version} <span className="main-home-version-exact">{translation.home.tanzanite}</span></span>
                         </AnimationOnScroll>
                     </div>
                 </AnimationOnScroll>

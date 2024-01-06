@@ -89,3 +89,26 @@
     font-family: 'IBM Plex Mono', monospace;
     color: var(--color-3);
 }
+@media (min-width: 2540px) {
+    .more-projects > span {
+        font-size: 2.2rem;
+    }
+    .more-project-element {
+        height: 260px;
+        min-width: 440px;
+        max-width: 440px;
+    }
+    .more-project-bg-img {
+        height: 200px;
+    }
+    .more-project-element::before {
+        height: 220px;
+        width: 400px;
+    }
+    .info-bottom-headline {
+        font-size: 1.5rem;
+    }
+    .info-bottom-date {
+        font-size: 0.9rem;
+    }
+}

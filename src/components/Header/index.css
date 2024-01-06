@@ -61,7 +61,7 @@ header {
     gap: 1em;
 }
 
-@media (min-width: 1081px) and (min-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1979px) {
     .header-link {
         font-size: 1rem;
     }
@@ -69,4 +69,7 @@ header {
         bottom: -3px;
         height: 2px;
     }
+}
+@media (min-width: 2540px) {
+
 }

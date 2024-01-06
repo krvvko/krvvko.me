@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid var(--border-color-1);
-    border-radius: var(--border-radius-3);
+    border-radius: 100px;
     overflow: hidden;
     position: relative;
 }
@@ -39,4 +39,15 @@
 }
 .reduced-motion-absolute.right {
     left: 50%;
+}
+@media (min-width: 2540px) {
+    .reduced-motion-button > span {
+        font-size: 1.1rem;
+        width: 110px;
+    }
+    .reduced-motion-button.ru > span {
+        width: 140px;
+        font-size: 1rem;
+        padding-top: 7px;
+    }
 }

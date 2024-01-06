@@ -8,8 +8,8 @@ const Footer = () => {
         <footer>
             <AnimationOnScroll animateIn="animate__fadeInUp delay-10" offset={10} animateOnce={true}>
                 <div className="footer-left">
-                    <span>2020-{new Date().getFullYear()} © krvvko.me</span>
-                    <span>Version: Tanzanite</span>
+                    <span className="footer-copyright">2020-{new Date().getFullYear()} © <span className="footer-username">krvvko.me</span></span>
+                    <span className="footer-version">Version: <span className="footer-version-exact">Tanzanite</span></span>
                 </div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__fadeInUp delay-20" offset={10} animateOnce={true}>

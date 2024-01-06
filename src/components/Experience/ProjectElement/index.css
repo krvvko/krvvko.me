@@ -123,3 +123,9 @@
     opacity: 0.5;
     filter: blur(2px);
 }
+
+@media (min-width: 2540px) {
+    .project-name {
+        font-size: 1.6rem;
+    }
+}

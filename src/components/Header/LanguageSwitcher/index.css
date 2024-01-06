@@ -43,3 +43,18 @@
     background: var(--color-1);
     color: var(--color-1-r);
 }
+
+@media (min-width: 2540px) {
+    .active-lang-button {
+        font-size: 1.1rem;
+    }
+    .language-switcher-container {
+        font-size: 1rem;
+    }
+    .language-button {
+        padding: 4px 13px;
+    }
+    .languages-modal-absolute {
+        top: 35px;
+    }
+}
