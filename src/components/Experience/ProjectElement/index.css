@@ -129,3 +129,28 @@
         font-size: 1.6rem;
     }
 }
+
+@media (orientation: portrait) {
+    .project-element {
+        flex-direction: row;
+    }
+    .project-element > * {
+        display: none;
+    }
+    .project-id {
+        display: flex !important;
+        color: var(--color-3);
+        font-size: 0.6rem;
+    }
+    .project-name {
+        display: flex !important;
+        font-size: 1rem;
+    }
+    .project-date {
+        display: flex;
+    }
+    .sort-data:has(> div > .project-element:hover) > div > .project-element:not(:hover){
+        opacity: 0.5;
+        filter: none;
+    }
+}

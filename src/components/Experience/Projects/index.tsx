@@ -16,8 +16,8 @@ const Projects: React.FC = () => {
 
         return [...projects].sort((a, b) => {
             // Convert string to array for image count
-            const aImages = JSON.parse(a.ProjectImages[0]).length;
-            const bImages = JSON.parse(b.ProjectImages[0]).length;
+            const aImages = a.ProjectImages.length;
+            const bImages = b.ProjectImages.length;
 
             // Compare based on image count if sortKey is 'ProjectImages'
             if (sortKey === 'ProjectImages') {

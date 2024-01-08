@@ -56,3 +56,9 @@
         transform: rotate(-15deg) translateX(-7%) translateY(200vh);
     }
 }
+
+@media (orientation: portrait) {
+    .animation {
+        display: none !important;
+    }
+}

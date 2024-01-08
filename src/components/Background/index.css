@@ -8,3 +8,8 @@
     background: url('./../../media/svg/bg.svg') center no-repeat;
     background-size: 100%;
 }
+@media (orientation: portrait) {
+    .background-lines {
+        background: url('./../../media/svg/bg-mobile.svg') center no-repeat;
+    }
+}

@@ -39,7 +39,7 @@ const translations: any = {
                 language: 'Language',
                 description: 'Description',
                 startDate: 'Start Date',
-                knowledgeLevel: 'Knowledge Level'
+                knowledgeLevel: 'Knowledge'
             }
         }
     },
@@ -83,7 +83,7 @@ const translations: any = {
                 language: 'Язык',
                 description: 'Описание',
                 startDate: 'Дата Начала',
-                knowledgeLevel: 'Уровень Знания'
+                knowledgeLevel: 'Знание'
             }
         }
     },

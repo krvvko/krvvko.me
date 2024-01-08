@@ -122,3 +122,63 @@
         transition-duration: 0.2s;
     }
 }
+
+@media (orientation: portrait) {
+    .experience-container {
+        margin: 4em 2% 0 2%;
+    }
+    .placeholder-desc {
+        display: none;
+    }
+    .sort-buttons > * {
+        font-size: 0.6rem;
+        white-space: nowrap;
+    }
+    .sort-buttons.technologies {
+        gap: 4px;
+    }
+    .sort-date {
+        display: none !important;
+    }
+    .placeholder-project-desc {
+        display: none !important;
+    }
+    .sort-project-technologies {
+        display: none !important;
+    }
+    .sort-project-images {
+        display: none !important;
+    }
+    .sort-project-url {
+        display: none !important;
+    }
+    .sort-project-source {
+        display: none !important;
+    }
+    .sort-project-deployed {
+        display: none !important;
+    }
+    .sort-project-difficulty {
+        display: none !important;
+    }
+    .section-headline {
+        font-size: 1.6rem;
+    }
+    .experience-sections {
+        margin: 1em 0;
+        gap: 20px;
+    }
+    .experience-button {
+        font-size: 0.8rem;
+        gap: 7px;
+    }
+    .experience-button > span:nth-child(1) {
+        font-size: 1rem;
+    }
+    .experience-button > span:nth-child(2) {
+        height: 25px;
+        text-align: center;
+        font-size: 0.8rem;
+        width: 25px;
+    }
+}

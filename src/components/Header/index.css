@@ -73,3 +73,16 @@ header {
 @media (min-width: 2540px) {
 
 }
+@media (orientation: portrait) {
+    header {
+        padding: 2%;
+    }
+    .header-link {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+    .header-link::after {
+        bottom: -2px;
+        height: 1.5px;
+    }
+}

@@ -58,3 +58,8 @@
         top: 35px;
     }
 }
+@media (orientation: portrait) {
+    .language-switcher-container {
+        display: none;
+    }
+}

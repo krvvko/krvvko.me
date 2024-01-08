@@ -74,3 +74,27 @@
         margin-top: 2px;
     }
 }
+@media (orientation: portrait) {
+    .logo-box {
+        height: 40px;
+        width: 40px;
+    }
+    .logo-img {
+        height: 24px;
+        width: 24px;
+        margin: 8px;
+    }
+    .logo:hover > .logo-box {
+        width: 150px;
+        height: 38px;
+    }
+    .logo:hover > .logo-box > span {
+        left: 38px;
+        opacity: 1;
+    }
+    .logo-box > span {
+        left: 78px;
+        font-size: 1.1rem;
+        margin-top: 2px;
+    }
+}

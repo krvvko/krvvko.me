@@ -51,3 +51,8 @@
         padding-top: 7px;
     }
 }
+@media (orientation: portrait) {
+    .reduced-motion-container {
+        display: none;
+    }
+}

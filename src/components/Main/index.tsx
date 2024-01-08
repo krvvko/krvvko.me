@@ -15,11 +15,11 @@ const Main = () => {
             <section className="main-top">
                 <AnimationOnScroll animateIn="animate__fadeIn">
                     <div className="main-text">
-                        <AnimationOnScroll animateIn="animate__fadeInDown" animateOnce={true}>
+                        <AnimationOnScroll offset={0} animateIn="animate__fadeInDown" animateOnce={true}>
                             <span className="main-home-area">{translation.home.area}</span>
                         </AnimationOnScroll>
                         <div className="main-text-large">
-                            <AnimationOnScroll animateIn="animate__fadeInDown delay-25" animateOnce={true}>
+                            <AnimationOnScroll offset={0} animateIn="animate__fadeInDown delay-25" animateOnce={true}>
                                 <span className="main-text-large-span"><span className="text-primary-gradient">KRVVKO</span>.ME</span>
                             </AnimationOnScroll>
                             <AnimationOnScroll animateIn="animate__fadeInDown delay-50" animateOnce={true}>

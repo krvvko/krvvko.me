@@ -45,7 +45,7 @@ const Technologies = () => {
 
     return (
         <>
-            <div className="sort-buttons">
+            <div className="sort-buttons technologies">
                 <button className="sort-id" onClick={() => handleSort('id')}>
                     <span>ID</span>
                     <i className={`icon arrow ${getSortLabel('id')}`}></i>

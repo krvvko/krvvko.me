@@ -18,7 +18,7 @@ export const ServerDataProvider: React.FC<ServerDataProviderProps> = ({ children
     );
 
     useEffect(() => {
-        axios.get('http://localhost:4001/api/experience')
+        axios.get(`${process.env.REACT_APP_API_URL}/experience`)
             .then(function (response) {
                 console.log(response.data);
                 setExperience(response.data);
@@ -26,7 +26,7 @@ export const ServerDataProvider: React.FC<ServerDataProviderProps> = ({ children
             .catch(function (error) {
                 console.log(error);
             });
-        axios.get('http://localhost:4001/api/myProjects')
+        axios.get(`${process.env.REACT_APP_API_URL}/projects`)
             .then(function (response) {
                 console.log(response.data)
                 const transformedData = response.data.map((project: any) => transformProjectData(project));

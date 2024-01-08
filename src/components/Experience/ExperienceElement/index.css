@@ -49,3 +49,25 @@
     height: 100%;
     background: var(--accent-color-main);
 }
+
+@media (orientation: portrait) {
+    .experience-element {
+        gap: 4px;
+    }
+    .experience-id {
+        color: var(--color-3);
+        font-size: 0.6rem;
+    }
+    .experience-name {
+        font-size: 1rem;
+    }
+    .experience-lang {
+        font-size: 0.6rem;
+    }
+    .experience-description {
+        display: none;
+    }
+    .experience-date {
+        display: none;
+    }
+}

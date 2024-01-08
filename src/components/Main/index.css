@@ -64,3 +64,33 @@
         font-size: 1.1rem;
     }
 }
+
+@media (orientation: portrait) {
+    .main-top {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0 2%;
+    }
+    .main-text {
+        margin: 20px 0 50px 0;
+        max-width: unset;
+    }
+    .main-text-large {
+        font-size: 1.5rem;
+        margin: 5px 0;
+    }
+    .main-text-large-span {
+        font-size: 1.5rem;
+        white-space: normal;
+    }
+    .main-home-area {
+        font-size: 0.9rem;
+    }
+    .main-home-version {
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+    .main-home-version-exact {
+        font-size: 1rem;
+    }
+}

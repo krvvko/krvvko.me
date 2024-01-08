@@ -20,13 +20,11 @@ const Project = () => {
     const [projectData, setProjectData] = useState<ProjectServerData | null>(null);
 
     useEffect(() => {
-        axios.get(`http://localhost:4001/api/myProjects/project/${id}`)
+        axios.get(`${process.env.REACT_APP_API_URL}/projects/${id}`)
             .then((response) => {
                 console.log(response.data);
                 const modifiedData = {
                     ...response.data,
-                    ProjectTechnologies: response.data.ProjectTechnologies ? parseArrayString(response.data.ProjectTechnologies) : null,
-                    ProjectImages: response.data.ProjectImages ? parseArrayString(response.data.ProjectImages) : null,
                 };
                 setProjectData(modifiedData);
             })

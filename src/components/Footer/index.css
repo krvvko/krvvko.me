@@ -60,3 +60,27 @@ footer {
         font-size: 1rem;
     }
 }
+
+@media (orientation: portrait) {
+    footer {
+        padding: 20px 2% 50px 2%;
+    }
+    .footer-left {
+        gap: 2px;
+    }
+    .footer-left > span:nth-child(1) {
+        font-size: 0.8rem;
+    }
+    .footer-left > span:nth-child(2) {
+        font-size: 0.8rem;
+    }
+    .footer-version-exact {
+        font-size: 0.9rem;
+    }
+    .footer-timer-container > span:nth-child(1) {
+        font-size: 0.9rem;
+    }
+    .footer-timer-container > span:nth-child(2) {
+        font-size: 0.7rem;
+    }
+}

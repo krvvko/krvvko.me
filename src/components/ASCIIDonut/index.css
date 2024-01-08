@@ -27,3 +27,15 @@
 @media (min-width: 2540px) {
     font-size: 1.2rem;
 }
+
+@media (orientation: portrait) {
+    .donut-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .donut {
+        transform: translateX(-20px);
+        font-size: 0.6rem !important;
+    }
+}

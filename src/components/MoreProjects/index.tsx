@@ -40,7 +40,7 @@ const MoreProjects = () => {
                 {projects.map((project: ProjectsData) => (
                     <button className="more-project-element" onClick={(e) => redirect(`/project/${project.id}`, e)}>
                         {project.ProjectImages !== null ? (
-                            <img src={JSON.parse(project.ProjectImages[0])[0]} alt=""
+                            <img src={project.ProjectImages[0]} alt=""
                                  className="more-project-bg-img"/>
                         ) : (
                             <div className="more-project-bg-div"></div>

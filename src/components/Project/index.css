@@ -102,6 +102,10 @@
     height: auto;
     border-radius: var(--border-radius-4);
 }
+.project-detail-img, .project-detail-primary-img {
+    /*border: 2px solid var(--accent-color-main);*/
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.2);
+}
 .project-additional-images {
     display: flex;
     flex-direction: column;
