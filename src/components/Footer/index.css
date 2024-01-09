@@ -61,6 +61,15 @@ footer {
     }
 }
 
+@media (min-width: 1440px) and (max-width: 1909px) {
+    .footer-timer-container > span:nth-child(1) {
+        font-size: 1rem;
+    }
+    .footer-timer-container > span:nth-child(2) {
+        font-size: 0.9rem;
+    }
+}
+
 @media (orientation: portrait) {
     footer {
         padding: 20px 2% 50px 2%;

@@ -104,7 +104,7 @@
 }
 .project-detail-img, .project-detail-primary-img {
     /*border: 2px solid var(--accent-color-main);*/
-    box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.2);
+    /*box-shadow: 0 0 8px 0 rgba(255, 255, 255, 0.2);*/
 }
 .project-additional-images {
     display: flex;
@@ -128,6 +128,74 @@
 .project-main-short-description {
     font-size: 1.2rem;
     color: var(--color-2);
+}
+
+.project-main-text > div:nth-child(2) {
+    margin: 0.5em 0;
+}
+div:has(> .project-main-short-description) {
+    margin-top: 1em;
+}
+.project-container-top.skelet {
+    min-height: calc(100vh - 120px);
+}
+.project-main-text.skelet {
+    display: flex;
+    flex-direction: column;
+}
+.project-main-text.skelet > .text.skelet-element:nth-child(1) {
+    height: 20px;
+    width: 50px;
+}
+.project-main-text.skelet > .text.skelet-element:nth-child(2) {
+    height: 85px;
+    width: 420px;
+}
+.project-main-text.skelet > .text.skelet-element:nth-child(3) {
+    height: 20px;
+    width: 400px;
+}
+.project-main-text.skelet > .text.skelet-element:nth-child(4) {
+    height: 25px;
+    width: 200px;
+    margin-top: 10px;
+}
+.links-container.skelet-element {
+    height: 45px;
+    width: 200px;
+}
+.image-detail.skelet-element {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+.text-detail.skelet-element {
+    flex: 1;
+}
+
+.skelet-element {
+    border-radius: var(--border-radius-4);
+    background: var(--skeleton-bg);
+    position: relative;
+    overflow: hidden;
+}
+.skelet-element::after {
+    animation: skeletAnimation 4s infinite;
+    background: linear-gradient(to left, transparent, var(--skeleton-animation-color), transparent);
+    content: '';
+    width: 100px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+@media (min-width: 1910px) and (max-width: 2539px) {
+    .project-main-text > div:nth-child(2) {
+        margin: 1em 0;
+    }
+    div:has(> .project-main-short-description) {
+        margin-top: 2em;
+    }
 }
 @media (min-width: 1910px) and (max-width: 2539px) {
     .project-main-text > div:nth-child(2) {
@@ -171,5 +239,18 @@
     .project-long-description {
         font-size: 1.5rem;
         line-height: 2.5rem;
+    }
+}
+
+@keyframes skeletAnimation {
+    0%, 100% {
+        background-position: 0;
+        left: 0;
+        right: calc(100% - 100px);
+    }
+    50% {
+        background-position: 100%;
+        right: 0;
+        left: calc(100% - 100px);
     }
 }

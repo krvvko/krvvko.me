@@ -43,6 +43,8 @@
     --bg-block-1: #333333;
     --bg-block-1-transparent: rgba(51, 51, 51, 0.5);
 
+    --skeleton-animation-color: rgba(255, 255, 255, 0.02);
+    --skeleton-bg: #191919;
     --color-1: rgb(252, 252, 252);
     --color-2: rgb(204, 204, 204);
     --color-3: rgb(164, 164, 164);
@@ -55,6 +57,9 @@
 }
 .theme-light {
     --bg: #e7e7e7;
+
+    --skeleton-animation-color: rgba(0, 0, 0, 0.05);
+    --skeleton-bg: #d2d2d2;
 
     --bg-block-1: #c9c9c9;
     --bg-block-1-transparent: rgba(204, 204, 204, 0.5);
