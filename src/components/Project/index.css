@@ -242,6 +242,35 @@ div:has(> .project-main-short-description) {
     }
 }
 
+@media (orientation: portrait) {
+    .project-container {
+        padding: 10px;
+    }
+    .project-container-top {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .project-main {
+        position: relative;
+        top: unset;
+        max-height: unset;
+    }
+    .project-details, .project-main {
+        max-width: calc(100vw - 20px);
+        flex: 1;
+        align-self: stretch;
+    }
+    .project-main-text > div:nth-child(2) > span {
+        font-size: 3rem;
+    }
+    .project-main-text {
+        gap: 4px;
+    }
+    .links-container {
+        margin-top: 20px;
+    }
+}
+
 @keyframes skeletAnimation {
     0%, 100% {
         background-position: 0;

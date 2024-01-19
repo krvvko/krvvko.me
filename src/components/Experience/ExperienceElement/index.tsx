@@ -10,8 +10,8 @@ const ExperienceElement: React.FC<ExperienceElementProps> = ({
         startDate,
         description,
         id}) => {
-    const [width, setWidth] = useState(0);
-    const formattedDate = new Date(startDate).toLocaleDateString(
+    const [width, setWidth] = useState<number>(0);
+    const formattedDate: string = new Date(startDate).toLocaleDateString(
         "en-US",{
             year: 'numeric',
             month: 'long',
@@ -19,13 +19,12 @@ const ExperienceElement: React.FC<ExperienceElementProps> = ({
         }
 );
     useEffect(() => {
-        const timer = setTimeout(() => {
+        const timer: NodeJS.Timeout = setTimeout((): void => {
             setWidth(knowledgeLevel * 10);
-        }, 100); // Adjust the delay here if needed
+        }, 100);
 
-        // Cleanup function to clear the timeout if the component unmounts
         return () => clearTimeout(timer);
-    }, [knowledgeLevel]); // Depend on knowledgeLevel
+    }, [knowledgeLevel]);
 
     return (
         <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>

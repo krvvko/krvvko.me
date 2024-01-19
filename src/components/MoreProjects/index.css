@@ -112,3 +112,9 @@
         font-size: 0.9rem;
     }
 }
+
+@media (orientation: portrait) {
+    .more-projects-container {
+        max-width: calc(100vw - 20px);
+    }
+}

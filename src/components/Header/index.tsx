@@ -17,7 +17,7 @@ const Header:React.FC = () => {
             </div>
             <div className="header-middle">
                 <AnimatedLink linkClass="header-link" to="/">{translation.header.homeLink}</AnimatedLink>
-                <AnimatedLink linkClass="header-link" to="/about">{translation.header.aboutLink}</AnimatedLink>
+                <AnimatedLink linkClass="header-link" to="/contact">{translation.header.contactLink}</AnimatedLink>
             </div>
             <div className="header-right">
                 <AnimationsSwitcher />

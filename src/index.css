@@ -230,6 +230,55 @@ button {
     background: var(--color-1);
 }
 
+.icon.sun {
+    height: 20px;
+    width: 20px;
+    mask: url('./media/svg/sun.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/sun.svg') no-repeat center / contain;
+    background: var(--color-1);
+}
+
+.icon.time {
+    height: 20px;
+    width: 20px;
+    mask: url('./media/svg/time.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/time.svg') no-repeat center / contain;
+    background: currentColor;
+    transition-delay: 0s !important;
+}
+.icon.email {
+    height: 20px;
+    width: 20px;
+    mask: url('./media/svg/email.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/email.svg') no-repeat center / contain;
+    background: currentColor;
+    transition-delay: 0s !important;
+}
+.icon.portfolio {
+    height: 20px;
+    width: 20px;
+    mask: url('./media/svg/portfolio.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/portfolio.svg') no-repeat center / contain;
+    background: currentColor;
+    transition-delay: 0s !important;
+}
+
+.icon.github2 {
+    aspect-ratio: 1/1;
+    height: 90%;
+    mask: url('./media/svg/github.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/github.svg') no-repeat center / contain;
+    background: currentColor;
+}
+
+.icon.linkedin {
+    aspect-ratio: 1/1;
+    height: 90%;
+    mask: url('./media/svg/linkedin.svg') no-repeat center / contain;
+    -webkit-mask: url('./media/svg/linkedin.svg') no-repeat center / contain;
+    background: currentColor;
+}
+
 
 ::-webkit-scrollbar {
     width: 10px;

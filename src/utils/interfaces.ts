@@ -103,3 +103,15 @@ export interface ProjectServerData {
     ProjectTechnologies: string[] | null;
     ProjectUrl: string | null;
 }
+export interface LinkElementProps {
+    link: string;
+    title: string;
+    username: string;
+    icon: string;
+}
+
+export interface ContactDescriptionElementProps {
+    title: string;
+    amount: number;
+    suffix?: string | null;
+}

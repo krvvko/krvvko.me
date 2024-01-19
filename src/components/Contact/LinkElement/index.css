@@ -1,0 +1,58 @@
+.contact-me-link-top {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color-1);
+    text-decoration: none;
+    overflow: hidden;
+    transition-duration: 0.2s;
+    padding-left: 2em;
+}
+.contact-me-link-top:hover {
+    color: var(--accent-color-main);
+}
+.contact-me-link-top:hover > .link-element-icon {
+    transform: translateX(0);
+}
+.link-element-icon {
+    position: absolute;
+    right: 8px;
+    align-self: center;
+    transition: transform 0.2s;
+    transform: translateX(50%);
+}
+.contact-link-element-text {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    overflow: hidden;
+}
+.contact-link-element-text-element {
+    min-height: 40px;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.2s;
+    font-size: 1.5rem;
+}
+.contact-link-element-text-element > span {
+    transition-duration: 0s;
+    transition-delay: 0s;
+    font-weight: 500;
+}
+.contact-link-element-text-element:nth-child(1) > span {
+    font-family: 'IBM Plex Mono', monospace;
+}
+.contact-me-link-top:hover > .contact-link-element-text > .contact-link-element-text-element:nth-child(1) {
+    margin-top: -40px;
+}
+@media (orientation: portrait) {
+    .contact-me-link-top {
+        padding-left: 1em;
+        min-height: 100px;
+    }
+    .contact-link-element-text-element {
+        font-size: 1.1rem;
+    }
+}

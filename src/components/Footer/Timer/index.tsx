@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import {usePreferences} from "../../../utils/PreferencesContext";
 
 const Timer: React.FC = () => {
     const [currentTime, setCurrentTime] = useState<Date>(new Date());
-
+    const {translation} = usePreferences();
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentTime(new Date());
@@ -17,13 +18,13 @@ const Timer: React.FC = () => {
     const getGreeting = (date: Date): string => {
         const hour = date.getHours();
         if (hour >= 22 || hour < 6) {
-            return "Good night";
+            return translation.footer.night;
         } else if (hour >= 6 && hour < 10) {
-            return "Good morning";
+            return translation.footer.morning;
         } else if (hour >= 10 && hour < 16) {
-            return "Have a productive day";
+            return translation.footer.productive;
         } else {
-            return "Good evening";
+            return translation.footer.evening;
         }
     };
 

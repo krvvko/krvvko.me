@@ -21,6 +21,7 @@
     transition-duration: 0.2s;
     overflow: hidden;
     gap: 1px;
+    z-index: 1;
 }
 .languages-modal-absolute.open {
     opacity: 1;
@@ -60,6 +61,6 @@
 }
 @media (orientation: portrait) {
     .language-switcher-container {
-        display: none;
+        display: flex;
     }
 }

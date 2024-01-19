@@ -20,6 +20,7 @@ const MoreProjects = () => {
     const navigate = useNavigate();
     const { startAnimation, isInProcess } = useAnimation();
     const { reducedMotion } = usePreferences();
+    const {translation} = usePreferences();
     const formattedDate = (date: Date) => new Date(date).toLocaleDateString("en-US", {
         year: 'numeric', month: 'long', day: 'numeric'
     });
@@ -35,7 +36,7 @@ const MoreProjects = () => {
 
     return (
         <div className="more-projects">
-            <span>More Projects:</span>
+            <span>{translation.project.moreProjects}</span>
             <div className="more-projects-container">
                 {projects.map((project: ProjectsData, index: number) => (
                     <button key={index} className="more-project-element" onClick={(e) => redirect(`/project/${project.id}`, e)}>

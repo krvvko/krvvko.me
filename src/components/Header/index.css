@@ -81,8 +81,15 @@ header {
         font-size: 1rem;
         white-space: nowrap;
     }
+    .header-left {
+        flex: 1;
+    }
     .header-link::after {
         bottom: -2px;
         height: 1.5px;
+    }
+    .header-right {
+        flex: 1;
+        margin: 0 10px;
     }
 }

@@ -2,6 +2,7 @@ const translations: any = {
     en: {
         header: {
             homeLink: "Home",
+            contactLink: "Contact",
             aboutLink: "About Me",
             staticButton: "Static",
             animatedButton: "Animate",
@@ -41,11 +42,32 @@ const translations: any = {
                 startDate: 'Start Date',
                 knowledgeLevel: 'Knowledge'
             }
+        },
+        project: {
+            liveLink: 'View Live',
+            moreProjects: 'More Projects'
+        },
+        contact: {
+            emailMe: 'Email Me',
+            myResume: 'My Resume',
+            scheduleMeeting: 'Schedule a Meeting',
+            projectsCompleted: 'Projects Completed',
+            learnedTechnologies: 'Learned Technologies',
+            developingExperience: 'Developing Experience',
+            suffix: '+ years'
+        },
+        footer: {
+            version: 'Version',
+            productive: 'Have a productive day',
+            evening: 'Good evening',
+            night: 'Good night',
+            morning: 'Good morning'
         }
     },
     ru: {
         header: {
             homeLink: "Главная",
+            contactLink: "Контакты",
             aboutLink: "Обо мне",
             staticButton: "Скорость",
             animatedButton: "Анимации",
@@ -85,6 +107,26 @@ const translations: any = {
                 startDate: 'Дата Начала',
                 knowledgeLevel: 'Знание'
             }
+        },
+        project: {
+            liveLink: 'Перейти на сайт',
+            moreProjects: 'Остальные проекты'
+        },
+        contact: {
+            emailMe: 'Моя Почта',
+            myResume: 'Моё Резюме',
+            scheduleMeeting: 'Назначить Встречу',
+            projectsCompleted: 'Выполнено Проектов',
+            learnedTechnologies: 'Технологий Изучено',
+            developingExperience: 'Опыт Разработки',
+            suffix: '+ лет'
+        },
+        footer: {
+            version: 'Версия',
+            productive: 'Продуктивного дня',
+            evening: 'Добрый вечер',
+            night: 'Спойоной ночи',
+            morning: 'Доброе утро'
         }
     },
 };

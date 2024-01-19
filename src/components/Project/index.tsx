@@ -5,10 +5,12 @@ import './index.css';
 import MoreProjects from "../MoreProjects";
 import {AnimationOnScroll} from "react-animation-on-scroll";
 import {ProjectServerData} from "../../utils/interfaces";
+import {usePreferences} from "../../utils/PreferencesContext";
 
 const Project = () => {
     const {id} = useParams();
     const [projectData, setProjectData] = useState<ProjectServerData | null>(null);
+    const {translation} = usePreferences();
 
     useEffect(() => {
         axios.get(`${process.env.REACT_APP_API_URL}/projects/${id}`)
@@ -59,7 +61,7 @@ const Project = () => {
                                         <a target="_blank" rel="noreferrer" className="project-main-link live"
                                            href={projectData?.ProjectUrl}>
                                             <i className="icon web"></i>
-                                            <span>View Live</span>
+                                            <span>{translation.project.liveLink}</span>
                                         </a>
                                     }
                                     {projectData?.ProjectSourceUrl &&

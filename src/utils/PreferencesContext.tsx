@@ -5,7 +5,7 @@ import translations from "./translations";
 const PreferencesContext = createContext<PreferencesContextType>({
     language: 'en',
     setLanguage: () => {},
-    reducedMotion: false,
+    reducedMotion: true,
     setReducedMotion: () => {},
     theme: 'theme-dark',
     setTheme: () => {},
@@ -21,7 +21,7 @@ export const PreferencesProvider: React.FC<PreferencesProviderProps> = ({ childr
 
     const [reducedMotion, setReducedMotion] = useState<boolean>(() => {
         const storedValue = localStorage.getItem('reducedMotion');
-        return storedValue !== null ? JSON.parse(storedValue) : false;
+        return storedValue !== null ? JSON.parse(storedValue) : true;
     });
 
     const [theme, setTheme] = useState<string>(() => {
