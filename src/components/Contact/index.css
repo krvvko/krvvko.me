@@ -124,7 +124,7 @@
 
 @media (orientation: portrait) {
     .contact-me-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .contact-me-links {
         flex-direction: column;
