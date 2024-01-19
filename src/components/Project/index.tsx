@@ -90,7 +90,7 @@ const Project = () => {
                                         <AnimationOnScroll key={index} offset={20} animateIn="animate__fadeIn">
                                             <img className="project-detail-img"
                                                  src={url}
-                                                 alt={`Project image ${index + 1}`}/>
+                                                 alt={`Project ${index + 1}`}/>
                                         </AnimationOnScroll>
                                     ))}
                                 </div>

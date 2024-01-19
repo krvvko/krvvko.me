@@ -47,6 +47,29 @@
 .contact-me-link-top:hover > .contact-link-element-text > .contact-link-element-text-element:nth-child(1) {
     margin-top: -40px;
 }
+
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .contact-me-link-top:hover > .contact-link-element-text > .contact-link-element-text-element:nth-child(1) {
+        margin-top: -50px;
+    }
+    .contact-link-element-text, .contact-link-element-text-element {
+        min-height: 50px;
+        max-height: 50px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1921px) and (max-width: 2560px) {
+    .contact-me-link-top:hover > .contact-link-element-text > .contact-link-element-text-element:nth-child(1) {
+        margin-top: -60px;
+    }
+    .contact-link-element-text, .contact-link-element-text-element {
+        min-height: 60px;
+        max-height: 60px;
+        font-size: 2rem;
+    }
+}
+
 @media (orientation: portrait) {
     .contact-me-link-top {
         padding-left: 1em;

@@ -7,7 +7,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 import LanguageSwitcher from "./LanguageSwitcher";
 import {usePreferences} from "../../utils/PreferencesContext";
 
-const Header:React.FC = () => {
+const Header: React.FC = () => {
     const {translation} = usePreferences();
 
     return(

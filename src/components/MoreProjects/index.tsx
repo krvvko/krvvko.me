@@ -6,15 +6,6 @@ import {useNavigate} from "react-router-dom";
 import {useAnimation} from "../../utils/AnimationContext";
 import {usePreferences} from "../../utils/PreferencesContext";
 
-const parseArrayString = (arrayString: string) => {
-    try {
-        return JSON.parse(arrayString.replace(/'/g, '"'));
-    } catch (error) {
-        console.error("Failed to parse array string:", arrayString, error);
-        return null;
-    }
-};
-
 const MoreProjects = () => {
     const {projects} = useServerData();
     const navigate = useNavigate();

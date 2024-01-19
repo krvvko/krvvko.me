@@ -14,21 +14,21 @@ const Contact: React.FC = () => {
         <div className="contact-me-container">
             <div className="contact-me-links">
                 <div className="contact-me-links-top">
-                    <LinkElement link={'/'} title={'Github'} username={'@krvvko'}
+                    <LinkElement link={'https://github.com/krvvko'} title={'Github'} username={'@krvvko'}
                                  icon={'github2'}/>
-                    <LinkElement link={'/'} title={'Linked In'} username={'@krvvko'}
+                    <LinkElement link={'https://www.linkedin.com/in/krvvko/'} title={'Linked In'} username={'@krvvko'}
                                  icon={'linkedin'}/>
                 </div>
                 <div className="contact-me-links-bottom">
-                    <Link to='/' className="contact-me-link-bottom mail">
+                    <Link to='mailto:krvvko@gmail.com' target="_blank" rel="noreferrer" className="contact-me-link-bottom mail">
                         <i className="icon email"></i>
                         <span>{translation.contact.emailMe}</span>
                     </Link>
-                    <Link to='/' className="contact-me-link-bottom portfolio">
+                    <Link to={`${process.env.PUBLIC_URL}/krvvko_resume.pdf`} target="_blank" rel="noreferrer" className="contact-me-link-bottom portfolio">
                         <i className="icon portfolio"></i>
                         <span>{translation.contact.myResume} (pdf)</span>
                     </Link>
-                    <Link to='/' className="contact-me-link-bottom appointment">
+                    <Link to='https://booking.appointy.com/krvvko/' target="_blank" rel="noreferrer" className="contact-me-link-bottom appointment">
                         <i className="icon time"></i>
                         <span>{translation.contact.scheduleMeeting}</span>
                     </Link>

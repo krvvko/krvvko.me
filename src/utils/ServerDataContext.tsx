@@ -33,6 +33,7 @@ export const ServerDataProvider: React.FC<ServerDataProviderProps> = ({ children
             .catch(function (error) {
                 console.log(error);
             });
+        // eslint-disable-next-line
     }, []);
 
     const convertStringToArray = (str:any) => {
