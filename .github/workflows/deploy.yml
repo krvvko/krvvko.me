@@ -23,7 +23,6 @@ jobs:
 
       - name: Create .env for client
         run: |
-          cd server
           cat <<EOF > .env
           BASE_URL=https://api.krvvko.me
           EOF
