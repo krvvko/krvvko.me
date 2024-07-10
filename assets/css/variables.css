@@ -1,0 +1,22 @@
+:root {
+    --bg: black;
+    --bg-2: #282828;
+
+    --color-1: white;
+    --color-2: #b2b2b2;
+    --color-3: #8c8c8c;
+
+    --border-color-1: transparent;
+
+    --border-radius: 4px;
+    --border-radius-1: 8px;
+    --border-radius-2: 12px;
+    --border-radius-3: 16px;
+    --border-radius-4: 24px;
+
+    --block-padding: 24px;
+
+    --primary-color-1: #42b883;
+    --primary-color-2: #42aeb8;
+    --primary-color-1-opacity: rgba(66, 184, 131, 0.1);
+}
