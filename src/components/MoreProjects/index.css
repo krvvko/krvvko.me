@@ -82,12 +82,20 @@
     font-weight: 500;
     margin-left: 2em;
     transition-duration: 0.2s;
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.more-project-element:hover > .info-bottom > .info-bottom-headline {
+    max-width: 270px;
 }
 .info-bottom-date {
     font-size: 0.75rem;
     font-weight: 500;
     font-family: 'IBM Plex Mono', monospace;
     color: var(--color-3);
+    white-space: nowrap;
 }
 @media (min-width: 2540px) {
     .more-projects > span {

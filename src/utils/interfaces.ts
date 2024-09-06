@@ -21,25 +21,33 @@ export interface ReducedMotionContextType {
 }
 
 export interface ExperienceData {
-    id: number;
-    TechnologyName: string;
-    Language: string;
-    Description: string;
-    StartDate: Date | string | number;
-    KnowledgeLevel: number;
+    id: string;
+    name: string;
+    language: string;
+    description_ru: string;
+    description_en: string;
+    start_date: Date | string | number;
+    knowledge: number;
+    [key: string]: any;
 }
 export interface ProjectsData {
-    ProjectCreationDay: Date;
-    ProjectDeployed: boolean;
-    ProjectDifficulty: number;
-    ProjectImages: string[] | null;
-    ProjectLongDescription: string;
-    ProjectName: string;
-    ProjectShortDescription: string;
-    ProjectSourceUrl: string | null;
-    ProjectTechnologies: string[];
-    ProjectUrl: string;
-    id: number;
+    id: string;
+    name_en: string;
+    name_ru: string;
+    full_description_ru: string | null;
+    full_description_en: string | null;
+    short_description_ru: string | null;
+    short_description_en: string | null;
+    type: string;
+    tags: string[] | null;
+    creation_date: Date;
+    deployed: boolean;
+    difficulty: number;
+    images: string[] | null;
+    source: string | null;
+    technologies: string[] | null;
+    url: string | null;
+    [key: string]: any;
 }
 export interface ExperienceButtonProps {
     name: string;
@@ -57,17 +65,23 @@ export interface ExperienceElementProps {
     startDate: Date | string | number;
 }
 export interface ProjectElementProps {
-    ProjectCreationDay: Date;
-    ProjectDeployed: boolean;
-    ProjectDifficulty: number;
-    ProjectImages: string[] | null;
-    ProjectLongDescription: string;
-    ProjectName: string;
-    ProjectShortDescription: string;
-    ProjectSourceUrl: string | null;
-    ProjectTechnologies: string[];
-    ProjectUrl: string;
-    id: number;
+    id: string;
+    index: number;
+    name_en: string;
+    name_ru: string;
+    full_description_ru: string | null;
+    full_description_en: string | null;
+    short_description_ru: string | null;
+    short_description_en: string | null;
+    type: string;
+    tags: string[] | null;
+    creation_date: Date;
+    deployed: boolean;
+    difficulty: number;
+    images: string[] | null;
+    source: string | null;
+    technologies: string[] | null;
+    url: string | null;
     onClick: () => void;
 }
 export interface TechProps {
@@ -92,16 +106,22 @@ export interface PreferencesContextType {
 }
 export interface ProjectServerData {
     id: number;
-    ProjectName: string;
-    ProjectShortDescription: string | null;
-    ProjectLongDescription: string | null;
-    ProjectCreationDate: Date;
-    ProjectDeployed: boolean;
-    ProjectDifficulty: number;
-    ProjectImages: string[] | null;
-    ProjectSourceUrl: string | null;
-    ProjectTechnologies: string[] | null;
-    ProjectUrl: string | null;
+    name_en: string;
+    name_ru: string;
+    full_description_ru: string | null;
+    full_description_en: string | null;
+    short_description_ru: string | null;
+    short_description_en: string | null;
+    type: string;
+    tags: string[] | null;
+    creation_date: Date;
+    deployed: boolean;
+    difficulty: number;
+    images: string[] | null;
+    source: string | null;
+    technologies: string[] | null;
+    url: string | null;
+    [key: string]: any;
 }
 export interface LinkElementProps {
     link: string;

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, {createContext, useContext, useEffect, useState} from 'react';
 import {PreferencesContextType, PreferencesProviderProps} from "./interfaces";
 import translations from "./translations";
 
@@ -21,7 +21,10 @@ export const PreferencesProvider: React.FC<PreferencesProviderProps> = ({ childr
 
     const [reducedMotion, setReducedMotion] = useState<boolean>(() => {
         const storedValue = localStorage.getItem('reducedMotion');
-        return storedValue !== null ? JSON.parse(storedValue) : true;
+        if (storedValue !== null) {
+            return JSON.parse(storedValue);
+        }
+        return window.matchMedia("(orientation: portrait)").matches;
     });
 
     const [theme, setTheme] = useState<string>(() => {

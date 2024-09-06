@@ -10,7 +10,7 @@ import {usePreferences} from "../../utils/PreferencesContext";
 const Project = () => {
     const {id} = useParams();
     const [projectData, setProjectData] = useState<ProjectServerData | null>(null);
-    const {translation} = usePreferences();
+    const {translation, language} = usePreferences();
 
     useEffect(() => {
         axios.get(`${process.env.REACT_APP_API_URL}/projects/${id}`)
@@ -25,6 +25,11 @@ const Project = () => {
             });
     }, [id]);
 
+    const projectName = projectData ? projectData[`name_${language}`] : '';
+    const shortDescription = projectData ? projectData[`short_description_${language}`] : '';
+    const fullDescription = projectData ? projectData[`full_description_${language}`] : '';
+
+
     return (
         <>
             <div className="project-container">
@@ -36,12 +41,12 @@ const Project = () => {
                                     <span className="project-main-id">PRJ {projectData?.id}</span>
                                 </AnimationOnScroll>
                                 <AnimationOnScroll animateIn="animate__fadeInDown">
-                                    <span className="project-main-name">{projectData?.ProjectName}</span>
+                                    <span className="project-main-name">{projectName}</span>
                                 </AnimationOnScroll>
                                 <div className="project-main-techs">
-                                    {projectData?.ProjectTechnologies && (
+                                    {projectData?.technologies && (
                                         <>
-                                            {projectData.ProjectTechnologies.map((tech, index) => (
+                                            {projectData.technologies.map((tech, index) => (
                                                 <AnimationOnScroll key={index} animateIn={`animate__fadeInUp delay-${30 + (index*5)}`}>
                                                         <span className="project-tech-main">
                                                             {tech}
@@ -52,21 +57,21 @@ const Project = () => {
                                     )}
                                 </div>
                                 <AnimationOnScroll animateIn="animate__fadeInDown delay-55">
-                                    <span className="project-main-short-description">{projectData?.ProjectShortDescription}</span>
+                                    <span className="project-main-short-description">{shortDescription}</span>
                                 </AnimationOnScroll>
                             </div>
-                            {(projectData?.ProjectUrl || projectData?.ProjectSourceUrl) &&
+                            {(projectData?.url || projectData?.source) &&
                                 <div className="links-container animate__animated animate__fadeInUp delay-45">
-                                    {projectData?.ProjectUrl &&
+                                    {projectData?.url &&
                                         <a target="_blank" rel="noreferrer" className="project-main-link live"
-                                           href={projectData?.ProjectUrl}>
+                                           href={projectData?.url}>
                                             <i className="icon web"></i>
                                             <span>{translation.project.liveLink}</span>
                                         </a>
                                     }
-                                    {projectData?.ProjectSourceUrl &&
+                                    {projectData?.source &&
                                         <a target="_blank" rel="noreferrer" className="project-main-link gh"
-                                           href={projectData?.ProjectSourceUrl}>
+                                           href={projectData?.source}>
                                             <i className="icon github"></i>
                                         </a>
                                     }
@@ -74,19 +79,19 @@ const Project = () => {
                             }
                         </div>
                         <div className="project-details">
-                            {projectData?.ProjectImages && projectData.ProjectImages.length > 0 && (
+                            {projectData?.images && projectData.images.length > 0 && (
                                 <AnimationOnScroll offset={20} animateIn="animate__fadeIn">
                                     <img className="project-detail-primary-img"
-                                         src={projectData.ProjectImages[0]}
+                                         src={projectData.images[0]}
                                          alt="Project primary"/>
                                 </AnimationOnScroll>
                             )}
                             <AnimationOnScroll offset={20} animateIn="animate__fadeIn">
-                                <span className="project-long-description">{projectData?.ProjectLongDescription}</span>
+                                <span className="project-long-description">{fullDescription}</span>
                             </AnimationOnScroll>
-                            {projectData?.ProjectImages && projectData.ProjectImages.length > 1 && (
+                            {projectData?.images && projectData.images.length > 1 && (
                                 <div className="project-additional-images">
-                                    {projectData.ProjectImages.slice(1).map((url, index) => (
+                                    {projectData.images.slice(1).map((url, index) => (
                                         <AnimationOnScroll key={index} offset={20} animateIn="animate__fadeIn">
                                             <img className="project-detail-img"
                                                  src={url}

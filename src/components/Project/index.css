@@ -29,6 +29,7 @@
 .project-main-text > div:nth-child(1) > span {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
+    display: none;
 }
 .project-main-text > div:nth-child(2) > span {
     font-size: 4.5rem;

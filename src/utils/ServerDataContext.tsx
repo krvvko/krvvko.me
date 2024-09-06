@@ -18,7 +18,7 @@ export const ServerDataProvider: React.FC<ServerDataProviderProps> = ({ children
     );
 
     useEffect(() => {
-        axios.get(`${process.env.REACT_APP_API_URL}/experience`)
+        axios.get(`${process.env.REACT_APP_API_URL}/technologies`)
             .then(function (response) {
                 setExperience(response.data);
             })
