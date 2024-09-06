@@ -3,7 +3,7 @@ import {useAnimation} from "../../utils/AnimationContext";
 import './index.css';
 import {AnimatedLinkProps} from "../../utils/interfaces";
 import {usePreferences} from "../../utils/PreferencesContext";
-import {useNavigate} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 
 const AnimatedLink: React.FC<AnimatedLinkProps> = ({ to, children, linkClass }) => {
@@ -11,10 +11,12 @@ const AnimatedLink: React.FC<AnimatedLinkProps> = ({ to, children, linkClass }) 
     const { reducedMotion } = usePreferences();
     const [isActive, setIsActive] = useState<boolean>(false);
     const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
         window.location.pathname === to ? setIsActive(true) : setIsActive(false)
-    }, [window.location.pathname, to]);
+    }, [location.pathname, to]);
+
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         e.preventDefault();
         if(!isInProcess && !isActive) {
