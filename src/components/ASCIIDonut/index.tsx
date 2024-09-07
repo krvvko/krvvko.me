@@ -58,7 +58,7 @@ const ASCIIDonut = () => {
         setAnimationRunning(!reducedMotion);
     }, [reducedMotion]);
 
-    return <pre ref={preRef} className="donut"></pre>;
+    return <pre ref={preRef} className={`donut ${reducedMotion ? 'reduced' : ''}`}></pre>;
 };
 
 export default ASCIIDonut;

@@ -4,6 +4,10 @@
     font-size: 1.2rem;
     animation: gradientText 5s infinite;
 }
+.donut.reduced {
+    animation: none;
+    color: var(--color-1);
+}
 
 @keyframes gradientText {
     20%, 80% {

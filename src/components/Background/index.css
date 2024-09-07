@@ -7,9 +7,16 @@
     pointer-events: none;
     background: url('./../../media/svg/bg.svg') center no-repeat;
     background-size: 100%;
+    transition-duration: 0.2s;
+}
+.background-lines.reduced {
+    opacity: 0;
 }
 @media (orientation: portrait) {
     .background-lines {
         background: url('./../../media/svg/bg-mobile.svg') center no-repeat;
+    }
+    .background-lines.reduced {
+        opacity: 0.3;
     }
 }
