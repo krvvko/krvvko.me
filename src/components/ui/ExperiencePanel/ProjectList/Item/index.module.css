@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(90deg, transparent, rgba(180, 130, 255, 0.1));
+    /*background: linear-gradient(90deg, transparent, rgba(180, 130, 255, 0.1));*/
     backdrop-filter: blur(4px);
     border-radius: 8px;
     box-shadow: 4px 4px 12px 0 rgba(40, 4, 86, 0.1);
@@ -14,7 +14,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 1.25em 1.5em 1.25em 1.5em;
-    border: 1px solid var(--transparent-block-light-1);
     border-radius: 0 8px 8px 0;
     border-left: 0;
 }
@@ -33,6 +32,7 @@
     color: var(--color-3);
 }
 .image {
+    display: none;
     height: 140px;
     width: 260px;
     object-fit: cover;
@@ -43,6 +43,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+    gap: 0.5em;
 }
 .tech {
     display: flex;
@@ -87,6 +88,7 @@
     border-radius: 4px;
     writing-mode: vertical-rl;
     transition-duration: 0.2s;
+    border: 1px solid var(--transparent-block-light-2);
 }
 .link:hover {
     background: var(--transparent-block-light-2);

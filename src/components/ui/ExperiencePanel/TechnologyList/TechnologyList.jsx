@@ -1,16 +1,21 @@
 "use client";
-
 import React from "react";
+import styles from "@/components/ui/ExperiencePanel/ProjectList/index.module.css";
+import Item from "@/components/ui/ExperiencePanel/TechnologyList/Item/Item";
 
 const TechnologyList = ({ technologies }) => {
+    const sortedTechnologies = [...technologies].sort((a, b) => b.knowledge - a.knowledge);
+
     return (
-        <div>
-            {technologies.map((tech, index) => (
-                <div key={index} style={{ marginBottom: "1rem" }}>
-                    <pre>{JSON.stringify(tech, null, 2)}</pre>
-                </div>
+        <>
+            {sortedTechnologies.map((tech, index) => (
+                <React.Fragment key={index}>
+                    <Item tech={tech} key={index} />
+                    {index < technologies.length - 1 && <div className={styles.hr}></div>}
+                </React.Fragment>
+
             ))}
-        </div>
+        </>
     );
 };
 

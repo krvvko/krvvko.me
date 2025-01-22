@@ -1,3 +1,7 @@
-.container {
+.hr {
     display: flex;
+    height: 1px;
+    width: 100%;
+    background: var(--transparent-block-light-1);
+    align-self: stretch;
 }
