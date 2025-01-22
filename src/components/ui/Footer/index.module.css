@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    margin: 5vh 5vw;
+    color: var(--color-3);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    align-self: flex-end;
+    background: var(--transparent-block-light-2);
+    border: 1px solid var(--transparent-block-light-1);
+}
+.krvvko {
+    color: var(--color-1);
+}
+.made {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+    color: var(--color-4);
+}
+.heart {
+    transform: translateY(-3px);
+}

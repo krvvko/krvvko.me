@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(90deg, transparent, rgba(180, 130, 255, 0.1));
+    backdrop-filter: blur(4px);
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px 0 rgba(40, 4, 86, 0.1);
+    /*background: var(--transparent-block-light-1);*/
+}
+.textContent {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.25em 1.5em 1.25em 1.5em;
+    border: 1px solid var(--transparent-block-light-1);
+    border-radius: 0 8px 8px 0;
+    border-left: 0;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 0.5em;
+}
+.main > span:nth-child(1) {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.main > span:nth-child(2) {
+    font-size: 1rem;
+    color: var(--color-3);
+}
+.image {
+    height: 140px;
+    width: 260px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.tech {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    justify-content: flex-end;
+}
+.tech > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background: var(--transparent-block-light-1);
+    color: var(--accent-color-1);
+}
+.info > span:nth-child(2) {
+    color: var(--color-3);
+    font-size: 0.9rem;
+}
+.type {
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: var(--primary-color-2);
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 1em;
+}
+.link {
+    background: var(--transparent-block-light-1);
+    padding: 10px 6px;
+    flex: 1;
+    color: var(--color-2);
+    text-align: center;
+    border-radius: 4px;
+    writing-mode: vertical-rl;
+    transition-duration: 0.2s;
+}
+.link:hover {
+    background: var(--transparent-block-light-2);
+    color: var(--color-1);
+}

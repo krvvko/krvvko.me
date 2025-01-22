@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    transition-duration: 0.2s;
+    background: transparent;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-5);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.active {
+    color: var(--color-1);
+}
+.container::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    border-radius: 0 0 2px 2px;
+    width: 40px;
+    height: 3px;
+    transition-duration: 0.2s;
+}
+/*.container:not(.active):hover::before {*/
+/*    opacity: 0.5;*/
+/*    background: white;*/
+/*    box-shadow: 0 3px 12px 1px #fff*/
+/*}*/
+.active::before {
+    background: var(--primary-color-1);
+    box-shadow: 0 3px 12px 1px var(--primary-color-1)
+}
+.container:not(.active):hover {
+    color: var(--color-1);
+}

@@ -9,8 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^19.0.0",
+    "@react-spring/three": "^9.7.5",
+    "@react-three/cannon": "^6.6.0",
+    "@react-three/drei": "^9.121.3",
+    "@react-three/fiber": "^9.0.0-alpha.8",
+    "@use-gesture/react": "^10.3.1",
+    "framer-motion": "^12.0.0",
+    "next": "15.1.5",
+    "react": "^18.3.1",
     "react-dom": "^19.0.0",
-    "next": "15.1.5"
+    "three": "^0.172.0",
+    "zustand": "^5.0.3"
   }
 }
