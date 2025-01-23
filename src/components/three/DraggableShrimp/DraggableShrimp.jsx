@@ -3,9 +3,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useBox } from "@react-three/cannon";
-import { Clone } from "@react-three/drei";
-import { useSpring, animated } from "@react-spring/three"; // Import useSpring and animated
+import { useSpring, animated } from "@react-spring/three";
 import * as THREE from "three";
+import {useSceneStore} from "@/stores/useSceneStore";
 
 const DEBUG_PHYSICS = process.env.NEXT_PUBLIC_DEBUG_PHYSICS === "true";
 
@@ -15,6 +15,7 @@ export default function DraggableShrimp({
                                             scale = 1,
                                             modelOffset = [0, 0, 0],
                                             initialPosition = [0, 1, 0],
+                                            id
                                         }) {
     const DRAG_Y = 0.65;
     const SCROLL_ROTATION_SPEED = 0.005;
@@ -43,6 +44,9 @@ export default function DraggableShrimp({
     const tempVec = useRef(new THREE.Vector3());
 
     const [isVisible, setIsVisible] = useState(false); // For animation visibility control
+    const markShrimpDeleted = useSceneStore((s) => s.markShrimpDeleted);
+    const removeShrimp = useSceneStore((s) => s.removeShrimp);
+    const shrimp = useSceneStore((s) => s.shrimps.find((shrimp) => shrimp.id === id));
 
     // Animation for scale and opacity using react-spring
     const { animatedScale, animatedOpacity } = useSpring({
@@ -52,6 +56,11 @@ export default function DraggableShrimp({
             tension: 120,
             friction: 14,
             duration: 500
+        },
+        onRest: () => {
+            if (shrimp?.isDeleted) {
+                removeShrimp(id);
+            }
         },
     });
 
@@ -114,6 +123,8 @@ export default function DraggableShrimp({
     };
 
     useFrame(() => {
+        if (shrimp?.isDeleted) return;
+
         if (isDragging) {
             const desiredNDC = new THREE.Vector2(mouse.x, mouse.y).add(offset2D);
             raycasterRef.current.setFromCamera(
@@ -129,12 +140,8 @@ export default function DraggableShrimp({
         }
 
         physicsRef.current.getWorldPosition(tempVec.current);
-        if (tempVec.current.y < -2) {
-            api.position.set(...initialPosition);
-            api.velocity.set(0, 0, 0);
-            api.angularVelocity.set(0, 0, 0);
-            setRotationY(0);
-            api.rotation.set(0, 0, 0);
+        if (tempVec.current.y < -2 && !shrimp?.isDeleted) {
+            markShrimpDeleted(id);
         }
     });
 

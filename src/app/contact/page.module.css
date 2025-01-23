@@ -1,3 +1,27 @@
 .container {
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    pointer-events: initial;
+    gap: 1em;
+    margin: 5vh auto 0 auto;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.links {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+}
+.stats {
+    display: flex;
+    gap: 1em;
+    align-self: stretch;
 }

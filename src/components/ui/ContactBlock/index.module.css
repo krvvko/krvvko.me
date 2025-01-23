@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 1.5em 0;
+    border-radius: 16px;
+    line-height: 1.6rem;
+    justify-content: center;
+}
+.top {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.name {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+.position {
+    transform: translateY(2px);
+    color: var(--primary-color-1);
+}
+.point {
+}
+.label {
+    color: var(--color-3);
+}
+.value {
+
+}
+.description {
+    margin-bottom: 1em;
+    color: var(--color-2);
+}

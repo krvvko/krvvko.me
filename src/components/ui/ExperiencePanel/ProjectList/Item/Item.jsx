@@ -20,10 +20,10 @@ const Item = ({project}) => {
                     <span>{new Date(project.creation_date).toLocaleDateString('en-US', {day: 'numeric', month: 'short', year: 'numeric'})}</span>
                 </div>
             </div>
-            {(project.url || project.source) && <div className={styles.links}>
-                {project.source && <Link target={'_blank'} className={styles.link} href={project.source}>Source</Link>}
-                {project.url && <Link target={'_blank'} className={styles.link} href={project.url}>Web</Link>}
-            </div>}
+            {/*{(project.url || project.source) && <div className={styles.links}>*/}
+            {/*    {project.source && <Link target={'_blank'} className={styles.link} href={project.source}>Source</Link>}*/}
+            {/*    {project.url && <Link target={'_blank'} className={styles.link} href={project.url}>Web</Link>}*/}
+            {/*</div>}*/}
         </div>
     );
 }

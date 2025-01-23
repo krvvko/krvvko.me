@@ -3,7 +3,6 @@
 import { create } from "zustand";
 
 export const useSceneStore = create((set) => ({
-
     cameraPosition: [2, 2, 3],
     cameraTarget: [-4, -1.5, 0.75],
 
@@ -21,11 +20,26 @@ export const useSceneStore = create((set) => ({
 
     shrimps: [
         {
-            model: 'shrimp',
-            id: 'init'
-        }
+            model: "shrimp",
+            id: "init",
+            isDeleted: false,
+        },
     ],
-    addShrimp: (shrimp) => set((state) => ({
-        shrimps: [...state.shrimps, shrimp],
-    })),
+
+    addShrimp: (shrimp) =>
+        set((state) => ({
+            shrimps: [...state.shrimps, { ...shrimp, isDeleted: false }],
+        })),
+
+    markShrimpDeleted: (id) =>
+        set((state) => ({
+            shrimps: state.shrimps.map((shrimp) =>
+                shrimp.id === id ? { ...shrimp, isDeleted: true } : shrimp
+            ),
+        })),
+
+    removeShrimp: (id) =>
+        set((state) => ({
+            shrimps: state.shrimps.filter((shrimp) => shrimp.id !== id),
+        })),
 }));

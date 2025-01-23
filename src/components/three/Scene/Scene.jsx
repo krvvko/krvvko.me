@@ -38,7 +38,7 @@ export default function Scene() {
                     roughness={1}
                 />
             </mesh>
-            <Table/>
+            <Table />
             {shrimps.map((shrimp, index) => (
                 <DraggableShrimp
                     key={index}
@@ -47,6 +47,7 @@ export default function Scene() {
                     scale={1}
                     initialPosition={[0, 1, 0]}
                     modelOffset={[-0.18, -0.22, 0]}
+                    id={shrimp.id}
                 />
             ))}
         </Physics>

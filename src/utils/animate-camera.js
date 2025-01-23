@@ -2,6 +2,7 @@ import {useFrame, useThree} from "@react-three/fiber";
 import * as THREE from "three";
 import {useSceneStore} from "@/stores/useSceneStore";
 import {useRef} from "react";
+import {sceneConfig} from "@/utils/scene-config";
 
 export default function AnimateCamera() {
     const { camera } = useThree();
@@ -13,10 +14,10 @@ export default function AnimateCamera() {
 
     useFrame(() => {
         const desiredPos = new THREE.Vector3(...cameraPosition);
-        camera.position.lerp(desiredPos, 0.015);
+        camera.position.lerp(desiredPos, sceneConfig.lerpValue);
 
         const desiredTarget = new THREE.Vector3(...cameraTarget);
-        currentTargetRef.current.lerp(desiredTarget, 0.015);
+        currentTargetRef.current.lerp(desiredTarget, sceneConfig.lerpValue);
 
         camera.lookAt(currentTargetRef.current);
     });
