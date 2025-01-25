@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "public":  "cloudflared tunnel --url http://localhost:3000"
   },
   "dependencies": {
     "@react-spring/three": "^9.7.5",
