@@ -1,6 +1,6 @@
 "use client";
 
-import React, {Suspense, useEffect, useRef} from "react";
+import React, {useEffect, useRef} from "react";
 import styles from "./index.module.css";
 import { Canvas } from "@react-three/fiber";
 import AnimateCamera from "@/utils/animate-camera";
@@ -46,7 +46,6 @@ function Light() {
 }
 
 export default function Background() {
-
     const pathname = usePathname();
     const { setCamera } = useSceneStore();
 
