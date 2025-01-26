@@ -17,5 +17,6 @@ export const sceneConfig = {
             target: [-4, -1.5, 0.75]
         },
     },
-    lerpValue: 0.015
+    lerpValue: 0.015,
+    shrimp_drag_y: 0.65
 }
