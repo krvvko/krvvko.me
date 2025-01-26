@@ -11,8 +11,11 @@ import ContactStat from "@/components/ui/ContactStat/ContactStat";
 import {fetchPersonalApi} from "@/api/fetchPersonalApi";
 
 export const metadata = {
-    title: "Contact",
-    description: "Meow meow",
+    title: "Contact - krvvko",
+    description: "Here is how you can contact me",
+    openGraph: {
+        images: "/preview.png",
+    }
 };
 
 const Contact = async () => {

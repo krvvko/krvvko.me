@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import styles from "@/components/ui/ExperiencePanel/ProjectList/index.module.css";
 import Item from "@/components/ui/ExperiencePanel/TechnologyList/Item/Item";

@@ -1,3 +1,44 @@
 .container {
     display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1.25em 1.5em;
+}
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.under {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.company {
+    color: var(--color-3);
+}
+.time {
+    color: var(--primary-color-1);
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+.tech {
+    padding: 5px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background: var(--transparent-block-light-1);
+    color: var(--accent-color-1);
+}
+.description {
+    color: var(--color-3);
+    margin: 0.25em 0;
+}
+.responsibilities {
+    line-height: 1.75rem;
+    color: var(--color-3);
+}
+.rList {
+    margin-left: 1.5em;
 }

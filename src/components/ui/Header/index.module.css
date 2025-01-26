@@ -15,3 +15,8 @@
     pointer-events: initial;
     z-index: 999;
 }
+@media (orientation: portrait) {
+    .container {
+        top: 2vh;
+    }
+}

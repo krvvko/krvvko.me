@@ -25,3 +25,11 @@
     gap: 1em;
     align-self: stretch;
 }
+@media (orientation: portrait) {
+    .main {
+        flex-direction: column;
+    }
+    .stats {
+        flex-direction: column;
+    }
+}

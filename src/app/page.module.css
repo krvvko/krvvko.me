@@ -13,7 +13,6 @@
     font-size: 1.25rem;
 }
 .bold {
-
     font-weight: 600;
 }
 .mainText {
@@ -44,7 +43,47 @@
     gap: 1rem;
 }
 
+.notFound {
+    display: flex;
+    flex-direction: column;
+    pointer-events: initial;
+    margin: auto 0 auto 5vw;
+    gap: 0.1em;
+    align-self: flex-start;
+}
+.nft {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.nflink {
+    padding: 10px 20px;
+    align-self: flex-start;
+    border: 1px solid var(--transparent-block-light-1);
+    background: var(--transparent-block-light-1);
+    border-radius: 8px;
+    color: var(--color-2);
+    margin-top: 1em;
+    transition-duration: 0.2s;
+}
+.nflink:hover {
+    color: var(--color-1);
+    border: 1px solid var(--primary-color-1);
+    background: var(--transparent-block-light-2);
+}
 @keyframes blink {
     0%, 100% { opacity: 0; }
     50% { opacity: 1; }
+}
+
+@media (orientation: portrait) {
+    .mainText {
+        font-size: 1.5rem;
+    }
+    .topText {
+        font-size: 1rem;
+    }
+    .blinker {
+        height: 22px;
+        width: 2px;
+    }
 }

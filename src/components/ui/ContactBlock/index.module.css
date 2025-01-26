@@ -33,3 +33,8 @@
     margin-bottom: 1em;
     color: var(--color-2);
 }
+@media (orientation: portrait) {
+    .container {
+        width: unset;
+    }
+}

@@ -1,11 +1,13 @@
 .container {
     display: flex;
     margin-left: 50vw;
-    flex-direction: column;
-    pointer-events: initial;
+    margin-top: 5vh;
+    margin-right: 5vw;
 }
 @media (orientation: portrait) {
     .container {
         margin-left: 0;
+        margin-top: 0;
+        margin-right: 0;
     }
 }

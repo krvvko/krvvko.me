@@ -80,3 +80,8 @@ main {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary-color-2);
 }
+@media (orientation: portrait) {
+    main {
+        margin: calc(2vh + 40px) 4% 0 4%;
+    }
+}

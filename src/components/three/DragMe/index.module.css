@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    position: relative;
+    pointer-events: none;
+    min-width: 140px;
+    font-size: 1rem;
+    padding: 1em;
+    border: 2px solid var(--primary-color-1);
+    background: var(--transparent-block-light-2);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+}
+.container::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 12px;
+    width: 18px;
+    height: 18px;
+    transform: rotate(180deg);
+    background: linear-gradient(to bottom right, transparent 0%, transparent 50%, var(--primary-color-1) 50%, var(--primary-color-1) 100%);
+}

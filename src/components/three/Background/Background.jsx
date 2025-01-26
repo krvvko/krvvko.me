@@ -50,7 +50,14 @@ export default function Background() {
     const { setCamera } = useSceneStore();
 
     useEffect(() => {
-        const config = sceneConfig.urlCameraMapper[pathname] || sceneConfig.urlCameraMapper['default'];
+        let config;
+
+        if (pathname.startsWith('/project/')) {
+            config = sceneConfig.urlCameraMapper['/experience'];
+        } else {
+            config = sceneConfig.urlCameraMapper[pathname] || sceneConfig.urlCameraMapper['default'];
+        }
+
         setCamera(config.position, config.target);
     }, []);
 

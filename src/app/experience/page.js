@@ -3,8 +3,11 @@ import {fetchPersonalApi} from "@/api/fetchPersonalApi";
 import ExperiencePanel from "@/components/ui/ExperiencePanel/ExperiencePanel";
 
 export const metadata = {
-    title: "Experience",
-    description: "Meow meow",
+    title: "Experience - krvvko",
+    description: "Page with my experience",
+    openGraph: {
+        images: "/preview.png",
+    }
 };
 
 const Experience = async () => {

@@ -1,14 +1,16 @@
-"use client";
-
 import React from "react";
+import Item from "@/components/ui/ExperiencePanel/PersonalList/Item/Item";
+import styles from './index.module.css';
 
 const PersonalList = ({ personal }) => {
     return (
-        <div>
+        <div className={styles.container}>
+
             {personal.experience.map((item, index) => (
-                <div key={index} style={{ marginBottom: "1rem" }}>
-                    <pre>{JSON.stringify(item, null, 2)}</pre>
-                </div>
+                <React.Fragment key={index}>
+                    <Item work={item} key={index} />
+                    {index < personal.experience.length - 1 && <div className={styles.hr}></div>}
+                </React.Fragment>
             ))}
         </div>
     );

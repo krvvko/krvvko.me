@@ -15,3 +15,20 @@ export async function fetchPersonalApi() {
 
     return { projects, technologies, personal };
 }
+
+export async function fetchProjectById(projectId) {
+    try {
+        const response = await fetch(`${apiUrl}/projects/${projectId}`);
+
+        if (!response.ok) {
+            return { project: null };
+        }
+
+        const project = await response.json();
+
+        return { project };
+    } catch (error) {
+        console.error(`Error fetching project with ID ${projectId}:`, error);
+        return { project: null };
+    }
+}

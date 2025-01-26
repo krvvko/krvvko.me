@@ -24,3 +24,9 @@
 .heart {
     transform: translateY(-3px);
 }
+@media (orientation: portrait) {
+    .container {
+        align-self: center;
+        margin: 2vh;
+    }
+}

@@ -10,10 +10,6 @@ import {useGLTF} from "@react-three/drei";
 export default function Scene() {
     const shrimps = useSceneStore((s) => s.shrimps);
 
-    useEffect(() => {
-        console.log(shrimps);
-    }, [shrimps]);
-
     const {scene: shrimpScene} = useGLTF("/three/shrimp/scene.gltf", true);
     const {scene: shrimpContactScene} = useGLTF("/three/shrimp_contact/scene.gltf", true);
     const {scene: shrimpExperienceScene} = useGLTF("/three/shrimp_experience/scene.gltf", true);

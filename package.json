@@ -7,18 +7,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "public":  "cloudflared tunnel --url http://localhost:3000"
+    "public": "cloudflared tunnel --url http://localhost:3000"
   },
   "dependencies": {
     "@react-spring/three": "^9.7.5",
     "@react-three/cannon": "^6.6.0",
-    "@react-three/drei": "^9.121.3",
-    "@react-three/fiber": "^9.0.0-alpha.8",
+    "@react-three/drei": "^9.11.0",
+    "@react-three/fiber": "^8.17.12",
     "@use-gesture/react": "^10.3.1",
     "framer-motion": "^12.0.0",
-    "next": "15.1.5",
-    "react": "^18.3.1",
-    "react-dom": "^19.0.0",
+    "next": "14.2.16",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-spring": "^9.7.5",
     "three": "^0.172.0",
     "uuid": "^11.0.5",
     "zustand": "^5.0.3"

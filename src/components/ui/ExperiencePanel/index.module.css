@@ -49,3 +49,15 @@
     flex-direction: column;
     margin-right: 5vw;
 }
+
+@media (orientation: portrait) {
+    .category {
+        margin-right: 0;
+    }
+    .container {
+        margin-top: 2vh;
+    }
+    .buttons {
+        justify-content: center;
+    }
+}
