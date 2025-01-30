@@ -30,7 +30,7 @@ const Contact = async () => {
                     <ContactLink url={personal.links.github} icon={github} />
                     <ContactLink url={personal.links.linkedIn} icon={linkedin} />
                     <ContactLink url={'mailto:' + personal.contacts.email} icon={email} />
-                    <ContactLink url={'/resume'} icon={cv} />
+                    <ContactLink url={'/resume.pdf'} icon={cv} />
                 </div>
             </div>
             <div className={styles.stats}>

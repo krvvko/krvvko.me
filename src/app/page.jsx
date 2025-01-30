@@ -1,6 +1,13 @@
-'use client'
 import styles from "./page.module.css";
 import TextTyper from "@/components/ui/TextTyper/TextTyper";
+
+export const metadata = {
+    title: "Home - krvvko",
+    description: "Hey! I'm krvvko - a Frontend Web Developer. This is my web portfolio with demonstration of my skills, experience and projects. Feel free to get in touch with me ;)",
+    openGraph: {
+        images: "/preview.png",
+    }
+};
 
 const Home = () => {
     return (

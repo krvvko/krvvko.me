@@ -4,7 +4,7 @@ import {fetchProjectById} from "@/api/fetchPersonalApi";
 import ProjectElementFull from "@/components/ui/ProjectElementFull/ProjectElementFull";
 
 export async function generateMetadata({ params }) {
-    const { id } = params;
+    const { id } = await params;
     const { project } = await fetchProjectById(id);
 
     if (!project) {

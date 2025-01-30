@@ -69,6 +69,7 @@ export default function Table() {
                 object={gltf.scene}
                 scale={TABLE_MODEL_SCALE}
                 position={TABLE_MODEL_OFFSET}
+                dispose={null}
             />
 
             {/* Debug box that does NOT catch pointer events */}
