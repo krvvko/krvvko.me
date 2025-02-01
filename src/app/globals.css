@@ -15,6 +15,8 @@
     --primary-color-2: #9972d1;
 
     --accent-color-1: #7f7fea;
+
+    --circle-size: 380px;
 }
 
 
@@ -42,6 +44,9 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+img {
+    user-select: none;
 }
 
 a {
