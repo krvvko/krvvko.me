@@ -1,7 +1,28 @@
 .container {
     display: flex;
     position: fixed;
-    z-index: -1;
+    z-index: -2;
     inset: 0;
     background: #0f0f10;
+    pointer-events: none;
+}
+
+.container::before,
+.container::after {
+    content: "";
+    position: fixed;
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 50%;
+}
+.container::before {
+    background: radial-gradient(circle at center, rgba(170, 130, 232, 0.3) 0%, #0f0f10 60%);
+    top: 10%;
+    left: -40%;
+}
+
+.container::after {
+    background: radial-gradient(circle at center, rgba(127, 127, 234, 0.3) 0%, #0f0f10 60%);
+    bottom: 10%;
+    right: -40%;
 }
