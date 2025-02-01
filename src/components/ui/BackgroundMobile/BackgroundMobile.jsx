@@ -3,8 +3,7 @@ import styles from './index.module.css';
 
 const BackgroundMobile = () => {
     return (
-        <div className={styles.container}>
-        </div>
+        <div className={styles.container} />
     );
 }
 
