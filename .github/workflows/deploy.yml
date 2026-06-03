@@ -26,6 +26,7 @@ jobs:
             set -e
             cd /home/deploy/apps/krvvko.me
 
+            git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'
             git fetch --prune origin
             git checkout -B ${{ steps.branch_name.outputs.branch }} origin/${{ steps.branch_name.outputs.branch }}
             git reset --hard origin/${{ steps.branch_name.outputs.branch }}
