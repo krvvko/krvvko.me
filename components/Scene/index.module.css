@@ -1,0 +1,25 @@
+.scene {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.5s var(--ease);
+}
+
+.scene[data-hidden="true"] {
+  opacity: 0;
+}
+
+/* home enables grabbing the shrimp; the hero overlay is made pointer-
+   transparent in globals.css so buttons still work and empty space falls
+   through to the canvas */
+.scene[data-interactive="true"] {
+  pointer-events: auto;
+}
+
+.scene canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
