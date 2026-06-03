@@ -1,26 +1,156 @@
-@import "tailwindcss";
+/* ============================================================
+   krvvko.me — global design system
+   Tokens, base styles, and shared keyframes.
+   Fonts are injected as CSS variables by next/font in layout.tsx.
+   ============================================================ */
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ---- color (light & airy) ---- */
+  --bg: #efeff2;
+  --surface: #ffffff;
+  --surface-2: #f7f7fa;
+  --ink: #1b1a1e;
+  --ink-soft: #6a6873;
+  --ink-faint: #9a98a3;
+  --line: rgba(20, 18, 24, 0.1);
+  --line-strong: rgba(20, 18, 24, 0.18);
+
+  --red: #da2f2e;
+  --red-press: #b3211f;
+  --red-tint: #fbe5e2;
+  --coral: #f4795b;
+  --coral-tint: #fdeae2;
+  --green: #21b66b;
+
+  /* accent applied */
+  --accent: var(--red);
+  --accent-tint: var(--red-tint);
+
+  /* ---- type ---- */
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-body: var(--font-manrope), system-ui, sans-serif;
+  --font-mono: var(--font-space-mono), ui-monospace, monospace;
+
+  /* ---- radii ---- */
+  --r-sm: 10px;
+  --r: 16px;
+  --r-lg: 24px;
+  --r-xl: 34px;
+  --r-pill: 999px;
+
+  /* ---- shadow ---- */
+  --shadow-sm: 0 1px 2px rgba(20, 18, 24, 0.05), 0 2px 8px rgba(20, 18, 24, 0.04);
+  --shadow: 0 4px 16px rgba(20, 18, 24, 0.07), 0 14px 40px rgba(20, 18, 24, 0.07);
+  --shadow-lg: 0 10px 30px rgba(20, 18, 24, 0.1), 0 40px 90px rgba(20, 18, 24, 0.12);
+
+  /* ---- layout ---- */
+  --maxw: 1320px;
+  --pad-x: clamp(22px, 5vw, 80px);
+  --nav-h: 76px;
+
+  /* ---- easing ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  /* always reserve the scrollbar so switching between short and tall
+     sub-tabs (and pages) never shifts the content width. overflow-x:hidden
+     must live here too — if it sits on body it propagates to the viewport
+     and overrides scrollbar-gutter. */
+  scrollbar-gutter: stable;
+  overflow-x: hidden;
+  /* iOS Safari otherwise inflates body copy in landscape; pin it to 100%. */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---- custom scrollbar ---- */
+html {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border: 3px solid var(--bg);
+  border-radius: var(--r-pill);
+  transition: background 0.25s var(--ease);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* content sits above the fixed background Scene */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* On home the 3D shrimp is grabbable, so pointer events must reach the canvas
+   behind main. The hero overlay is made transparent to the pointer while its
+   actual controls (links/buttons) stay clickable; empty space falls through
+   to the canvas. Hero body text is not selectable while here. */
+body[data-home="true"] main {
+  pointer-events: none;
+}
+
+body[data-home="true"] main a,
+body[data-home="true"] main button {
+  pointer-events: auto;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

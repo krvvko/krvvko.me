@@ -1,0 +1,172 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--pad-x);
+  background: linear-gradient(
+    to bottom,
+    rgba(239, 239, 242, 0.92),
+    rgba(239, 239, 242, 0)
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.01em;
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+  transition: transform 0.3s var(--ease);
+}
+
+.brand:hover .logo {
+  transform: rotate(-12deg) scale(1.12);
+}
+
+.me {
+  color: var(--ink-faint);
+  font-weight: 500;
+  transition: color 0.25s var(--ease);
+}
+
+.brand:hover .me {
+  color: var(--accent);
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 5px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  box-shadow: var(--shadow-sm);
+}
+
+.pill a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 12.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 9px 18px;
+  border-radius: var(--r-pill);
+  transition: color 0.25s var(--ease), background 0.25s var(--ease);
+}
+
+/* Icons live in the markup for both viewports — they're just hidden on
+   desktop. The label drops on narrow screens so the pill can fit alongside
+   the brand and Resume CTA without overflowing. */
+.linkIcon {
+  display: none;
+  width: 16px;
+  height: 16px;
+}
+
+.pill a:hover {
+  color: var(--ink);
+}
+
+.pill a.active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 11px 18px;
+  border-radius: var(--r-pill);
+  transition: background 0.25s var(--ease), color 0.25s var(--ease),
+    border-color 0.25s var(--ease);
+}
+
+.cta:hover {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.cta svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 720px) {
+  .nav {
+    padding: 0 clamp(14px, 4vw, 22px);
+    gap: 10px;
+  }
+  .me {
+    display: none;
+  }
+  /* Resume CTA collapses to an icon-only pill — kept available, just compact. */
+  .ctaLabel {
+    display: none;
+  }
+  .cta {
+    padding: 10px 12px;
+    gap: 0;
+  }
+  .cta svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Below ~560px the pill switches to icons so all three routes still fit
+   alongside the brand and Resume CTA without overflowing the viewport. */
+@media (max-width: 560px) {
+  .pill {
+    padding: 4px;
+    gap: 2px;
+  }
+  .pill a {
+    padding: 8px 10px;
+    gap: 0;
+  }
+  .pill .linkText {
+    display: none;
+  }
+  .pill .linkIcon {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand span {
+    display: none;
+  }
+}
