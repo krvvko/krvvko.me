@@ -27,7 +27,7 @@ jobs:
             cd /home/deploy/apps/krvvko.me
 
             git fetch --prune origin
-            git checkout ${{ steps.branch_name.outputs.branch }}
+            git checkout -B ${{ steps.branch_name.outputs.branch }} origin/${{ steps.branch_name.outputs.branch }}
             git reset --hard origin/${{ steps.branch_name.outputs.branch }}
 
             docker compose down || true
