@@ -1,9 +1,7 @@
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: krvvko-me:latest
+    image: ghcr.io/krvvko/krvvko.me-ruby:latest
+    pull_policy: always
     container_name: krvvko-me
     restart: unless-stopped
     ports:
