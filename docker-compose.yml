@@ -2,11 +2,16 @@ services:
   web:
     image: ghcr.io/krvvko/krvvko.me-ruby:latest
     pull_policy: always
-    container_name: krvvko-me
     restart: unless-stopped
-    ports:
-      - "3020:3020"
     environment:
       NODE_ENV: production
       PORT: 3020
       HOSTNAME: 0.0.0.0
+    expose:
+      - "3020"
+    networks:
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
