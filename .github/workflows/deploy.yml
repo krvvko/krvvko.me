@@ -1,0 +1,67 @@
+name: Build & Deploy
+
+# Builds the Docker image on GitHub CI, pushes it to GHCR, then pings the
+# Dokploy webhook so Dokploy pulls the fresh :latest image and redeploys.
+on:
+  push:
+    branches: [ruby-design]
+  workflow_dispatch: # allow manual "Run workflow" from the Actions tab
+
+concurrency:
+  # never let two deploys of the same branch race; cancel the older one
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  IMAGE: ghcr.io/krvvko/krvvko.me-ruby
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write # required for GITHUB_TOKEN to push to GHCR
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build & push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64 # Dokploy host arch
+          push: true
+          tags: |
+            ${{ env.IMAGE }}:latest
+            ${{ env.IMAGE }}:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Trigger Dokploy redeploy
+        env:
+          DOKPLOY_DEPLOY_WEBHOOK: ${{ secrets.DOKPLOY_WEBHOOK_URL }}
+        run: |
+          code=$(curl -sS -o /tmp/dokploy_resp -w "%{http_code}" \
+            --retry 3 --max-time 30 -X POST \
+            -H "Content-Type: application/json" \
+            -H "X-GitHub-Event: push" \
+            -d "{\"ref\":\"${{ github.ref }}\"}" \
+            "$DOKPLOY_DEPLOY_WEBHOOK" || echo "000")
+          echo "Dokploy responded: $code"
+          cat /tmp/dokploy_resp || true
+          echo
+          case "$code" in
+            2*) echo "Deploy webhook accepted." ;;
+            *)  echo "::error::Dokploy webhook failed with status $code"; exit 1 ;;
+          esac
