@@ -58,7 +58,7 @@ export default function Contact() {
 
       <div className={styles.footer}>
         <span>© 2026 — krvvko.me</span>
-        <span>Designed &amp; built end-to-end · Made with shrimp 🦐</span>
+        <span>Designed &amp; built by krvvko · Made with shrimp 🦐</span>
       </div>
     </Reveal>
   );
