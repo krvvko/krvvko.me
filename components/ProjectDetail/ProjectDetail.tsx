@@ -6,7 +6,8 @@ import { X, ArrowUpRight } from "@phosphor-icons/react/dist/ssr";
 import Button from "@/components/Button/Button";
 import Tag from "@/components/Tag/Tag";
 import Lightbox from "@/components/Lightbox/Lightbox";
-import type { Project } from "@/components/Experience/data";
+import Media from "@/components/Media/Media";
+import type { Project, Shot } from "@/components/Experience/data";
 import styles from "./index.module.css";
 
 type Props = {
@@ -15,6 +16,35 @@ type Props = {
   onClose: () => void;
   onClosed: () => void;
 };
+
+/** One clickable gallery entry. The skeleton lives in <Media>, sized from the
+ *  shot's intrinsic dimensions, so the panel never reflows as shots arrive. */
+function GalleryShot({
+  shot,
+  alt,
+  onOpen,
+}: {
+  shot: Shot;
+  alt: string;
+  onOpen: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      className={styles.shotBtn}
+      onClick={onOpen}
+      aria-label="Open image"
+    >
+      <Media
+        src={shot.src}
+        alt={alt}
+        width={shot.w}
+        height={shot.h}
+        className={styles.shotMedia}
+      />
+    </button>
+  );
+}
 
 export default function ProjectDetail({
   project,
@@ -25,7 +55,7 @@ export default function ProjectDetail({
   // Portal target only exists in the browser; render nothing until mounted so
   // SSR and the first client paint agree.
   const [mounted, setMounted] = useState(false);
-  const [lightboxSrc, setLightboxSrc] = useState<string | null>(null);
+  const [lightboxShot, setLightboxShot] = useState<Shot | null>(null);
   // Canonical client-only portal gate: server and first client render both
   // return null, then we flip on mount — keeps hydration in sync.
   // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -36,7 +66,7 @@ export default function ProjectDetail({
     const onKey = (e: KeyboardEvent) => {
       if (e.key !== "Escape") return;
       // Lightbox is layered on top of the modal, so Esc dismisses it first.
-      if (lightboxSrc) setLightboxSrc(null);
+      if (lightboxShot) setLightboxShot(null);
       else onClose();
     };
     document.addEventListener("keydown", onKey);
@@ -48,11 +78,11 @@ export default function ProjectDetail({
       document.removeEventListener("keydown", onKey);
       document.documentElement.style.overflow = "";
     };
-  }, [open, onClose, lightboxSrc]);
+  }, [open, onClose, lightboxShot]);
 
   // Make sure the lightbox doesn't survive the modal closing.
   useEffect(() => {
-    if (!open) setLightboxSrc(null);
+    if (!open) setLightboxShot(null);
   }, [open]);
 
   if (!mounted) return null;
@@ -119,44 +149,24 @@ export default function ProjectDetail({
                   rest after the description. */}
               {project.portrait && project.shots.length > 0 && (
                 <div className={`${styles.gallery} ${styles.galleryGrid}`}>
-                  {project.shots.map((src) => (
-                    <button
-                      key={src}
-                      type="button"
-                      className={styles.shotBtn}
-                      onClick={() => setLightboxSrc(src)}
-                      aria-label="Open image"
-                    >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={src}
-                        alt={`${project.name} screenshot`}
-                        loading="lazy"
-                        decoding="async"
-                        className={styles.shot}
-                      />
-                    </button>
+                  {project.shots.map((shot) => (
+                    <GalleryShot
+                      key={shot.src}
+                      shot={shot}
+                      alt={`${project.name} screenshot`}
+                      onOpen={() => setLightboxShot(shot)}
+                    />
                   ))}
                 </div>
               )}
 
               {!project.portrait && project.shots[0] && (
                 <div className={styles.gallery}>
-                  <button
-                    type="button"
-                    className={styles.shotBtn}
-                    onClick={() => setLightboxSrc(project.shots[0])}
-                    aria-label="Open image"
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={project.shots[0]}
-                      alt={`${project.name} screenshot`}
-                      loading="lazy"
-                      decoding="async"
-                      className={styles.shot}
-                    />
-                  </button>
+                  <GalleryShot
+                    shot={project.shots[0]}
+                    alt={`${project.name} screenshot`}
+                    onOpen={() => setLightboxShot(project.shots[0])}
+                  />
                 </div>
               )}
 
@@ -164,23 +174,13 @@ export default function ProjectDetail({
 
               {!project.portrait && project.shots.length > 1 && (
                 <div className={styles.gallery}>
-                  {project.shots.slice(1).map((src) => (
-                    <button
-                      key={src}
-                      type="button"
-                      className={styles.shotBtn}
-                      onClick={() => setLightboxSrc(src)}
-                      aria-label="Open image"
-                    >
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={src}
-                        alt={`${project.name} screenshot`}
-                        loading="lazy"
-                        decoding="async"
-                        className={styles.shot}
-                      />
-                    </button>
+                  {project.shots.slice(1).map((shot) => (
+                    <GalleryShot
+                      key={shot.src}
+                      shot={shot}
+                      alt={`${project.name} screenshot`}
+                      onOpen={() => setLightboxShot(shot)}
+                    />
                   ))}
                 </div>
               )}
@@ -233,9 +233,9 @@ export default function ProjectDetail({
       </aside>
 
       <Lightbox
-        src={lightboxSrc}
+        shot={lightboxShot}
         alt={project ? `${project.name} screenshot` : ""}
-        onClose={() => setLightboxSrc(null)}
+        onClose={() => setLightboxShot(null)}
       />
     </>,
     document.body

@@ -3,10 +3,12 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import { X } from "@phosphor-icons/react/dist/ssr";
+import Media from "@/components/Media/Media";
+import type { Shot } from "@/components/Experience/data";
 import styles from "./index.module.css";
 
 type Props = {
-  src: string | null;
+  shot: Shot | null;
   alt: string;
   onClose: () => void;
 };
@@ -17,14 +19,14 @@ type Props = {
  * fighting for stacking order. Escape handling lives in the parent that owns
  * the open state — that way Esc closes the lightbox first, then the panel.
  */
-export default function Lightbox({ src, alt, onClose }: Props) {
+export default function Lightbox({ shot, alt, onClose }: Props) {
   const [mounted, setMounted] = useState(false);
   // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => setMounted(true), []);
 
   if (!mounted) return null;
 
-  const open = src !== null;
+  const open = shot !== null;
 
   return createPortal(
     <div
@@ -45,11 +47,17 @@ export default function Lightbox({ src, alt, onClose }: Props) {
           >
             <X weight="bold" />
           </button>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={src}
+          {/* Keyed by source: the loaded flag inside Media is per-source, and
+              the viewer stays mounted while the user moves between shots. */}
+          <Media
+            key={shot.src}
+            src={shot.src}
             alt={alt}
-            className={styles.img}
+            width={shot.w}
+            height={shot.h}
+            fit="viewport"
+            eager
+            className={styles.media}
             onClick={(e) => e.stopPropagation()}
           />
         </>

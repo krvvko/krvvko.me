@@ -1,0 +1,70 @@
+.frame {
+  position: relative;
+  display: block;
+  margin-inline: auto;
+  /* The whole point: the box exists at full size before the media loads. */
+  aspect-ratio: var(--media-w) / var(--media-h);
+  border-radius: var(--r);
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+/* Fill the container, but never blow an asset up past its own resolution. */
+.fitWidth {
+  width: min(100%, calc(var(--media-w) * 1px));
+}
+
+/* Full-screen viewer: the largest box that fits both the viewport and the
+   asset's own resolution, sized from width alone so the ratio never breaks. */
+.fitViewport {
+  --media-pad: clamp(20px, 4vw, 60px);
+  width: min(
+    100%,
+    calc(var(--media-w) * 1px),
+    calc((100dvh - 2 * var(--media-pad)) * var(--media-w) / var(--media-h))
+  );
+}
+
+.skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    var(--skeleton) 18%,
+    var(--skeleton-sheen) 38%,
+    var(--skeleton) 58%
+  );
+  background-size: 240% 100%;
+  animation: sheen 1.5s var(--ease-soft) infinite;
+  transition: opacity 0.35s var(--ease);
+}
+
+.frame[data-loaded] .skeleton {
+  opacity: 0;
+  animation: none;
+}
+
+.img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+}
+
+.frame[data-loaded] .img {
+  opacity: 1;
+}
+
+@keyframes sheen {
+  from {
+    background-position: 140% 0;
+  }
+  to {
+    background-position: -40% 0;
+  }
+}

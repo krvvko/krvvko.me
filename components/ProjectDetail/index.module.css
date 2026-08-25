@@ -141,27 +141,30 @@
   display: block;
   width: 100%;
   cursor: zoom-in;
-  border-radius: var(--r);
-  transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  transition: transform 0.3s var(--ease);
 }
 
 .shotBtn:hover {
   transform: translateY(-2px);
+}
+
+/* The button spans the column but a small shot doesn't fill it, so the hover
+   shadow and focus ring belong on the media box, not on the button. */
+.shotMedia {
+  transition: box-shadow 0.3s var(--ease);
+}
+
+.shotBtn:hover .shotMedia {
   box-shadow: var(--shadow);
 }
 
 .shotBtn:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
+  outline: none;
 }
 
-.shot {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: var(--r);
-  border: 1px solid var(--line);
-  background: var(--surface-2);
+.shotBtn:focus-visible .shotMedia {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .body h4 {

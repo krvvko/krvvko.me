@@ -15,6 +15,10 @@
   --line: rgba(20, 18, 24, 0.1);
   --line-strong: rgba(20, 18, 24, 0.18);
 
+  /* loading placeholders — base fill and the band that sweeps across it */
+  --skeleton: #e6e6ec;
+  --skeleton-sheen: #f2f2f6;
+
   --red: #da2f2e;
   --red-press: #b3211f;
   --red-tint: #fbe5e2;
